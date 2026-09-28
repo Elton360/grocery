@@ -14,7 +14,20 @@
   --status-dot: #7fa894;
   --warn: #9a5b00;
   --danger: #a23b2a;
-  --border: #e3e3ef;
+  --border: #e4e4ee;
+  --card-highlight: #e9eafb;
+  --best-tile: #e3f8ec;
+  --best-text: #1c7a4a;
+  --tag-neutral-bg: #e6e8f5;
+  --tag-neutral-text: #4a5270;
+  --tag-ai-bg: #eae3ff;
+  --tag-ai-text: #5b3cc4;
+  --danger-bg: #fde2e2;
+  --danger-text: #c0262d;
+  --group-header-bg: #eeeef6;
+  --variant-tile: #f1f1f9;
+  --band: #fbfbfe;
+  --divider: #d9d9e3;
 
   --win: #dff7e9;
   --win-text: #15573a;
