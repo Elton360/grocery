@@ -1,43 +1,37 @@
-/* Design tokens + base elements, shared by the web app and the side panel. Placeholder look until the UI brief. */
+/* Design tokens + base elements shared by the web app and the side panel (Capture Feed spec). */
 :root {
-  --bg: #f7f7f5;
-  --surface: #fff;
-  --text: #1d1d1b;
-  --muted: #6b6b66;
-  --border: #e3e3de;
-  --accent: #2f6f4f;
-  --accent-text: #fff;
+  --bg: #f6f5fc;
+  --surface: #ffffff;
+  --surface-muted: #eeeef9;
+  --primary: #1f4a33;
+  --primary-strong: #0d2a1c;
+  --primary-text: #1f5c3e;
+  --accent: #a8f0c6;
+  --accent-text: #15573a;
+  --text: #111814;
+  --text-muted: #4b5563;
+  --pill-muted: #e3e3ef;
+  --status-dot: #7fa894;
+  --warn: #9a5b00;
   --danger: #a23b2a;
-  --chip: #eef3ef;
-  --win: #e3f2e8;
-  --win-text: #1f5a3c;
+  --border: #e3e3ef;
+
+  --win: #dff7e9;
+  --win-text: #15573a;
   --est: #fff2d6;
   --est-text: #7a5300;
   --costco: #c8102e;
   --walmart: #0071ce;
   --aldi: #00005f;
   --instacart: #0a8a4a;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #161615;
-    --surface: #1f1f1d;
-    --text: #ececea;
-    --muted: #a0a09a;
-    --border: #33332f;
-    --accent: #7cc49a;
-    --accent-text: #10251a;
-    --danger: #f08a78;
-    --chip: #243029;
-    --win: #1f3a2a;
-    --win-text: #a6e3bd;
-    --est: #3a2f14;
-    --est-text: #f2cf85;
-    --costco: #ff6b7f;
-    --walmart: #6db6ff;
-    --aldi: #9d9dff;
-    --instacart: #5fd39a;
-  }
+
+  --radius-card: 14px;
+  --radius-control: 12px;
+  --radius-thumb: 10px;
+  --radius-badge: 6px;
+  --shadow-card: 0 1px 2px rgba(20, 20, 60, 0.06);
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -46,33 +40,34 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font:
-    14px/1.45 system-ui,
-    -apple-system,
-    'Segoe UI',
-    sans-serif;
+  font: 14px/1.45 var(--font-body);
 }
 a {
-  color: var(--accent);
+  color: var(--primary-text);
 }
 button {
   font: inherit;
   padding: 6px 10px;
-  border-radius: 7px;
+  border-radius: var(--radius-control);
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
   cursor: pointer;
 }
 button:disabled {
-  opacity: 0.45;
+  opacity: 0.4;
   cursor: not-allowed;
 }
 button.primary {
-  background: var(--accent);
-  color: var(--accent-text);
-  border-color: var(--accent);
+  background: var(--primary-strong);
+  color: #fff;
+  border-color: var(--primary-strong);
+  font-family: var(--font-display);
   font-weight: 600;
+}
+:focus-visible {
+  outline: 2px solid var(--primary-text);
+  outline-offset: 2px;
 }
 input,
 textarea,
@@ -81,15 +76,15 @@ select {
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
-  border-radius: 7px;
+  border-radius: 8px;
   padding: 6px 8px;
 }
 .muted {
-  color: var(--muted);
+  color: var(--text-muted);
 }
 .small {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 .err {
   color: var(--danger);
@@ -99,8 +94,8 @@ select {
   font-size: 11px;
   padding: 1px 6px;
   border-radius: 99px;
-  background: var(--chip);
-  color: var(--muted);
+  background: var(--surface-muted);
+  color: var(--text-muted);
   margin-left: 4px;
   vertical-align: 1px;
 }

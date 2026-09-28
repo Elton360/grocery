@@ -46,6 +46,7 @@ export function createApi(base = '') {
     startConverge: () => post('/api/converge/run'),
     check: (store, ids) => post('/api/check', { store, ids }),
     saveGrab: (grab) => post('/api/grabs', grab),
+    ignore: (store, items) => post('/api/ignore', { store, items }),
     setItemStatus: (store, id, action) =>
       post(`/api/pending/${seg(store)}/${seg(id)}/${action}`),
     approve: (id, edits) => post(`/api/proposals/${id}/approve`, { edits }),

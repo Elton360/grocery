@@ -104,8 +104,8 @@ export function ReviewPage() {
       {!data && !error && <div className="empty">Loading…</div>}
       {data && !n && (
         <div className="empty">
-          No proposals waiting. Run Converge from the{' '}
-          <Link to="/list">List</Link> page.
+          No proposals waiting. Run Converge from the Pending section of{' '}
+          <Link to="/my-list">My List</Link>.
         </div>
       )}
       {data &&

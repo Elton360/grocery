@@ -1,42 +1,28 @@
-/** Grab actions offered for the active tab's site. `grabber` = public/grabbers/<name>.js */
+/**
+ * What can be imported from the active tab. `order` / `cart` name the grabber (public/grabbers/<name>.js)
+ * behind "Import Ordered Items" / "Import Items from Cart"; null when the site has none (yet).
+ */
 const SITES = [
   {
     host: 'walmart.com',
     name: 'Walmart',
-    actions: [
-      {
-        label: 'Grab order',
-        grabber: 'walmart-order',
-        hint: 'On an order detail page (Account → Purchase history)',
-      },
-      {
-        label: 'Grab cart',
-        grabber: 'walmart-cart',
-        hint: 'On walmart.com/cart',
-      },
-    ],
+    order: 'walmart-order',
+    cart: 'walmart-cart',
+    hint: 'Orders: open one from Account → Purchase history. Cart: walmart.com/cart.',
   },
   {
     host: 'instacart.com',
-    name: 'Instacart (Costco)',
-    actions: [
-      {
-        label: 'Grab cart',
-        grabber: 'instacart-cart',
-        hint: 'Open the cart panel first',
-      },
-    ],
+    name: 'Costco (Instacart)',
+    order: null,
+    cart: 'instacart-cart',
+    hint: 'Open the cart panel, then import.',
   },
   {
     host: 'aldi.us',
     name: 'Aldi',
-    actions: [
-      {
-        label: 'Grab list',
-        grabber: 'instacart-cart',
-        hint: 'In-Store mode, with your list open (prices are shelf prices only in In-Store mode)',
-      },
-    ],
+    order: null,
+    cart: 'instacart-cart',
+    hint: 'Use In-Store mode and open your list, then import.',
   },
 ]
 

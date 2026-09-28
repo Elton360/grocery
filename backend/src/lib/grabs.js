@@ -50,9 +50,14 @@ export function ignoreItems(db, store, items) {
   return items.length
 }
 
-/** Identity of a past order so re-submitting it replaces the earlier grab. Carts are never deduped. */
-export function orderKey(store, source, orderDate, pageUrl, items) {
+/**
+ * Identity of a grab so re-submitting it replaces the earlier one. Orders are keyed by their page; carts and
+ * receipts by the side panel's capture id when given (the panel re-submits a capture as more of its items are
+ * added), else receipts by date + item numbers. Carts without a capture id are never deduped.
+ */
+export function orderKey(store, source, orderDate, pageUrl, items, captureKey) {
   if (source === 'order' && pageUrl) return `${store}:${pageUrl}`
+  if (captureKey) return `${store}:capture:${captureKey}`
   if (source === 'receipt') {
     const ids = items
       .filter((i) => i.store_product_id)
@@ -104,7 +109,14 @@ export function saveGrab(db, payload) {
   const items = payload.items || []
   const touched = new Set()
 
-  const k = orderKey(store, source, orderDate, payload.page_url, items)
+  const k = orderKey(
+    store,
+    source,
+    orderDate,
+    payload.page_url,
+    items,
+    payload.capture_key,
+  )
   let replaced = false
   if (k) {
     for (const old of db
