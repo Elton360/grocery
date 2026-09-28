@@ -2,7 +2,7 @@ import { BadgeCheck, ListPlus } from 'lucide-react'
 
 import { money } from '../../../shared/format.js'
 
-export const MIN_SELECTION = 2 // spec: "Select at least 2 items to add"
+export const MIN_SELECTION = 1
 
 /** Add to My List + rule and total. On Tracked/Omitted only the total row is shown. */
 export function StickyFooter({ showButton, count, total, busy, onAdd }) {
@@ -17,14 +17,16 @@ export function StickyFooter({ showButton, count, total, busy, onAdd }) {
           onClick={onAdd}
         >
           <ListPlus size={22} aria-hidden="true" />
-          {busy ? 'Adding…' : `Add to My List (${count} items selected)`}
+          {busy
+            ? 'Adding…'
+            : `Add to My List (${count} ${count === 1 ? 'item' : 'items'} selected)`}
         </button>
       )}
       <div className="rule-row">
         {showButton ? (
           <span id="add-rule" className={`rule${ruleMet ? '' : ' unmet'}`}>
             <BadgeCheck size={16} aria-hidden="true" />
-            Rule: Select at least {MIN_SELECTION} items to add
+            {ruleMet ? 'Ready to add' : 'Select items to add'}
           </span>
         ) : (
           <span />

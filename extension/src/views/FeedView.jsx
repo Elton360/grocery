@@ -8,7 +8,16 @@ import { StoreStatusBar } from '../components/StoreStatusBar.jsx'
 import { TabBar } from '../components/TabBar.jsx'
 
 /** Capture feed: New | Tracked | Omitted, select new items and add them to My List. */
-export function FeedView({ feed, ready, live, tab, onTab, actions, notify }) {
+export function FeedView({
+  feed,
+  ready,
+  live,
+  refresh,
+  tab,
+  onTab,
+  actions,
+  notify,
+}) {
   const [selected, setSelected] = useState(() => new Set())
   const [busy, setBusy] = useState(null) // 'add' or an item key
 
@@ -61,7 +70,11 @@ export function FeedView({ feed, ready, live, tab, onTab, actions, notify }) {
   return (
     <div className="feed-view">
       <div className="pinned">
-        <StoreStatusBar captures={feed.captures} live={live} />
+        <StoreStatusBar
+          captures={feed.captures}
+          live={live}
+          refresh={refresh}
+        />
         <TabBar
           tab={tab}
           onChange={onTab}

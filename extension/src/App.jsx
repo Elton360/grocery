@@ -7,7 +7,7 @@ import { useActiveTab } from './hooks/useActiveTab.js'
 import { useBackendLive } from './hooks/useBackendLive.js'
 import { useFeed } from './hooks/useFeed.js'
 import { useStoredState } from './hooks/useStoredState.js'
-import { siteFor } from './sites.js'
+import { refreshInfo, siteFor } from './sites.js'
 import { FeedView } from './views/FeedView.jsx'
 import { MainView } from './views/MainView.jsx'
 import { ReceiptView } from './views/ReceiptView.jsx'
@@ -19,6 +19,7 @@ async function runGrabber(tab, grabber) {
     files: [`grabbers/${grabber}.js`],
   })
   const grab = res?.result
+  if (grab) grab.grabber = grabber
   if (!grab || grab.error)
     throw new Error(grab?.error || 'Grabber returned nothing')
   if (grab.source === 'cart' && !grab.order_date) {
@@ -60,6 +61,14 @@ export function App() {
   }
 
   const pendingNew = feed.items.filter((f) => f.status === 'new').length
+  const latest = Object.values(feed.captures).sort((a, b) =>
+    b.captured_at.localeCompare(a.captured_at),
+  )[0]
+  const refresh = {
+    ...refreshInfo(latest, tab?.url),
+    busy,
+    run: () => doImport(() => runGrabber(tab, latest.grabber)),
+  }
   return (
     <div className="side-panel">
       <Header
@@ -71,6 +80,7 @@ export function App() {
           feed={feed}
           ready={ready}
           live={live}
+          refresh={refresh}
           tab={feedTab}
           onTab={setFeedTab}
           actions={{ addToList, omit, restore }}

@@ -59,11 +59,13 @@ npm start                # build the web app, then serve API + app (My List) on 
   - **Tracked**: already on My List, pending or matched;
   - **Omitted**: on the ignore list.
 - **Accumulates across stores:** import a Walmart order, then a Costco cart, and so on. Items stay in the feed, kept in `chrome.storage.local`, until they're handled. Grabbed items only appear in the panel; nothing opens a new tab.
-- **Adding:** select New items, then **Add to My List**. The rule is at least 2 items (`MIN_SELECTION` in `StickyFooter.jsx`). They become *pending* on My List in the web app.
+- **Adding:** select one or more New items, then **Add to My List**. They become *pending* on My List in the web app.
+- **Refresh** (next to the store chip): re-grabs the latest import from the active tab, e.g. "Refresh cart list from Instacart". It's disabled unless the tab is that store and the right page (a Walmart order page, walmart.com/cart, Instacart, or the Aldi list); the tooltip says what to open.
+- **Grabber errors:** if the page isn't ready (cart panel closed, list not open, cart empty, not an order page), the import stops with a message saying what to open.
 - **Omit / restore:** **Omit** on a New card puts the item on the ignore list, so future imports skip it. On Omitted, **Add to My List** brings one back.
 - **Prices:** items already on My List get their prices recorded as soon as they're imported.
 - **Duplicates:** each import has a capture id (`capture_key`), so re-submitting an import as more of its items are added replaces its earlier grab, and price history isn't duplicated. Orders are also matched by page URL across imports.
-- **Offline:** if the backend is down, the header shows **Paused**. Imports still land in New and are checked once the backend is back.
+- **Offline:** if the backend is down, the status bar shows **Offline**. Imports still land in New and are checked once the backend is back.
 
 **Grabbers:**
 - They run in the page's MAIN world. Instacart and Aldi product IDs come from React fiber props.

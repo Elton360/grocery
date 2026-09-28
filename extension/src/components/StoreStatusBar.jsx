@@ -4,8 +4,11 @@ import { STORE_NAMES } from '../../../shared/format.js'
 
 const SOURCE = { order: 'order', cart: 'cart', receipt: 'receipt' }
 
-/** Latest import (store, kind, date) and whether the backend is reachable. */
-export function StoreStatusBar({ captures, live }) {
+/**
+ * Latest import (store, kind, date), Refresh (re-grab it from the active tab; disabled off the relevant page,
+ * the tooltip says what it does), and "Offline" when the backend doesn't answer.
+ */
+export function StoreStatusBar({ captures, live, refresh }) {
   const list = Object.values(captures).sort((a, b) =>
     b.captured_at.localeCompare(a.captured_at),
   )
@@ -23,9 +26,21 @@ export function StoreStatusBar({ captures, live }) {
         <span className="dot" aria-hidden="true" />
         <span className="truncate">{text}</span>
       </span>
-      <span className={`live${live ? '' : ' paused'}`}>
-        <RefreshCw size={16} aria-hidden="true" />
-        {live === false ? 'Paused' : 'Live'}
+      <span className="status-actions">
+        {live === false && <span className="offline">Offline</span>}
+        <button
+          className="icon-btn refresh"
+          title={refresh.label}
+          aria-label={refresh.label}
+          disabled={!refresh.enabled || refresh.busy}
+          onClick={refresh.run}
+        >
+          <RefreshCw
+            size={18}
+            aria-hidden="true"
+            className={refresh.busy ? 'spin' : ''}
+          />
+        </button>
       </span>
     </div>
   )

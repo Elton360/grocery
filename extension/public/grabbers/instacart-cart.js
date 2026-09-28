@@ -58,43 +58,49 @@
         : 'Cart not found — open the cart panel, then grab again.',
     }
 
-  const items = [...cart.querySelectorAll('[role=group][aria-label]')].map(
-    (el) => {
-      const fk = Object.keys(el).find((k) => k.startsWith('__reactFiber$'))
-      let f = fk && el[fk],
-        props = null
-      for (let d = 0; f && d < 8 && !props; d++, f = f.return)
-        props = findProps(f.memoizedProps, 0, new WeakSet())
-      const text = el.innerText
-      const cur = money((text.match(/Current price\s*\$[\d,.]+/) || [])[0])
-      const orig = money((text.match(/Original price\s*\$[\d,.]+/) || [])[0])
-      const price = cur ?? money(text)
-      const q = text.match(/Quantity:\s*([\d.]+)\s*(\w+)/)
-      const productId = props ? String(props.product_id ?? props.productId) : ''
-      const img = el.querySelector('img[alt]')
-      return {
-        store_product_id: productId,
-        name: el.getAttribute('aria-label'),
-        qty: q ? Number(q[1]) : 1,
-        price_each: price,
-        line_total:
-          price !== null && q
-            ? Math.round(price * Number(q[1]) * 100) / 100
-            : price,
-        url: productId ? productBase + productId : '',
-        image_url: img?.src || '',
-        notes:
-          cur !== null && orig !== null
-            ? 'promo $' + cur.toFixed(2) + ' (was $' + orig.toFixed(2) + ')'
-            : '',
-        raw: {
-          item_id: props ? String(props.item_id ?? props.itemId ?? '') : '',
-          original_price: orig ?? price,
-          retailer: location.pathname.split('/')[2] || '',
-        },
-      }
-    },
-  )
+  const groups = [...cart.querySelectorAll('[role=group][aria-label]')]
+  if (!groups.length)
+    return {
+      error: isAldi
+        ? 'No items found in your ALDI list — open the list and make sure it has items, then import again.'
+        : 'No items found in the cart — open the cart panel and make sure it has items, then import again.',
+    }
+
+  const items = groups.map((el) => {
+    const fk = Object.keys(el).find((k) => k.startsWith('__reactFiber$'))
+    let f = fk && el[fk],
+      props = null
+    for (let d = 0; f && d < 8 && !props; d++, f = f.return)
+      props = findProps(f.memoizedProps, 0, new WeakSet())
+    const text = el.innerText
+    const cur = money((text.match(/Current price\s*\$[\d,.]+/) || [])[0])
+    const orig = money((text.match(/Original price\s*\$[\d,.]+/) || [])[0])
+    const price = cur ?? money(text)
+    const q = text.match(/Quantity:\s*([\d.]+)\s*(\w+)/)
+    const productId = props ? String(props.product_id ?? props.productId) : ''
+    const img = el.querySelector('img[alt]')
+    return {
+      store_product_id: productId,
+      name: el.getAttribute('aria-label'),
+      qty: q ? Number(q[1]) : 1,
+      price_each: price,
+      line_total:
+        price !== null && q
+          ? Math.round(price * Number(q[1]) * 100) / 100
+          : price,
+      url: productId ? productBase + productId : '',
+      image_url: img?.src || '',
+      notes:
+        cur !== null && orig !== null
+          ? 'promo $' + cur.toFixed(2) + ' (was $' + orig.toFixed(2) + ')'
+          : '',
+      raw: {
+        item_id: props ? String(props.item_id ?? props.itemId ?? '') : '',
+        original_price: orig ?? price,
+        retailer: location.pathname.split('/')[2] || '',
+      },
+    }
+  })
 
   return {
     store,

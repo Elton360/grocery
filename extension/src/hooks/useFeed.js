@@ -7,7 +7,7 @@ import { useStoredState } from './useStoredState.js'
  * The capture feed: everything imported in the panel, across stores, until cleared.
  * Persisted in chrome.storage.local as { captures: {id: capture}, items: [feedItem] }.
  *
- *   capture   { id, store, source, order_date, page_url, price_mode, captured_at }
+ *   capture   { id, store, source, order_date, page_url, price_mode, captured_at, grabber }
  *   feedItem  { key, captureId, store, item (as grabbed), status: 'new' | 'tracked' | 'omitted', checked }
  *
  * Status comes from the backend: never seen → new; pending or on the list → tracked (it is on My List);
@@ -70,6 +70,7 @@ export function useFeed() {
         price_mode:
           grab.price_mode || (grab.store === 'costco' ? 'in_store' : null),
         captured_at: new Date().toISOString(),
+        grabber: grab.grabber ?? null, // for Refresh; null for pasted receipts
       }
       let statusOf = null
       try {
