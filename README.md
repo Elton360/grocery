@@ -1,6 +1,6 @@
 # Grocery
 
-This project compares grocery prices per unit across Aldi, Walmart and Costco (North Miami).
+This project compares grocery prices per unit across Aldi, Walmart and Costco.
 
 1. **Gather:** the Chrome side panel grabs orders, carts and receipts into a local backend as *pending* items.
 2. **Converge:** Claude proposes how pending items join the curated product list, and you approve them.
