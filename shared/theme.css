@@ -1,0 +1,118 @@
+/* Design tokens + base elements, shared by the web app and the side panel. Placeholder look until the UI brief. */
+:root {
+  --bg: #f7f7f5;
+  --surface: #fff;
+  --text: #1d1d1b;
+  --muted: #6b6b66;
+  --border: #e3e3de;
+  --accent: #2f6f4f;
+  --accent-text: #fff;
+  --danger: #a23b2a;
+  --chip: #eef3ef;
+  --win: #e3f2e8;
+  --win-text: #1f5a3c;
+  --est: #fff2d6;
+  --est-text: #7a5300;
+  --costco: #c8102e;
+  --walmart: #0071ce;
+  --aldi: #00005f;
+  --instacart: #0a8a4a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615;
+    --surface: #1f1f1d;
+    --text: #ececea;
+    --muted: #a0a09a;
+    --border: #33332f;
+    --accent: #7cc49a;
+    --accent-text: #10251a;
+    --danger: #f08a78;
+    --chip: #243029;
+    --win: #1f3a2a;
+    --win-text: #a6e3bd;
+    --est: #3a2f14;
+    --est-text: #f2cf85;
+    --costco: #ff6b7f;
+    --walmart: #6db6ff;
+    --aldi: #9d9dff;
+    --instacart: #5fd39a;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font:
+    14px/1.45 system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+}
+a {
+  color: var(--accent);
+}
+button {
+  font: inherit;
+  padding: 6px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+button.primary {
+  background: var(--accent);
+  color: var(--accent-text);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+input,
+textarea,
+select {
+  font: inherit;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 6px 8px;
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 12px;
+  color: var(--muted);
+}
+.err {
+  color: var(--danger);
+}
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 99px;
+  background: var(--chip);
+  color: var(--muted);
+  margin-left: 4px;
+  vertical-align: 1px;
+}
+.s-costco {
+  color: var(--costco);
+}
+.s-walmart {
+  color: var(--walmart);
+}
+.s-aldi {
+  color: var(--aldi);
+}
+.s-instacart {
+  color: var(--instacart);
+}

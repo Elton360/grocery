@@ -1,0 +1,418 @@
+[
+  {
+    "op": "check",
+    "store": "walmart",
+    "ids": ["wm-milk", "wm-ign-card", "wm-t-1"]
+  },
+  {
+    "op": "grab",
+    "payload": {
+      "store": "walmart",
+      "source": "order",
+      "order_date": "2026-09-25",
+      "page_url": "https://www.walmart.com/orders/TEST-ORDER-2",
+      "items": [
+        {
+          "store_product_id": "wm-milk",
+          "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+          "qty": 1,
+          "price_each": 4.18,
+          "line_total": 4.18,
+          "unit_price_text": "8.0¢/fl oz"
+        },
+        {
+          "store_product_id": "wm-t-1",
+          "name": "Great Value Test Tortillas, 10 Count",
+          "qty": 2,
+          "price_each": 1.98,
+          "line_total": 3.96,
+          "url": "https://example.test/wm-t-1"
+        },
+        {
+          "store_product_id": "wm-ign-card",
+          "name": "Birthday Card",
+          "qty": 1,
+          "price_each": 3.97
+        },
+        {
+          "name": "Loose Limes (no id)",
+          "qty": 1,
+          "price_each": 1.25,
+          "notes": "was $1.40"
+        }
+      ],
+      "removed": [{ "store_product_id": "wm-t-2", "name": "Gift Bag" }]
+    }
+  },
+  {
+    "op": "grab",
+    "payload": {
+      "store": "walmart",
+      "source": "order",
+      "order_date": "2026-09-25",
+      "page_url": "https://www.walmart.com/orders/TEST-ORDER-2",
+      "items": [
+        {
+          "store_product_id": "wm-milk",
+          "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+          "qty": 1,
+          "price_each": 4.08,
+          "line_total": 4.08,
+          "unit_price_text": "7.8¢/fl oz"
+        },
+        {
+          "store_product_id": "wm-t-1",
+          "name": "Great Value Test Tortillas, 10 Count",
+          "qty": 2,
+          "price_each": 1.98,
+          "line_total": 3.96,
+          "url": "https://example.test/wm-t-1"
+        }
+      ]
+    }
+  },
+  {
+    "op": "grab",
+    "payload": {
+      "store": "aldi",
+      "source": "cart",
+      "order_date": "2026-09-26",
+      "price_mode": "pickup",
+      "page_url": "https://www.aldi.us/store/aldi/storefront",
+      "items": [
+        {
+          "store_product_id": "al-water",
+          "name": "Puraqua Water, 40 pack",
+          "qty": 1,
+          "price_each": 5.99,
+          "raw": { "k": 1 }
+        }
+      ]
+    }
+  },
+  {
+    "op": "grab",
+    "payload": {
+      "store": "costco",
+      "source": "receipt",
+      "order_date": "2026-09-24",
+      "items": [
+        {
+          "store_product_id": "cc-eggs",
+          "name": "KS CF 2DZ",
+          "qty": 1,
+          "price_each": 7.99
+        },
+        {
+          "store_product_id": "cc-t-1",
+          "name": "KS TEST RICE",
+          "qty": 1,
+          "price_each": 18.99
+        }
+      ]
+    }
+  },
+  {
+    "op": "grab",
+    "payload": {
+      "store": "costco",
+      "source": "receipt",
+      "order_date": "2026-09-24",
+      "items": [
+        {
+          "store_product_id": "cc-t-1",
+          "name": "KS TEST RICE",
+          "qty": 1,
+          "price_each": 18.49
+        },
+        {
+          "store_product_id": "cc-eggs",
+          "name": "KS CF 2DZ",
+          "qty": 1,
+          "price_each": 7.99
+        }
+      ]
+    }
+  },
+  {
+    "op": "grab",
+    "payload": {
+      "store": "instacart",
+      "source": "cart",
+      "order_date": "2026-09-26",
+      "items": [
+        {
+          "store_product_id": "ic-t-1",
+          "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+          "qty": 1,
+          "price_each": 19.99,
+          "raw": { "original_price": 20.49 }
+        }
+      ]
+    }
+  },
+  {
+    "op": "grab",
+    "payload": { "store": "bogus", "source": "cart", "items": [] }
+  },
+  {
+    "op": "ignore",
+    "store": "walmart",
+    "items": [{ "store_product_id": "wm-t-3", "name": "Wrapping paper" }]
+  },
+  {
+    "op": "check",
+    "store": "walmart",
+    "ids": ["wm-milk", "wm-ign-card", "wm-t-1", "wm-t-2", "wm-t-3"]
+  },
+  { "op": "list", "status": "pending" },
+  { "op": "list", "status": "ignored" },
+  {
+    "op": "set_status",
+    "store": "walmart",
+    "id": "wm-milk",
+    "action": "remove"
+  },
+  {
+    "op": "set_status",
+    "store": "walmart",
+    "id": "wm-milk",
+    "action": "restore"
+  },
+  {
+    "op": "set_status",
+    "store": "walmart",
+    "id": "wm-ign-card",
+    "action": "restore"
+  },
+  {
+    "op": "set_status",
+    "store": "walmart",
+    "id": "wm-ign-card",
+    "action": "remove"
+  },
+  { "op": "set_status", "store": "walmart", "id": "nope", "action": "remove" },
+  { "op": "converge_export" },
+  {
+    "op": "converge_apply",
+    "data": {
+      "batch": "T1",
+      "proposals": [
+        {
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "action": "link",
+          "product_id": 7,
+          "size_text": "10 Count",
+          "match_tier": "substitute",
+          "note": "test",
+          "confidence": 0.95,
+          "reason": "r1"
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "action": "new",
+          "new_product": { "name": "Limes", "category": "produce" },
+          "confidence": 0.7,
+          "reason": "r2"
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-t-1",
+          "action": "pair",
+          "pair_with": { "store": "costco", "store_product_id": "cc-t-1" },
+          "new_product": { "name": "Jasmine rice", "category": "pantry" },
+          "size_text": "25 lb",
+          "match_tier": "exact",
+          "confidence": 0.92,
+          "reason": "r3"
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "action": "ask",
+          "candidates": [1, 2, 99999],
+          "confidence": 0.3,
+          "reason": "r4"
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "action": "ignore",
+          "confidence": 0.5,
+          "reason": "supersedes ask"
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-milk",
+          "action": "link",
+          "product_id": 2,
+          "confidence": 1,
+          "reason": "not pending"
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "action": "link",
+          "product_id": 99999,
+          "confidence": 1,
+          "reason": "bad product"
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "action": "fly",
+          "confidence": 1
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "action": "new",
+          "new_product": { "name": "BAGELS", "category": "bakery" },
+          "confidence": 0.8,
+          "reason": "existing name becomes link"
+        }
+      ]
+    }
+  },
+  { "op": "proposals", "status": "proposed" },
+  { "op": "reject", "id": 10 },
+  { "op": "approve", "id": 9, "edits": { "action": "ask" } },
+  {
+    "op": "approve",
+    "id": 9,
+    "edits": {
+      "action": "link",
+      "product_id": 2,
+      "note": "relinked",
+      "bogus": 1
+    }
+  },
+  { "op": "approve", "id": 6 },
+  { "op": "approve", "id": 999 },
+  {
+    "op": "approve",
+    "id": 5,
+    "edits": { "action": "link", "product_id": 99999 }
+  },
+  { "op": "approve_bulk", "min_confidence": 0.9 },
+  { "op": "list", "status": "pending" },
+  { "op": "normalize_export", "store": "aldi" },
+  { "op": "normalize_export", "store": "costco", "limit": 3 },
+  { "op": "normalize_export", "store": "walmart" },
+  {
+    "op": "normalize_apply",
+    "data": {
+      "batch": "N1",
+      "target_store": "aldi",
+      "proposals": [
+        {
+          "product_id": 11,
+          "action": "version",
+          "store_product_id": "al-t-1",
+          "name": "Mariquitas Plantain Chips",
+          "url": "https://example.test/al-t-1",
+          "price": 2.75,
+          "size_text": "5 oz",
+          "match_tier": "equivalent",
+          "note": "in-store",
+          "confidence": 0.9,
+          "reason": "n1",
+          "alternatives": [
+            {
+              "store_product_id": "al-t-2",
+              "name": "Mariquitas Plantain Chips, family size",
+              "price": 4.49,
+              "size_text": "10 oz"
+            },
+            {
+              "store_product_id": "al-ign-cream",
+              "name": "ignored one",
+              "price": 1
+            },
+            { "name": "no id", "price": 1 }
+          ]
+        },
+        {
+          "product_id": 5,
+          "action": "not_carried",
+          "note": "no waffles",
+          "confidence": 0.8,
+          "reason": "n2"
+        },
+        {
+          "product_id": 6,
+          "action": "version_ask",
+          "candidates": [
+            {
+              "store_product_id": "al-t-3",
+              "name": "Everything Bagels",
+              "price": 2.29,
+              "size_text": "6 ct"
+            }
+          ],
+          "confidence": 0.4,
+          "reason": "n3"
+        },
+        {
+          "product_id": 3,
+          "action": "version",
+          "store_product_id": "al-eggs-12",
+          "name": "already",
+          "price": 2.79,
+          "confidence": 0.9
+        },
+        { "product_id": 99999, "action": "not_carried", "confidence": 0.9 },
+        {
+          "product_id": 3,
+          "action": "version",
+          "store_product_id": "al-t-4",
+          "name": "no price",
+          "confidence": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "op": "normalize_apply",
+    "data": {
+      "batch": "N2",
+      "target_store": "walmart",
+      "proposals": [
+        {
+          "product_id": 4,
+          "action": "not_carried",
+          "note": "first",
+          "confidence": 0.5
+        },
+        {
+          "product_id": 4,
+          "action": "not_carried",
+          "note": "second supersedes",
+          "confidence": 0.6
+        }
+      ]
+    }
+  },
+  { "op": "normalize_apply", "data": { "batch": "N3", "proposals": [] } },
+  { "op": "proposals", "status": "proposed" },
+  { "op": "approve", "id": 11, "edits": { "choice": 0 } },
+  { "op": "approve", "id": 12 },
+  { "op": "approve", "id": 13, "edits": { "choice": 0 } },
+  { "op": "approve", "id": 13, "edits": { "action": "version", "choice": 5 } },
+  {
+    "op": "approve",
+    "id": 13,
+    "edits": { "action": "version", "choice": 0, "match_tier": "substitute" }
+  },
+  { "op": "approve", "id": 13 },
+  { "op": "approve", "id": 15 },
+  { "op": "reject", "id": 15 },
+  { "op": "proposals", "status": "approved" },
+  { "op": "proposals", "status": "rejected" },
+  { "op": "proposals", "status": "superseded" },
+  { "op": "list", "status": "converged" },
+  { "op": "compare" },
+  { "op": "dump" }
+]

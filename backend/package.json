@@ -1,0 +1,29 @@
+{
+  "name": "grocery-backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local API: grabs, curated list, compare, converge/normalize proposals (SQLite)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
+    "test": "node --test",
+    "lint": "eslint ."
+  },
+  "author": "Elton Lucien",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "eslint": "^9.39.5",
+    "eslint-plugin-import": "^2.32.0",
+    "globals": "^17.12.0"
+  }
+}

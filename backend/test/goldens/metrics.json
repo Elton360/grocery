@@ -1,0 +1,2204 @@
+[
+  {
+    "args": [3.99, "Brand Pasta Sauce, 24 oz", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 24.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.16625,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.28,
+      "Ultra-Filtered Milk, 52 fl oz",
+      "8.2\u00a2/fl oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 52.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.08231,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.48, "Whole Milk, Half Gallon", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 64.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.05437,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.5, "Juice, 64 fluid ounces", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 64.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.03906,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [6.0, "Flour, 5 lb", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 80.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.075,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [9.0, "Rice, 10 pounds", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 160.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.05625,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [5.0, "Chicken Breast Per 4 Oz Serving, 2 lb", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 32.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.15625,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [8.49, "Cage-Free Eggs, 24-count", "", null, null],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3538,
+      "price_per_count": 0.3538,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.47, "Large Eggs, 18 Count", "24.8\u00a2/ea", null, null],
+    "out": {
+      "pack_count": 18,
+      "net_amount": 18,
+      "net_unit": "ct",
+      "price_per_unit": 0.2483,
+      "price_per_count": 0.2483,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.79, "Eggs, 12 ct", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.2325,
+      "price_per_count": 0.2325,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.79, "KS FR 2DZ", "", null, null],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3246,
+      "price_per_count": 0.3246,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.0, "Shrimp, 31-40-count, 2 lb", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 32.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.375,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [24.99, "Paper Towels, 160 Sheets, 12 Rolls", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 1920,
+      "net_unit": "sheet",
+      "price_per_unit": 0.013016,
+      "price_per_count": 2.0825,
+      "unit_label": "sheet",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [19.99, "Toilet Paper, 30 rolls", "", null, null],
+    "out": {
+      "pack_count": 30,
+      "net_amount": 30,
+      "net_unit": "ct",
+      "price_per_unit": 0.6663,
+      "price_per_count": 0.6663,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [14.99, "Dishwasher Tablets, 90 tablets", "", null, null],
+    "out": {
+      "pack_count": 90,
+      "net_amount": 90,
+      "net_unit": "ct",
+      "price_per_unit": 0.1666,
+      "price_per_count": 0.1666,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [9.99, "Toilet Gel Stamps, 6 gel stamps", "", null, null],
+    "out": {
+      "pack_count": 6,
+      "net_amount": 6,
+      "net_unit": "ct",
+      "price_per_unit": 1.665,
+      "price_per_count": 1.665,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [5.99, "Soda, 12 fl oz, 12 pk", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.49917,
+      "price_per_count": 0.4992,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.98,
+      "Greek Yogurt, 5.3 oz, 4 Count",
+      "23.5\u00a2/oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 4,
+      "net_amount": 21.2,
+      "net_unit": "oz",
+      "price_per_unit": 0.23491,
+      "price_per_count": 1.245,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.47, "Waffles, 12.3 oz, 10 Count", "28.2\u00a2/oz", null, null],
+    "out": {
+      "pack_count": 10,
+      "net_amount": 12.3,
+      "net_unit": "oz",
+      "price_per_unit": 0.28211,
+      "price_per_count": 0.347,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [13.08, "Waffle, 1.24 oz, 60-count", "", null, null],
+    "out": {
+      "pack_count": 60,
+      "net_amount": 74.4,
+      "net_unit": "oz",
+      "price_per_unit": 0.17581,
+      "price_per_count": 0.218,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      8.99,
+      "Protein Bars, 20 count box of 1.41 oz bars",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 20,
+      "net_amount": 28.2,
+      "net_unit": "oz",
+      "price_per_unit": 0.31879,
+      "price_per_count": 0.4495,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [11.62, "Fresh Salmon Fillet", "$9.97/lb", 12.46, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 19.996,
+      "net_unit": "oz",
+      "price_per_unit": 0.58112,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [1.25, "Bananas", "$0.62/lb", 1.4, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 36.129,
+      "net_unit": "oz",
+      "price_per_unit": 0.0346,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [5.43, "Ground Beef", "$5.43/lb", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 16.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.33937,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [29.97, "KS ATL SALMON", "", null, 2.5],
+    "out": {
+      "pack_count": "",
+      "net_amount": 40.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.74925,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [
+      38.97,
+      "Atlantic Salmon Fillet (About 3 lb / package)",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 48.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.81188,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [9.5, "Chicken Thighs, 2-3 lb", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 9.5,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [0.49, "Bananas, per lb", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 0.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.29, "Heavy Cream (32 fl oz)", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 32.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.13406,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.0, "Avocado, each", "$2.00/ea", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 2.0,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.5, "Lemon", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 1.5,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.0, "Cheese &amp; Crackers, 4 oz", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 4.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.75,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.0, "Mini Muffins, 20 ct", "$0.35/ct", null, null],
+    "out": {
+      "pack_count": 20,
+      "net_amount": 20,
+      "net_unit": "ct",
+      "price_per_unit": 0.35,
+      "price_per_count": 0.35,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      6.5,
+      "Sparkling Water, 12 fl oz, 18-count",
+      "3.0\u00a2/fl oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 18,
+      "net_amount": 216.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.03009,
+      "price_per_count": 0.3611,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.47, "", "24.8\u00a2/ea", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.47,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.47,
+      "Great Value Cage-Free Large Eggs, 18 Count",
+      "24.8\u00a2/ea",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 18,
+      "net_amount": 18,
+      "net_unit": "ct",
+      "price_per_unit": 0.2483,
+      "price_per_count": 0.2483,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.28, "", "8.2\u00a2/fl oz", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.28,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.28,
+      "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+      "8.2\u00a2/fl oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 52.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.08231,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [11.62, "", "$9.97/lb", 12.46, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 19.996,
+      "net_unit": "oz",
+      "price_per_unit": 0.58112,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [11.62, "Fresh Atlantic Salmon Fillet", "$9.97/lb", 12.46, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 19.996,
+      "net_unit": "oz",
+      "price_per_unit": 0.58112,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [15.97, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 15.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [15.97, "98 Sheets, 6 Rolls", "", null, null],
+    "out": {
+      "pack_count": 6,
+      "net_amount": 588,
+      "net_unit": "sheet",
+      "price_per_unit": 0.02716,
+      "price_per_count": 2.6617,
+      "unit_label": "sheet",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      15.97,
+      "Bounty Select-A-Size Paper Towels, 6 Double Rolls",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 15.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.47, "", "28.2\u00a2/oz", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.47,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      3.47,
+      "Eggo Homestyle Waffles, 12.3 oz, 10 Count",
+      "28.2\u00a2/oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 10,
+      "net_amount": 12.3,
+      "net_unit": "oz",
+      "price_per_unit": 0.28211,
+      "price_per_count": 0.347,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.28, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.28,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.28, "Mission Carb Balance Tortillas", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.28,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.98, "", "0.7\u00a2/fl oz", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.98,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.98,
+      "Great Value Purified Water, 16.9 fl oz, 40 Count",
+      "0.7\u00a2/fl oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 40,
+      "net_amount": 676.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.00737,
+      "price_per_count": 0.1245,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.25, "", "$0.62/lb", 1.4, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 36.129,
+      "net_unit": "oz",
+      "price_per_unit": 0.0346,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [1.25, "Bananas", "$0.62/lb", 1.4, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 36.129,
+      "net_unit": "oz",
+      "price_per_unit": 0.0346,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [2.47, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 2.47,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.47, "Great Value Dinner Rolls, 12 Count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.2058,
+      "price_per_count": 0.2058,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.78, "", "35.6\u00a2/oz", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 1.78,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      1.78,
+      "Mariquitas Plantain Chips, 5 oz",
+      "35.6\u00a2/oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 5.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.356,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [0.98, "", "6.5\u00a2/oz", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 0.98,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      0.98,
+      "Great Value Black Beans, 15 oz",
+      "6.5\u00a2/oz",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 15.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.06533,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.97, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.97, "Birthday Card", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.79, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 7.79,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.79, "24-count", "", null, null],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3246,
+      "price_per_count": 0.3246,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.79, "KS CF 2DZ", "", null, null],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3246,
+      "price_per_count": 0.3246,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.29, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 12.29,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.29, "52 fl oz, 3-count", "", null, null],
+    "out": {
+      "pack_count": 3,
+      "net_amount": 156.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.07878,
+      "price_per_count": 4.0967,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.29, "KS UF 2% MILK", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 12.29,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [29.97, "", "", null, 2.5],
+    "out": {
+      "pack_count": "",
+      "net_amount": 40.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.74925,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [29.97, "KS ATL SALMON", "", null, 2.5],
+    "out": {
+      "pack_count": "",
+      "net_amount": 40.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.74925,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": true
+    }
+  },
+  {
+    "args": [4.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.99, "12-count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.4158,
+      "price_per_count": 0.4158,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.99, "KS BAGELS SALE", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [16.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 16.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [16.99, "KS ORG EVOO 2L", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 16.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [8.49, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 8.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      8.49,
+      "Kirkland Signature Cage-Free Eggs, 24-count",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3538,
+      "price_per_count": 0.3538,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.49, "", "", 13.49, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 12.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      12.49,
+      "Kirkland Signature Ultra-Filtered 2% Milk, 52 fl oz, 3-count",
+      "",
+      13.49,
+      null
+    ],
+    "out": {
+      "pack_count": 3,
+      "net_amount": 156.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.08006,
+      "price_per_count": 4.1633,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [38.97, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 38.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      38.97,
+      "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 48.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.81188,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [24.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 24.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [24.99, "160 Sheets, 12 Rolls", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 1920,
+      "net_unit": "sheet",
+      "price_per_unit": 0.013016,
+      "price_per_count": 2.0825,
+      "unit_label": "sheet",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      24.99,
+      "Kirkland Signature Paper Towels, 12 rolls",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 2.0825,
+      "price_per_count": 2.0825,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [11.99, "", "", 13.08, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 11.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      11.99,
+      "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+      "",
+      13.08,
+      null
+    ],
+    "out": {
+      "pack_count": 60,
+      "net_amount": 74.4,
+      "net_unit": "oz",
+      "price_per_unit": 0.16116,
+      "price_per_count": 0.1998,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.29, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 7.29,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.29, "Kirkland Signature Bagels, 12-count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.6075,
+      "price_per_count": 0.6075,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [17.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 17.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      17.99,
+      "Kirkland Signature Organic Extra Virgin Olive Oil, 2 L",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 17.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.15, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.15,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.15, "Goldhen Cage Free Eggs, 12 ct", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.2625,
+      "price_per_count": 0.2625,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [5.65, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 5.65,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [5.65, "16.9 fl oz, 40-count", "", null, null],
+    "out": {
+      "pack_count": 40,
+      "net_amount": 676.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.00836,
+      "price_per_count": 0.1413,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [5.65, "Puraqua Water, 40 pack", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 5.65,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.79, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 2.79,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.79, "Goldhen Cage Free Eggs, 12 ct", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.2325,
+      "price_per_count": 0.2325,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 1.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.99, "L'oven Fresh Plain Bagels, 6 ct", "", null, null],
+    "out": {
+      "pack_count": 6,
+      "net_amount": 6,
+      "net_unit": "ct",
+      "price_per_unit": 0.3317,
+      "price_per_count": 0.3317,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.39, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.39,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.39, "L'oven Fresh Carb Control Tortillas, 8 ct", "", null, null],
+    "out": {
+      "pack_count": 8,
+      "net_amount": 8,
+      "net_unit": "ct",
+      "price_per_unit": 0.4238,
+      "price_per_count": 0.4238,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.49, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 2.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.49, "Casa Mamita Flour Tortillas, 10 ct", "", null, null],
+    "out": {
+      "pack_count": 10,
+      "net_amount": 10,
+      "net_unit": "ct",
+      "price_per_unit": 0.249,
+      "price_per_count": 0.249,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.29, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.29,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.29,
+      "Friendly Farms Heavy Whipping Cream (32 fl oz)",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 32.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.13406,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [6.49, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 6.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [6.49, "12-count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.5408,
+      "price_per_count": 0.5408,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [6.49, "KS BAGELS 12CT", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.5408,
+      "price_per_count": 0.5408,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [8.49, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 8.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      8.49,
+      "Kirkland Signature Cage-Free Eggs, 24-count",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3538,
+      "price_per_count": 0.3538,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.79, "24-count", "", null, null],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3246,
+      "price_per_count": 0.3246,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.79, "KS CF 2DZ", "", null, null],
+    "out": {
+      "pack_count": 24,
+      "net_amount": 24,
+      "net_unit": "ct",
+      "price_per_unit": 0.3246,
+      "price_per_count": 0.3246,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.47, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.47,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.47,
+      "Great Value Cage-Free Large Eggs, 18 Count",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 18,
+      "net_amount": 18,
+      "net_unit": "ct",
+      "price_per_unit": 0.2483,
+      "price_per_count": 0.2483,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.79, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 2.79,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.79, "Goldhen Cage Free Eggs, 12 ct", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.2325,
+      "price_per_count": 0.2325,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.49, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 12.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      12.49,
+      "Kirkland Signature Ultra-Filtered 2% Milk, 52 fl oz, 3-count",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 3,
+      "net_amount": 156.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.08006,
+      "price_per_count": 4.1633,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.29, "52 fl oz, 3-count", "", null, null],
+    "out": {
+      "pack_count": 3,
+      "net_amount": 156.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.07878,
+      "price_per_count": 4.0967,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [12.29, "KS UF 2% MILK", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 12.29,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.28, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.28,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.28, "fairlife Ultra-Filtered 2% Milk, 52 fl oz", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 52.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.08231,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [38.97, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 38.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      38.97,
+      "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 48.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.81188,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [29.97, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 29.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [29.97, "KS ATL SALMON", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 29.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [11.62, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 11.62,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [11.62, "Fresh Atlantic Salmon Fillet", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 11.62,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [24.99, "160 Sheets, 12 Rolls", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 1920,
+      "net_unit": "sheet",
+      "price_per_unit": 0.013016,
+      "price_per_count": 2.0825,
+      "unit_label": "sheet",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      24.99,
+      "Kirkland Signature Paper Towels, 12 rolls",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 2.0825,
+      "price_per_count": 2.0825,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [15.97, "98 Sheets, 6 Rolls", "", null, null],
+    "out": {
+      "pack_count": 6,
+      "net_amount": 588,
+      "net_unit": "sheet",
+      "price_per_unit": 0.02716,
+      "price_per_count": 2.6617,
+      "unit_label": "sheet",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      15.97,
+      "Bounty Select-A-Size Paper Towels, 6 Double Rolls",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 15.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [13.08, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 13.08,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      13.08,
+      "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 60,
+      "net_amount": 74.4,
+      "net_unit": "oz",
+      "price_per_unit": 0.17581,
+      "price_per_count": 0.218,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.47, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.47,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.47, "Eggo Homestyle Waffles, 12.3 oz, 10 Count", "", null, null],
+    "out": {
+      "pack_count": 10,
+      "net_amount": 123.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.02821,
+      "price_per_count": 0.347,
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [6.49, "12-count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.5408,
+      "price_per_count": 0.5408,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [6.49, "KS BAGELS 12CT", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.5408,
+      "price_per_count": 0.5408,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.29, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 7.29,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [7.29, "Kirkland Signature Bagels, 12-count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.6075,
+      "price_per_count": 0.6075,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.99, "12-count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.4158,
+      "price_per_count": 0.4158,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.99, "KS BAGELS SALE", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 1.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.99, "L'oven Fresh Plain Bagels, 6 ct", "", null, null],
+    "out": {
+      "pack_count": 6,
+      "net_amount": 6,
+      "net_unit": "ct",
+      "price_per_unit": 0.3317,
+      "price_per_count": 0.3317,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.39, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.39,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.39, "L'oven Fresh Carb Control Tortillas, 8 ct", "", null, null],
+    "out": {
+      "pack_count": 8,
+      "net_amount": 8,
+      "net_unit": "ct",
+      "price_per_unit": 0.4238,
+      "price_per_count": 0.4238,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.49, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 2.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.49, "Casa Mamita Flour Tortillas, 10 ct", "", null, null],
+    "out": {
+      "pack_count": 10,
+      "net_amount": 10,
+      "net_unit": "ct",
+      "price_per_unit": 0.249,
+      "price_per_count": 0.249,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.28, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.28,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.28, "Mission Carb Balance Tortillas", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.28,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.99, "16.9 fl oz, 40-count", "", null, null],
+    "out": {
+      "pack_count": 40,
+      "net_amount": 676.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.00738,
+      "price_per_count": 0.1247,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.99, "Puraqua Water, 40 pack", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.98, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.98,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.98,
+      "Great Value Purified Water, 16.9 fl oz, 40 Count",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": 40,
+      "net_amount": 676.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.00737,
+      "price_per_count": 0.1245,
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.25, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 1.25,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.25, "Bananas", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 1.25,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [0.49, "1 lb", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 16.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.03062,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [0.49, "Bananas, per lb", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 0.49,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.47, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 2.47,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [2.47, "Great Value Dinner Rolls, 12 Count", "", null, null],
+    "out": {
+      "pack_count": 12,
+      "net_amount": 12,
+      "net_unit": "ct",
+      "price_per_unit": 0.2058,
+      "price_per_count": 0.2058,
+      "unit_label": "ct",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.78, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 1.78,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [1.78, "Mariquitas Plantain Chips, 5 oz", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 5.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.356,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [0.98, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 0.98,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [0.98, "Great Value Black Beans, 15 oz", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 15.0,
+      "net_unit": "oz",
+      "price_per_unit": 0.06533,
+      "price_per_count": "",
+      "unit_label": "oz",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [16.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 16.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [16.99, "KS ORG EVOO 2L", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 16.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [17.99, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 17.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      17.99,
+      "Kirkland Signature Organic Extra Virgin Olive Oil, 2 L",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 17.99,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.97, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [3.97, "Birthday Card", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 3.97,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [4.29, "", "", null, null],
+    "out": {
+      "pack_count": "",
+      "net_amount": 1,
+      "net_unit": "ea",
+      "price_per_unit": 4.29,
+      "price_per_count": "",
+      "unit_label": "ea",
+      "sold_by_weight": false
+    }
+  },
+  {
+    "args": [
+      4.29,
+      "Friendly Farms Heavy Whipping Cream (32 fl oz)",
+      "",
+      null,
+      null
+    ],
+    "out": {
+      "pack_count": "",
+      "net_amount": 32.0,
+      "net_unit": "fl_oz",
+      "price_per_unit": 0.13406,
+      "price_per_count": "",
+      "unit_label": "fl_oz",
+      "sold_by_weight": false
+    }
+  }
+]

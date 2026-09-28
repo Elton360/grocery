@@ -1,0 +1,6518 @@
+[
+  {
+    "op": "check",
+    "result": {
+      "wm-milk": "converged",
+      "wm-ign-card": "ignored",
+      "wm-t-1": "new"
+    }
+  },
+  {
+    "op": "grab",
+    "result": {
+      "grab_id": 7,
+      "replaced": false,
+      "new": 2,
+      "known": 1,
+      "ignored": 1,
+      "removed": 1
+    }
+  },
+  {
+    "op": "grab",
+    "result": {
+      "grab_id": 7,
+      "replaced": true,
+      "new": 0,
+      "known": 2,
+      "ignored": 0,
+      "removed": 0
+    }
+  },
+  {
+    "op": "grab",
+    "result": {
+      "grab_id": 8,
+      "replaced": false,
+      "new": 0,
+      "known": 1,
+      "ignored": 0,
+      "removed": 0
+    }
+  },
+  {
+    "op": "grab",
+    "result": {
+      "grab_id": 9,
+      "replaced": false,
+      "new": 1,
+      "known": 1,
+      "ignored": 0,
+      "removed": 0
+    }
+  },
+  {
+    "op": "grab",
+    "result": {
+      "grab_id": 9,
+      "replaced": true,
+      "new": 0,
+      "known": 2,
+      "ignored": 0,
+      "removed": 0
+    }
+  },
+  {
+    "op": "grab",
+    "result": {
+      "grab_id": 10,
+      "replaced": false,
+      "new": 1,
+      "known": 0,
+      "ignored": 0,
+      "removed": 0
+    }
+  },
+  {
+    "op": "grab",
+    "error": "bad store/source: bogus/cart"
+  },
+  {
+    "op": "ignore",
+    "result": 1
+  },
+  {
+    "op": "check",
+    "result": {
+      "wm-milk": "converged",
+      "wm-ign-card": "ignored",
+      "wm-t-1": "pending",
+      "wm-t-2": "ignored",
+      "wm-t-3": "ignored"
+    }
+  },
+  {
+    "op": "list",
+    "result": [
+      {
+        "store": "costco",
+        "store_product_id": "cc-new-oil",
+        "name": "KS ORG EVOO 2L",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-18",
+        "last_seen": "2026-09-18",
+        "times_seen": 1,
+        "last_price": 16.99,
+        "last_source": "receipt",
+        "status": "pending",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "costco",
+        "store_product_id": "cc-t-1",
+        "name": "KS TEST RICE",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-24",
+        "last_seen": "2026-09-24",
+        "times_seen": 1,
+        "last_price": 18.49,
+        "last_source": "receipt",
+        "status": "pending",
+        "status_changed_at": "<ts>",
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-new-oil",
+        "name": "Kirkland Signature Organic Extra Virgin Olive Oil, 2 L",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 17.99,
+        "last_source": "cart",
+        "status": "pending",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-t-1",
+        "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-26",
+        "last_seen": "2026-09-26",
+        "times_seen": 1,
+        "last_price": 19.99,
+        "last_source": "cart",
+        "status": "pending",
+        "status_changed_at": "<ts>",
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-new-beans",
+        "name": "Great Value Black Beans, 15 oz",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 0.98,
+        "last_source": "order",
+        "status": "pending",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-t-1",
+        "name": "Great Value Test Tortillas, 10 Count",
+        "size_text": null,
+        "url": "https://example.test/wm-t-1",
+        "image_url": null,
+        "first_seen": "2026-09-25",
+        "last_seen": "2026-09-25",
+        "times_seen": 1,
+        "last_price": 1.98,
+        "last_source": "order",
+        "status": "pending",
+        "status_changed_at": "<ts>",
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "name:loose-limes-no-id",
+        "name": "Loose Limes (no id)",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-25",
+        "last_seen": "2026-09-25",
+        "times_seen": 1,
+        "last_price": 1.25,
+        "last_source": "order",
+        "status": "pending",
+        "status_changed_at": "<ts>",
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      }
+    ]
+  },
+  {
+    "op": "list",
+    "result": [
+      {
+        "store": "aldi",
+        "store_product_id": "al-ign-cream",
+        "name": "Friendly Farms Heavy Whipping Cream (32 fl oz)",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-09-22",
+        "times_seen": 1,
+        "last_price": 4.29,
+        "last_source": "cart",
+        "status": "ignored",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-ign-card",
+        "name": "Birthday Card",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 3.97,
+        "last_source": "order",
+        "status": "ignored",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-t-2",
+        "name": "Gift Bag",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": null,
+        "last_seen": null,
+        "times_seen": 0,
+        "last_price": null,
+        "last_source": null,
+        "status": "ignored",
+        "status_changed_at": "<ts>",
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-t-3",
+        "name": "Wrapping paper",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": null,
+        "last_seen": null,
+        "times_seen": 0,
+        "last_price": null,
+        "last_source": null,
+        "status": "ignored",
+        "status_changed_at": "<ts>",
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      }
+    ]
+  },
+  {
+    "op": "set_status",
+    "result": 1
+  },
+  {
+    "op": "set_status",
+    "result": 1
+  },
+  {
+    "op": "set_status",
+    "result": 1
+  },
+  {
+    "op": "set_status",
+    "result": 1
+  },
+  {
+    "op": "set_status",
+    "result": 0
+  },
+  {
+    "op": "converge_export",
+    "result": {
+      "batch": "<ts>",
+      "created_at": "<ts>",
+      "instacart_markup": 1.0836,
+      "rules": [
+        "Hard requirement: milk must be ultra-filtered (lactose-free 2% like Kirkland/fairlife). Never link other milk to that product.",
+        "Hard requirement: eggs must be at least cage-free. Never link conventional eggs to the Eggs product.",
+        "Minor differences (brand vs store brand, organic vs not, pack size) are fine: link as another version (tier equivalent).",
+        "Different product types stay separate (guacamole is not avocado mash; marinara is not alfredo).",
+        "Compare per count when every version of a product has a pack count; set size_text so price math works (e.g. \"5.3 oz, 6-count\", \"1 lb\", \"110 Sheets, 12 Rolls\").",
+        "Costco receipt lines (store costco, numeric item numbers) and Instacart listings (store instacart) are different ids for the same Costco product: propose action \"pair\" when a pending one matches an unpaired one on the other side.",
+        "Anything uncertain, below 0.6 confidence, or touching a hard requirement: action \"ask\" with a reason and up to 3 candidate product ids.",
+        "Non-grocery one-offs (decor, clothing, gifts): action \"ignore\"."
+      ],
+      "categories": [
+        "bakery",
+        "dairy",
+        "frozen",
+        "household",
+        "meat/seafood",
+        "other",
+        "pantry",
+        "produce",
+        "snacks"
+      ],
+      "pending": [
+        {
+          "store": "costco",
+          "store_product_id": "cc-new-oil",
+          "name": "KS ORG EVOO 2L",
+          "url": null,
+          "last_price": 16.99,
+          "times_seen": 1,
+          "first_seen": "2026-09-18",
+          "last_seen": "2026-09-18",
+          "unit_price_text": null,
+          "notes": ""
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "name": "KS TEST RICE",
+          "url": null,
+          "last_price": 18.49,
+          "times_seen": 1,
+          "first_seen": "2026-09-24",
+          "last_seen": "2026-09-24",
+          "unit_price_text": null,
+          "notes": null
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-new-oil",
+          "name": "Kirkland Signature Organic Extra Virgin Olive Oil, 2 L",
+          "url": null,
+          "last_price": 17.99,
+          "times_seen": 1,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "unit_price_text": null,
+          "notes": ""
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-t-1",
+          "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+          "url": null,
+          "last_price": 19.99,
+          "times_seen": 1,
+          "first_seen": "2026-09-26",
+          "last_seen": "2026-09-26",
+          "unit_price_text": null,
+          "notes": null
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-new-beans",
+          "name": "Great Value Black Beans, 15 oz",
+          "url": null,
+          "last_price": 0.98,
+          "times_seen": 1,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "unit_price_text": "6.5\u00a2/oz",
+          "notes": ""
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "name": "Great Value Test Tortillas, 10 Count",
+          "url": "https://example.test/wm-t-1",
+          "last_price": 1.98,
+          "times_seen": 1,
+          "first_seen": "2026-09-25",
+          "last_seen": "2026-09-25",
+          "unit_price_text": null,
+          "notes": null
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "name": "Loose Limes (no id)",
+          "url": null,
+          "last_price": 1.25,
+          "times_seen": 1,
+          "first_seen": "2026-09-25",
+          "last_seen": "2026-09-25",
+          "unit_price_text": null,
+          "notes": null
+        }
+      ],
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery",
+          "versions": [
+            {
+              "store": "costco",
+              "id": "cc-bagels",
+              "name": "KS BAGELS 12CT",
+              "size_text": "12-count",
+              "price": 6.49,
+              "pair_id": null
+            },
+            {
+              "store": "instacart",
+              "id": "ic-bagels",
+              "name": "Kirkland Signature Bagels, 12-count",
+              "size_text": null,
+              "price": 7.29,
+              "pair_id": "cc-bagels-sale"
+            },
+            {
+              "store": "costco",
+              "id": "cc-bagels-sale",
+              "name": "KS BAGELS SALE",
+              "size_text": "12-count",
+              "price": 4.99,
+              "pair_id": null
+            },
+            {
+              "store": "aldi",
+              "id": "al-bagels",
+              "name": "L'oven Fresh Plain Bagels, 6 ct",
+              "size_text": null,
+              "price": 1.99,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery",
+          "versions": [
+            {
+              "store": "walmart",
+              "id": "wm-rolls",
+              "name": "Great Value Dinner Rolls, 12 Count",
+              "size_text": null,
+              "price": 2.47,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery",
+          "versions": [
+            {
+              "store": "aldi",
+              "id": "al-tort-carb",
+              "name": "L'oven Fresh Carb Control Tortillas, 8 ct",
+              "size_text": null,
+              "price": 3.39,
+              "pair_id": null
+            },
+            {
+              "store": "aldi",
+              "id": "al-tort-flour",
+              "name": "Casa Mamita Flour Tortillas, 10 ct",
+              "size_text": null,
+              "price": 2.49,
+              "pair_id": null
+            },
+            {
+              "store": "walmart",
+              "id": "wm-tort",
+              "name": "Mission Carb Balance Tortillas",
+              "size_text": null,
+              "price": 4.28,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy",
+          "versions": [
+            {
+              "store": "instacart",
+              "id": "ic-eggs-24",
+              "name": "Kirkland Signature Cage-Free Eggs, 24-count",
+              "size_text": null,
+              "price": 8.49,
+              "pair_id": "cc-eggs"
+            },
+            {
+              "store": "costco",
+              "id": "cc-eggs",
+              "name": "KS CF 2DZ",
+              "size_text": "24-count",
+              "price": 7.99,
+              "pair_id": null
+            },
+            {
+              "store": "walmart",
+              "id": "wm-eggs-18",
+              "name": "Great Value Cage-Free Large Eggs, 18 Count",
+              "size_text": null,
+              "price": 4.47,
+              "pair_id": null
+            },
+            {
+              "store": "aldi",
+              "id": "al-eggs-12",
+              "name": "Goldhen Cage Free Eggs, 12 ct",
+              "size_text": null,
+              "price": 2.79,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy",
+          "versions": [
+            {
+              "store": "instacart",
+              "id": "ic-milk",
+              "name": "Kirkland Signature Ultra-Filtered 2% Milk, 52 fl oz, 3-count",
+              "size_text": null,
+              "price": 12.49,
+              "pair_id": "cc-milk"
+            },
+            {
+              "store": "costco",
+              "id": "cc-milk",
+              "name": "KS UF 2% MILK",
+              "size_text": "52 fl oz, 3-count",
+              "price": 12.29,
+              "pair_id": null
+            },
+            {
+              "store": "walmart",
+              "id": "wm-milk",
+              "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+              "size_text": null,
+              "price": 4.08,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen",
+          "versions": [
+            {
+              "store": "instacart",
+              "id": "ic-waffles",
+              "name": "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+              "size_text": null,
+              "price": 13.08,
+              "pair_id": null
+            },
+            {
+              "store": "walmart",
+              "id": "wm-waffles",
+              "name": "Eggo Homestyle Waffles, 12.3 oz, 10 Count",
+              "size_text": null,
+              "price": 3.47,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household",
+          "versions": [
+            {
+              "store": "instacart",
+              "id": "ic-towels",
+              "name": "Kirkland Signature Paper Towels, 12 rolls",
+              "size_text": "160 Sheets, 12 Rolls",
+              "price": 24.99,
+              "pair_id": null
+            },
+            {
+              "store": "walmart",
+              "id": "wm-towels",
+              "name": "Bounty Select-A-Size Paper Towels, 6 Double Rolls",
+              "size_text": "98 Sheets, 6 Rolls",
+              "price": 15.97,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood",
+          "versions": [
+            {
+              "store": "instacart",
+              "id": "ic-salmon",
+              "name": "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+              "size_text": null,
+              "price": 38.97,
+              "pair_id": "cc-salmon"
+            },
+            {
+              "store": "costco",
+              "id": "cc-salmon",
+              "name": "KS ATL SALMON",
+              "size_text": null,
+              "price": 29.97,
+              "pair_id": null
+            },
+            {
+              "store": "walmart",
+              "id": "wm-salmon",
+              "name": "Fresh Atlantic Salmon Fillet",
+              "size_text": null,
+              "price": 11.62,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry",
+          "versions": [
+            {
+              "store": "aldi",
+              "id": "al-water",
+              "name": "Puraqua Water, 40 pack",
+              "size_text": "16.9 fl oz, 40-count",
+              "price": 4.99,
+              "pair_id": null
+            },
+            {
+              "store": "walmart",
+              "id": "wm-water",
+              "name": "Great Value Purified Water, 16.9 fl oz, 40 Count",
+              "size_text": null,
+              "price": 4.98,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce",
+          "versions": [
+            {
+              "store": "walmart",
+              "id": "name:bananas",
+              "name": "Bananas",
+              "size_text": null,
+              "price": 1.25,
+              "pair_id": null
+            },
+            {
+              "store": "aldi",
+              "id": "al-bananas",
+              "name": "Bananas, per lb",
+              "size_text": "1 lb",
+              "price": 0.49,
+              "pair_id": null
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks",
+          "versions": [
+            {
+              "store": "walmart",
+              "id": "wm-chips",
+              "name": "Mariquitas Plantain Chips, 5 oz",
+              "size_text": null,
+              "price": 1.78,
+              "pair_id": null
+            }
+          ]
+        }
+      ],
+      "costco_pairing": {
+        "unpaired_costco_receipt_items": [
+          {
+            "id": "cc-bagels",
+            "name": "KS BAGELS 12CT",
+            "product_id": 6
+          }
+        ],
+        "unpaired_instacart_items": [
+          {
+            "id": "ic-towels",
+            "name": "Kirkland Signature Paper Towels, 12 rolls",
+            "product_id": 4,
+            "regular_price": null
+          },
+          {
+            "id": "ic-waffles",
+            "name": "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+            "product_id": 5,
+            "regular_price": null
+          }
+        ]
+      },
+      "output_schema": {
+        "batch": "<ts>",
+        "proposals": [
+          {
+            "store": "store of the pending item",
+            "store_product_id": "id of the pending item",
+            "action": "link | new | pair | ignore | ask",
+            "product_id": "link/pair: existing product id",
+            "new_product": "new (or pair of two new items): {\"name\": \"...\", \"category\": \"...\"}",
+            "pair_with": "pair: {\"store\": \"costco|instacart\", \"store_product_id\": \"...\"}",
+            "candidates": "ask: up to 3 existing product ids",
+            "size_text": "optional: size used for price math",
+            "match_tier": "exact | equivalent | substitute",
+            "note": "optional short note shown on the compare page",
+            "preferred": "optional bool: show this version first for its store",
+            "confidence": "0..1",
+            "reason": "one short sentence"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "converge_apply",
+    "result": {
+      "batch": "<ts>",
+      "stored": 6,
+      "invalid": [
+        {
+          "proposal": {
+            "store": "walmart",
+            "store_product_id": "wm-milk",
+            "action": "link",
+            "product_id": 2,
+            "confidence": 1,
+            "reason": "not pending"
+          },
+          "error": "item walmart/wm-milk is converged, not pending"
+        },
+        {
+          "proposal": {
+            "store": "walmart",
+            "store_product_id": "wm-t-1",
+            "action": "link",
+            "product_id": 99999,
+            "confidence": 1,
+            "reason": "bad product"
+          },
+          "error": "unknown product_id 99999"
+        },
+        {
+          "proposal": {
+            "store": "walmart",
+            "store_product_id": "wm-t-1",
+            "action": "fly",
+            "confidence": 1
+          },
+          "error": "bad action 'fly'"
+        }
+      ],
+      "by_action": {
+        "link": 2,
+        "new": 1,
+        "pair": 1,
+        "ask": 1,
+        "ignore": 1
+      }
+    }
+  },
+  {
+    "op": "proposals",
+    "result": {
+      "proposals": [
+        {
+          "id": 9,
+          "batch": "<ts>",
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "action": "ignore",
+          "confidence": 0.5,
+          "reason": "supersedes ask",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": "KS TEST RICE",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 18.49,
+          "times_seen": 1,
+          "payload": {
+            "store": "costco",
+            "store_product_id": "cc-t-1",
+            "action": "ignore",
+            "confidence": 0.5,
+            "reason": "supersedes ask",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false
+          }
+        },
+        {
+          "id": 5,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "action": "link",
+          "confidence": 0.95,
+          "reason": "r1",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": "Great Value Test Tortillas, 10 Count",
+          "item_url": "https://example.test/wm-t-1",
+          "image_url": null,
+          "last_price": 1.98,
+          "times_seen": 1,
+          "payload": {
+            "store": "walmart",
+            "store_product_id": "wm-t-1",
+            "action": "link",
+            "confidence": 0.95,
+            "reason": "r1",
+            "size_text": "10 Count",
+            "match_tier": "substitute",
+            "note": "test",
+            "preferred": false,
+            "product_id": 7
+          }
+        },
+        {
+          "id": 10,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "action": "link",
+          "confidence": 0.8,
+          "reason": "existing name becomes link",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": "Loose Limes (no id)",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 1.25,
+          "times_seen": 1,
+          "payload": {
+            "store": "walmart",
+            "store_product_id": "name:loose-limes-no-id",
+            "action": "link",
+            "confidence": 0.8,
+            "reason": "existing name becomes link",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "product_id": 6
+          }
+        },
+        {
+          "id": 7,
+          "batch": "<ts>",
+          "store": "instacart",
+          "store_product_id": "ic-t-1",
+          "action": "pair",
+          "confidence": 0.92,
+          "reason": "r3",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 19.99,
+          "times_seen": 1,
+          "payload": {
+            "store": "instacart",
+            "store_product_id": "ic-t-1",
+            "action": "pair",
+            "confidence": 0.92,
+            "reason": "r3",
+            "size_text": "25 lb",
+            "match_tier": "exact",
+            "note": null,
+            "preferred": false,
+            "new_product": {
+              "name": "Jasmine rice",
+              "category": "pantry"
+            },
+            "pair_with": {
+              "store": "costco",
+              "store_product_id": "cc-t-1"
+            }
+          }
+        },
+        {
+          "id": 3,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "al-chips",
+          "action": "version",
+          "confidence": 0.8,
+          "reason": "only plantain chips",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "version",
+            "product_id": 11,
+            "product_name": "Plantain chips",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.8,
+            "reason": "only plantain chips",
+            "match_tier": "equivalent",
+            "note": "in-store price",
+            "checked_on": "2026-09-22",
+            "store_product_id": "al-chips",
+            "name": "Mariquitas Original Plantain Chips",
+            "url": "https://example.test/al-chips",
+            "price": 2.75,
+            "size_text": "5 oz",
+            "alternatives": []
+          }
+        }
+      ],
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery"
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce"
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery"
+        },
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy"
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen"
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy"
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household"
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks"
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood"
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery"
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry"
+        }
+      ],
+      "categories": [
+        "dairy",
+        "produce",
+        "meat/seafood",
+        "bakery",
+        "snacks",
+        "pantry",
+        "frozen",
+        "household",
+        "other"
+      ]
+    }
+  },
+  {
+    "op": "reject",
+    "result": {
+      "rejected": 1
+    }
+  },
+  {
+    "op": "approve",
+    "error": "choose link, new product or ignore before approving"
+  },
+  {
+    "op": "approve",
+    "result": {
+      "approved": 9,
+      "action": "link"
+    }
+  },
+  {
+    "op": "approve",
+    "error": "proposal not found or already decided"
+  },
+  {
+    "op": "approve",
+    "error": "proposal not found or already decided"
+  },
+  {
+    "op": "approve",
+    "error": "unknown product"
+  },
+  {
+    "op": "approve_bulk",
+    "result": {
+      "approved": 2,
+      "errors": []
+    }
+  },
+  {
+    "op": "list",
+    "result": [
+      {
+        "store": "costco",
+        "store_product_id": "cc-new-oil",
+        "name": "KS ORG EVOO 2L",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-18",
+        "last_seen": "2026-09-18",
+        "times_seen": 1,
+        "last_price": 16.99,
+        "last_source": "receipt",
+        "status": "pending",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-new-oil",
+        "name": "Kirkland Signature Organic Extra Virgin Olive Oil, 2 L",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 17.99,
+        "last_source": "cart",
+        "status": "pending",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-new-beans",
+        "name": "Great Value Black Beans, 15 oz",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 0.98,
+        "last_source": "order",
+        "status": "pending",
+        "status_changed_at": null,
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "name:loose-limes-no-id",
+        "name": "Loose Limes (no id)",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-25",
+        "last_seen": "2026-09-25",
+        "times_seen": 1,
+        "last_price": 1.25,
+        "last_source": "order",
+        "status": "pending",
+        "status_changed_at": "<ts>",
+        "product_id": null,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": null,
+        "category": null
+      }
+    ]
+  },
+  {
+    "op": "normalize_export",
+    "result": {
+      "batch": "<ts>",
+      "created_at": "<ts>",
+      "target_store": "aldi",
+      "item_store": "aldi",
+      "search_url": "https://www.aldi.us/store/aldi/s?k={q}",
+      "queue_remaining": 3,
+      "products": [
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood",
+          "bought": 3,
+          "spec_versions": [
+            {
+              "store": "instacart",
+              "name": "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+              "size_text": null,
+              "price": 38.97,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "costco",
+              "name": "KS ATL SALMON",
+              "size_text": null,
+              "price": 29.97,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "walmart",
+              "name": "Fresh Atlantic Salmon Fillet",
+              "size_text": null,
+              "price": 11.62,
+              "match_tier": "equivalent",
+              "note": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen",
+          "bought": 2,
+          "spec_versions": [
+            {
+              "store": "instacart",
+              "name": "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+              "size_text": null,
+              "price": 13.08,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "walmart",
+              "name": "Eggo Homestyle Waffles, 12.3 oz, 10 Count",
+              "size_text": null,
+              "price": 3.47,
+              "match_tier": "exact",
+              "note": null
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry",
+          "bought": 1,
+          "spec_versions": [
+            {
+              "store": "instacart",
+              "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+              "size_text": "25 lb",
+              "price": 19.99,
+              "match_tier": "exact",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "instacart_markup": 1.0906,
+      "rules": [
+        "Hard requirement: milk must be ultra-filtered (lactose-free 2% like Kirkland/fairlife). Never link other milk to that product.",
+        "Hard requirement: eggs must be at least cage-free. Never link conventional eggs to the Eggs product.",
+        "Minor differences (brand vs store brand, organic vs not, pack size) are fine: link as another version (tier equivalent).",
+        "Different product types stay separate (guacamole is not avocado mash; marinara is not alfredo).",
+        "Compare per count when every version of a product has a pack count; set size_text so price math works (e.g. \"5.3 oz, 6-count\", \"1 lb\", \"110 Sheets, 12 Rolls\").",
+        "Costco receipt lines (store costco, numeric item numbers) and Instacart listings (store instacart) are different ids for the same Costco product: propose action \"pair\" when a pending one matches an unpaired one on the other side.",
+        "Anything uncertain, below 0.6 confidence, or touching a hard requirement: action \"ask\" with a reason and up to 3 candidate product ids.",
+        "Non-grocery one-offs (decor, clothing, gifts): action \"ignore\"."
+      ],
+      "pacing": [
+        "Wait ~5 s between searches.",
+        "Stop immediately on a 403, \"request blocked\" or captcha page: apply what is done and report. Never retry through a block.",
+        "Aldi: stay in In-Store mode (shelf prices). If the header shows Pickup or Delivery, stop and report."
+      ],
+      "output_schema": {
+        "batch": "<ts>",
+        "proposals": [
+          {
+            "product_id": "product being filled",
+            "action": "version | not_carried | version_ask",
+            "store_product_id": "version: the store item id (from the product URL)",
+            "name": "version: store item name",
+            "url": "version: product URL",
+            "price": "version: shelf price (Instacart: regular, non-promo price)",
+            "size_text": "version: size used for price math, e.g. \"12 oz\", \"6-count\", \"1 lb\"",
+            "match_tier": "exact | equivalent | substitute",
+            "note": "short note for the compare page",
+            "alternatives": "optional, up to 2: [{store_product_id, name, url, price, size_text}]",
+            "candidates": "version_ask: up to 3 candidates in the same shape as alternatives",
+            "confidence": "0..1",
+            "reason": "one short sentence"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "normalize_export",
+    "result": {
+      "batch": "<ts>",
+      "created_at": "<ts>",
+      "target_store": "costco",
+      "item_store": "instacart",
+      "search_url": "https://www.instacart.com/store/costco/s?k={q}",
+      "queue_remaining": 5,
+      "products": [
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery",
+          "bought": 4,
+          "spec_versions": [
+            {
+              "store": "aldi",
+              "name": "L'oven Fresh Carb Control Tortillas, 8 ct",
+              "size_text": null,
+              "price": 3.39,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "aldi",
+              "name": "Casa Mamita Flour Tortillas, 10 ct",
+              "size_text": null,
+              "price": 2.49,
+              "match_tier": "substitute",
+              "note": "not low-carb"
+            },
+            {
+              "store": "walmart",
+              "name": "Mission Carb Balance Tortillas",
+              "size_text": null,
+              "price": 4.28,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "walmart",
+              "name": "Great Value Test Tortillas, 10 Count",
+              "size_text": "10 Count",
+              "price": 1.98,
+              "match_tier": "substitute",
+              "note": "test"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry",
+          "bought": 3,
+          "spec_versions": [
+            {
+              "store": "aldi",
+              "name": "Puraqua Water, 40 pack",
+              "size_text": "16.9 fl oz, 40-count",
+              "price": 4.99,
+              "match_tier": "equivalent",
+              "note": "in-store price"
+            },
+            {
+              "store": "walmart",
+              "name": "Great Value Purified Water, 16.9 fl oz, 40 Count",
+              "size_text": null,
+              "price": 4.98,
+              "match_tier": "exact",
+              "note": null
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce",
+          "bought": 1,
+          "spec_versions": [
+            {
+              "store": "walmart",
+              "name": "Bananas",
+              "size_text": null,
+              "price": 1.25,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "aldi",
+              "name": "Bananas, per lb",
+              "size_text": "1 lb",
+              "price": 0.49,
+              "match_tier": "exact",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "instacart_markup": 1.0906,
+      "rules": [
+        "Hard requirement: milk must be ultra-filtered (lactose-free 2% like Kirkland/fairlife). Never link other milk to that product.",
+        "Hard requirement: eggs must be at least cage-free. Never link conventional eggs to the Eggs product.",
+        "Minor differences (brand vs store brand, organic vs not, pack size) are fine: link as another version (tier equivalent).",
+        "Different product types stay separate (guacamole is not avocado mash; marinara is not alfredo).",
+        "Compare per count when every version of a product has a pack count; set size_text so price math works (e.g. \"5.3 oz, 6-count\", \"1 lb\", \"110 Sheets, 12 Rolls\").",
+        "Costco receipt lines (store costco, numeric item numbers) and Instacart listings (store instacart) are different ids for the same Costco product: propose action \"pair\" when a pending one matches an unpaired one on the other side.",
+        "Anything uncertain, below 0.6 confidence, or touching a hard requirement: action \"ask\" with a reason and up to 3 candidate product ids.",
+        "Non-grocery one-offs (decor, clothing, gifts): action \"ignore\"."
+      ],
+      "pacing": [
+        "Wait ~5 s between searches.",
+        "Stop immediately on a 403, \"request blocked\" or captcha page: apply what is done and report. Never retry through a block.",
+        "Aldi: stay in In-Store mode (shelf prices). If the header shows Pickup or Delivery, stop and report."
+      ],
+      "output_schema": {
+        "batch": "<ts>",
+        "proposals": [
+          {
+            "product_id": "product being filled",
+            "action": "version | not_carried | version_ask",
+            "store_product_id": "version: the store item id (from the product URL)",
+            "name": "version: store item name",
+            "url": "version: product URL",
+            "price": "version: shelf price (Instacart: regular, non-promo price)",
+            "size_text": "version: size used for price math, e.g. \"12 oz\", \"6-count\", \"1 lb\"",
+            "match_tier": "exact | equivalent | substitute",
+            "note": "short note for the compare page",
+            "alternatives": "optional, up to 2: [{store_product_id, name, url, price, size_text}]",
+            "candidates": "version_ask: up to 3 candidates in the same shape as alternatives",
+            "confidence": "0..1",
+            "reason": "one short sentence"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "normalize_export",
+    "result": {
+      "batch": "<ts>",
+      "created_at": "<ts>",
+      "target_store": "walmart",
+      "item_store": "walmart",
+      "search_url": "https://www.walmart.com/search?q={q}",
+      "queue_remaining": 2,
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery",
+          "bought": 4,
+          "spec_versions": [
+            {
+              "store": "costco",
+              "name": "KS BAGELS 12CT",
+              "size_text": "12-count",
+              "price": 6.49,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "instacart",
+              "name": "Kirkland Signature Bagels, 12-count",
+              "size_text": null,
+              "price": 7.29,
+              "match_tier": "exact",
+              "note": null
+            },
+            {
+              "store": "costco",
+              "name": "KS BAGELS SALE",
+              "size_text": "12-count",
+              "price": 4.99,
+              "match_tier": "exact",
+              "note": "instant savings"
+            },
+            {
+              "store": "aldi",
+              "name": "L'oven Fresh Plain Bagels, 6 ct",
+              "size_text": null,
+              "price": 1.99,
+              "match_tier": "equivalent",
+              "note": null
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry",
+          "bought": 1,
+          "spec_versions": [
+            {
+              "store": "instacart",
+              "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+              "size_text": "25 lb",
+              "price": 19.99,
+              "match_tier": "exact",
+              "note": null
+            }
+          ]
+        }
+      ],
+      "instacart_markup": 1.0906,
+      "rules": [
+        "Hard requirement: milk must be ultra-filtered (lactose-free 2% like Kirkland/fairlife). Never link other milk to that product.",
+        "Hard requirement: eggs must be at least cage-free. Never link conventional eggs to the Eggs product.",
+        "Minor differences (brand vs store brand, organic vs not, pack size) are fine: link as another version (tier equivalent).",
+        "Different product types stay separate (guacamole is not avocado mash; marinara is not alfredo).",
+        "Compare per count when every version of a product has a pack count; set size_text so price math works (e.g. \"5.3 oz, 6-count\", \"1 lb\", \"110 Sheets, 12 Rolls\").",
+        "Costco receipt lines (store costco, numeric item numbers) and Instacart listings (store instacart) are different ids for the same Costco product: propose action \"pair\" when a pending one matches an unpaired one on the other side.",
+        "Anything uncertain, below 0.6 confidence, or touching a hard requirement: action \"ask\" with a reason and up to 3 candidate product ids.",
+        "Non-grocery one-offs (decor, clothing, gifts): action \"ignore\"."
+      ],
+      "pacing": [
+        "Wait ~5 s between searches.",
+        "Stop immediately on a 403, \"request blocked\" or captcha page: apply what is done and report. Never retry through a block.",
+        "Aldi: stay in In-Store mode (shelf prices). If the header shows Pickup or Delivery, stop and report."
+      ],
+      "output_schema": {
+        "batch": "<ts>",
+        "proposals": [
+          {
+            "product_id": "product being filled",
+            "action": "version | not_carried | version_ask",
+            "store_product_id": "version: the store item id (from the product URL)",
+            "name": "version: store item name",
+            "url": "version: product URL",
+            "price": "version: shelf price (Instacart: regular, non-promo price)",
+            "size_text": "version: size used for price math, e.g. \"12 oz\", \"6-count\", \"1 lb\"",
+            "match_tier": "exact | equivalent | substitute",
+            "note": "short note for the compare page",
+            "alternatives": "optional, up to 2: [{store_product_id, name, url, price, size_text}]",
+            "candidates": "version_ask: up to 3 candidates in the same shape as alternatives",
+            "confidence": "0..1",
+            "reason": "one short sentence"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "normalize_apply",
+    "result": {
+      "batch": "<ts>",
+      "target_store": "aldi",
+      "stored": 3,
+      "invalid": [
+        {
+          "product_id": 3,
+          "error": "aldi/al-eggs-12 is already on the list"
+        },
+        {
+          "product_id": 99999,
+          "error": "unknown product_id 99999"
+        },
+        {
+          "product_id": 3,
+          "error": "version needs store_product_id, name and a positive price"
+        }
+      ],
+      "by_action": {
+        "version": 1,
+        "not_carried": 1,
+        "version_ask": 1
+      }
+    }
+  },
+  {
+    "op": "normalize_apply",
+    "result": {
+      "batch": "<ts>",
+      "target_store": "walmart",
+      "stored": 2,
+      "invalid": [],
+      "by_action": {
+        "not_carried": 2
+      }
+    }
+  },
+  {
+    "op": "normalize_apply",
+    "error": "proposals file needs target_store (costco | aldi | walmart)"
+  },
+  {
+    "op": "proposals",
+    "result": {
+      "proposals": [
+        {
+          "id": 12,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "product:5",
+          "action": "not_carried",
+          "confidence": 0.8,
+          "reason": "n2",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "not_carried",
+            "product_id": 5,
+            "product_name": "Frozen waffles",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.8,
+            "reason": "n2",
+            "match_tier": null,
+            "note": "no waffles",
+            "checked_on": "<today>"
+          }
+        },
+        {
+          "id": 15,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "product:4",
+          "action": "not_carried",
+          "confidence": 0.6,
+          "reason": "",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "not_carried",
+            "product_id": 4,
+            "product_name": "Paper towels",
+            "target": "walmart",
+            "item_store": "walmart",
+            "confidence": 0.6,
+            "reason": "",
+            "match_tier": null,
+            "note": "second supersedes",
+            "checked_on": "<today>"
+          }
+        },
+        {
+          "id": 11,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "al-t-1",
+          "action": "version",
+          "confidence": 0.9,
+          "reason": "n1",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "version",
+            "product_id": 11,
+            "product_name": "Plantain chips",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.9,
+            "reason": "n1",
+            "match_tier": "equivalent",
+            "note": "in-store",
+            "checked_on": "<today>",
+            "store_product_id": "al-t-1",
+            "name": "Mariquitas Plantain Chips",
+            "url": "https://example.test/al-t-1",
+            "price": 2.75,
+            "size_text": "5 oz",
+            "alternatives": [
+              {
+                "store_product_id": "al-t-2",
+                "name": "Mariquitas Plantain Chips, family size",
+                "url": "",
+                "price": 4.49,
+                "size_text": "10 oz"
+              }
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "product:6",
+          "action": "version_ask",
+          "confidence": 0.4,
+          "reason": "n3",
+          "status": "proposed",
+          "created_at": "<ts>",
+          "decided_at": null,
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "version_ask",
+            "product_id": 6,
+            "product_name": "Bagels",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.4,
+            "reason": "n3",
+            "match_tier": null,
+            "note": null,
+            "checked_on": "<today>",
+            "candidates": [
+              {
+                "store_product_id": "al-t-3",
+                "name": "Everything Bagels",
+                "url": "",
+                "price": 2.29,
+                "size_text": "6 ct"
+              }
+            ]
+          }
+        }
+      ],
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery"
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce"
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery"
+        },
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy"
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen"
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry"
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy"
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household"
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks"
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood"
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery"
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry"
+        }
+      ],
+      "categories": [
+        "dairy",
+        "produce",
+        "meat/seafood",
+        "bakery",
+        "snacks",
+        "pantry",
+        "frozen",
+        "household",
+        "other"
+      ]
+    }
+  },
+  {
+    "op": "approve",
+    "result": {
+      "approved": 11,
+      "action": "version"
+    }
+  },
+  {
+    "op": "approve",
+    "result": {
+      "approved": 12,
+      "action": "not_carried"
+    }
+  },
+  {
+    "op": "approve",
+    "error": "pick a candidate or \"not carried\" before approving"
+  },
+  {
+    "op": "approve",
+    "error": "invalid choice"
+  },
+  {
+    "op": "approve",
+    "result": {
+      "approved": 13,
+      "action": "version"
+    }
+  },
+  {
+    "op": "approve",
+    "error": "proposal not found or already decided"
+  },
+  {
+    "op": "approve",
+    "result": {
+      "approved": 15,
+      "action": "not_carried"
+    }
+  },
+  {
+    "op": "reject",
+    "result": {
+      "rejected": 0
+    }
+  },
+  {
+    "op": "proposals",
+    "result": {
+      "proposals": [
+        {
+          "id": 9,
+          "batch": "<ts>",
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "action": "ignore",
+          "confidence": 0.5,
+          "reason": "supersedes ask",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "KS TEST RICE",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 18.49,
+          "times_seen": 1,
+          "payload": {
+            "store": "costco",
+            "store_product_id": "cc-t-1",
+            "action": "link",
+            "confidence": 0.5,
+            "reason": "supersedes ask",
+            "size_text": null,
+            "match_tier": null,
+            "note": "relinked",
+            "preferred": false,
+            "product_id": 2
+          }
+        },
+        {
+          "id": 1,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "wm-eggs-18",
+          "action": "link",
+          "confidence": 0.95,
+          "reason": "same eggs",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "Great Value Cage-Free Large Eggs, 18 Count",
+          "item_url": "https://example.test/wm-eggs-18",
+          "image_url": null,
+          "last_price": 4.47,
+          "times_seen": 1,
+          "payload": {
+            "store": "walmart",
+            "store_product_id": "wm-eggs-18",
+            "action": "link",
+            "confidence": 0.95,
+            "reason": "same eggs",
+            "size_text": null,
+            "match_tier": "equivalent",
+            "note": null,
+            "preferred": false,
+            "product_id": 1
+          }
+        },
+        {
+          "id": 5,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "action": "link",
+          "confidence": 0.95,
+          "reason": "r1",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "Great Value Test Tortillas, 10 Count",
+          "item_url": "https://example.test/wm-t-1",
+          "image_url": null,
+          "last_price": 1.98,
+          "times_seen": 1,
+          "payload": {
+            "store": "walmart",
+            "store_product_id": "wm-t-1",
+            "action": "link",
+            "confidence": 0.95,
+            "reason": "r1",
+            "size_text": "10 Count",
+            "match_tier": "substitute",
+            "note": "test",
+            "preferred": false,
+            "product_id": 7
+          }
+        },
+        {
+          "id": 12,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "product:5",
+          "action": "not_carried",
+          "confidence": 0.8,
+          "reason": "n2",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "not_carried",
+            "product_id": 5,
+            "product_name": "Frozen waffles",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.8,
+            "reason": "n2",
+            "match_tier": null,
+            "note": "no waffles",
+            "checked_on": "<today>"
+          }
+        },
+        {
+          "id": 15,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "product:4",
+          "action": "not_carried",
+          "confidence": 0.6,
+          "reason": "",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "not_carried",
+            "product_id": 4,
+            "product_name": "Paper towels",
+            "target": "walmart",
+            "item_store": "walmart",
+            "confidence": 0.6,
+            "reason": "",
+            "match_tier": null,
+            "note": "second supersedes",
+            "checked_on": "<today>"
+          }
+        },
+        {
+          "id": 7,
+          "batch": "<ts>",
+          "store": "instacart",
+          "store_product_id": "ic-t-1",
+          "action": "pair",
+          "confidence": 0.92,
+          "reason": "r3",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 19.99,
+          "times_seen": 1,
+          "payload": {
+            "store": "instacart",
+            "store_product_id": "ic-t-1",
+            "action": "pair",
+            "confidence": 0.92,
+            "reason": "r3",
+            "size_text": "25 lb",
+            "match_tier": "exact",
+            "note": null,
+            "preferred": false,
+            "new_product": {
+              "name": "Jasmine rice",
+              "category": "pantry"
+            },
+            "pair_with": {
+              "store": "costco",
+              "store_product_id": "cc-t-1"
+            }
+          }
+        },
+        {
+          "id": 11,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "al-t-1",
+          "action": "version",
+          "confidence": 0.9,
+          "reason": "n1",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "version",
+            "product_id": 11,
+            "product_name": "Plantain chips",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.9,
+            "reason": "n1",
+            "match_tier": "equivalent",
+            "note": "in-store",
+            "checked_on": "<today>",
+            "store_product_id": "al-t-2",
+            "name": "Mariquitas Plantain Chips, family size",
+            "url": "",
+            "price": 4.49,
+            "size_text": "10 oz",
+            "alternatives": [
+              {
+                "store_product_id": "al-t-2",
+                "name": "Mariquitas Plantain Chips, family size",
+                "url": "",
+                "price": 4.49,
+                "size_text": "10 oz"
+              }
+            ],
+            "choice": 0
+          }
+        },
+        {
+          "id": 13,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "product:6",
+          "action": "version_ask",
+          "confidence": 0.4,
+          "reason": "n3",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "version",
+            "product_id": 6,
+            "product_name": "Bagels",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.4,
+            "reason": "n3",
+            "match_tier": "substitute",
+            "note": null,
+            "checked_on": "<today>",
+            "candidates": [
+              {
+                "store_product_id": "al-t-3",
+                "name": "Everything Bagels",
+                "url": "",
+                "price": 2.29,
+                "size_text": "6 ct"
+              }
+            ],
+            "choice": 0,
+            "store_product_id": "al-t-3",
+            "name": "Everything Bagels",
+            "url": "",
+            "price": 2.29,
+            "size_text": "6 ct"
+          }
+        }
+      ],
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery"
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce"
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery"
+        },
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy"
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen"
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry"
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy"
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household"
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks"
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood"
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery"
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry"
+        }
+      ],
+      "categories": [
+        "dairy",
+        "produce",
+        "meat/seafood",
+        "bakery",
+        "snacks",
+        "pantry",
+        "frozen",
+        "household",
+        "other"
+      ]
+    }
+  },
+  {
+    "op": "proposals",
+    "result": {
+      "proposals": [
+        {
+          "id": 10,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "action": "link",
+          "confidence": 0.8,
+          "reason": "existing name becomes link",
+          "status": "rejected",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "Loose Limes (no id)",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 1.25,
+          "times_seen": 1,
+          "payload": {
+            "store": "walmart",
+            "store_product_id": "name:loose-limes-no-id",
+            "action": "link",
+            "confidence": 0.8,
+            "reason": "existing name becomes link",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "product_id": 6
+          }
+        },
+        {
+          "id": 2,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "wm-new-beans",
+          "action": "new",
+          "confidence": 0.6,
+          "reason": "beans",
+          "status": "rejected",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "Great Value Black Beans, 15 oz",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 0.98,
+          "times_seen": 1,
+          "payload": {
+            "store": "walmart",
+            "store_product_id": "wm-new-beans",
+            "action": "new",
+            "confidence": 0.6,
+            "reason": "beans",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "new_product": {
+              "name": "Black beans",
+              "category": "pantry"
+            }
+          }
+        }
+      ],
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery"
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce"
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery"
+        },
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy"
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen"
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry"
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy"
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household"
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks"
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood"
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery"
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry"
+        }
+      ],
+      "categories": [
+        "dairy",
+        "produce",
+        "meat/seafood",
+        "bakery",
+        "snacks",
+        "pantry",
+        "frozen",
+        "household",
+        "other"
+      ]
+    }
+  },
+  {
+    "op": "proposals",
+    "result": {
+      "proposals": [
+        {
+          "id": 4,
+          "batch": "<ts>",
+          "store": "costco",
+          "store_product_id": "cc-new-oil",
+          "action": "ask",
+          "confidence": 0.3,
+          "reason": "unsure",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "KS ORG EVOO 2L",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 16.99,
+          "times_seen": 1,
+          "payload": {
+            "store": "costco",
+            "store_product_id": "cc-new-oil",
+            "action": "ask",
+            "confidence": 0.3,
+            "reason": "unsure",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "candidates": [2]
+          }
+        },
+        {
+          "id": 8,
+          "batch": "<ts>",
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "action": "ask",
+          "confidence": 0.3,
+          "reason": "r4",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "KS TEST RICE",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 18.49,
+          "times_seen": 1,
+          "payload": {
+            "store": "costco",
+            "store_product_id": "cc-t-1",
+            "action": "ask",
+            "confidence": 0.3,
+            "reason": "r4",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "candidates": [1, 2]
+          }
+        },
+        {
+          "id": 6,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "action": "new",
+          "confidence": 0.7,
+          "reason": "r2",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": "Loose Limes (no id)",
+          "item_url": null,
+          "image_url": null,
+          "last_price": 1.25,
+          "times_seen": 1,
+          "payload": {
+            "store": "walmart",
+            "store_product_id": "name:loose-limes-no-id",
+            "action": "new",
+            "confidence": 0.7,
+            "reason": "r2",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "new_product": {
+              "name": "Limes",
+              "category": "produce"
+            }
+          }
+        },
+        {
+          "id": 14,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "product:4",
+          "action": "not_carried",
+          "confidence": 0.5,
+          "reason": "",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "not_carried",
+            "product_id": 4,
+            "product_name": "Paper towels",
+            "target": "walmart",
+            "item_store": "walmart",
+            "confidence": 0.5,
+            "reason": "",
+            "match_tier": null,
+            "note": "first",
+            "checked_on": "<today>"
+          }
+        },
+        {
+          "id": 3,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "al-chips",
+          "action": "version",
+          "confidence": 0.8,
+          "reason": "only plantain chips",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>",
+          "item_name": null,
+          "item_url": null,
+          "image_url": null,
+          "last_price": null,
+          "times_seen": null,
+          "payload": {
+            "action": "version",
+            "product_id": 11,
+            "product_name": "Plantain chips",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.8,
+            "reason": "only plantain chips",
+            "match_tier": "equivalent",
+            "note": "in-store price",
+            "checked_on": "2026-09-22",
+            "store_product_id": "al-chips",
+            "name": "Mariquitas Original Plantain Chips",
+            "url": "https://example.test/al-chips",
+            "price": 2.75,
+            "size_text": "5 oz",
+            "alternatives": []
+          }
+        }
+      ],
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery"
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce"
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery"
+        },
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy"
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen"
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry"
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy"
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household"
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks"
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood"
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery"
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry"
+        }
+      ],
+      "categories": [
+        "dairy",
+        "produce",
+        "meat/seafood",
+        "bakery",
+        "snacks",
+        "pantry",
+        "frozen",
+        "household",
+        "other"
+      ]
+    }
+  },
+  {
+    "op": "list",
+    "result": [
+      {
+        "store": "aldi",
+        "store_product_id": "al-bagels",
+        "name": "L'oven Fresh Plain Bagels, 6 ct",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-09-22",
+        "times_seen": 1,
+        "last_price": 1.99,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 6,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Bagels",
+        "category": "bakery"
+      },
+      {
+        "store": "aldi",
+        "store_product_id": "al-t-3",
+        "name": "Everything Bagels",
+        "size_text": "6 ct",
+        "url": "",
+        "image_url": null,
+        "first_seen": null,
+        "last_seen": "<today>",
+        "times_seen": 0,
+        "last_price": 2.29,
+        "last_source": "match",
+        "status": "converged",
+        "status_changed_at": "<ts>",
+        "product_id": 6,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "substitute",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Bagels",
+        "category": "bakery"
+      },
+      {
+        "store": "aldi",
+        "store_product_id": "al-bananas",
+        "name": "Bananas, per lb",
+        "size_text": "1 lb",
+        "url": "https://example.test/al-bananas",
+        "image_url": null,
+        "first_seen": null,
+        "last_seen": "2026-09-22",
+        "times_seen": 0,
+        "last_price": 0.49,
+        "last_source": "match",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 9,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Bananas",
+        "category": "produce"
+      },
+      {
+        "store": "aldi",
+        "store_product_id": "al-eggs-12",
+        "name": "Goldhen Cage Free Eggs, 12 ct",
+        "size_text": null,
+        "url": "https://example.test/al-eggs-12",
+        "image_url": null,
+        "first_seen": "2026-09-21",
+        "last_seen": "2026-09-22",
+        "times_seen": 2,
+        "last_price": 2.79,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 1,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": "in-store price",
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Eggs",
+        "category": "dairy"
+      },
+      {
+        "store": "aldi",
+        "store_product_id": "al-t-2",
+        "name": "Mariquitas Plantain Chips, family size",
+        "size_text": "10 oz",
+        "url": "",
+        "image_url": null,
+        "first_seen": null,
+        "last_seen": "<today>",
+        "times_seen": 0,
+        "last_price": 4.49,
+        "last_source": "match",
+        "status": "converged",
+        "status_changed_at": "<ts>",
+        "product_id": 11,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": "in-store",
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Plantain chips",
+        "category": "snacks"
+      },
+      {
+        "store": "aldi",
+        "store_product_id": "al-tort-carb",
+        "name": "L'oven Fresh Carb Control Tortillas, 8 ct",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-09-22",
+        "times_seen": 1,
+        "last_price": 3.39,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 7,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 1,
+        "product_name": "Tortillas",
+        "category": "bakery"
+      },
+      {
+        "store": "aldi",
+        "store_product_id": "al-tort-flour",
+        "name": "Casa Mamita Flour Tortillas, 10 ct",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-22",
+        "last_seen": "2026-09-22",
+        "times_seen": 1,
+        "last_price": 2.49,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 7,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "substitute",
+        "note": "not low-carb",
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Tortillas",
+        "category": "bakery"
+      },
+      {
+        "store": "aldi",
+        "store_product_id": "al-water",
+        "name": "Puraqua Water, 40 pack",
+        "size_text": "16.9 fl oz, 40-count",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-21",
+        "last_seen": "2026-09-26",
+        "times_seen": 2,
+        "last_price": 4.99,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 8,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": "in-store price",
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Water",
+        "category": "pantry"
+      },
+      {
+        "store": "costco",
+        "store_product_id": "cc-bagels",
+        "name": "KS BAGELS 12CT",
+        "size_text": "12-count",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-07-01",
+        "last_seen": "2026-07-01",
+        "times_seen": 1,
+        "last_price": 6.49,
+        "last_source": "receipt",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 6,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Bagels",
+        "category": "bakery"
+      },
+      {
+        "store": "costco",
+        "store_product_id": "cc-bagels-sale",
+        "name": "KS BAGELS SALE",
+        "size_text": "12-count",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-18",
+        "last_seen": "2026-09-18",
+        "times_seen": 1,
+        "last_price": 4.99,
+        "last_source": "receipt",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 6,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": "instant savings",
+        "exclude_markup": 1,
+        "preferred": 0,
+        "product_name": "Bagels",
+        "category": "bakery"
+      },
+      {
+        "store": "costco",
+        "store_product_id": "cc-eggs",
+        "name": "KS CF 2DZ",
+        "size_text": "24-count",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-18",
+        "last_seen": "2026-09-24",
+        "times_seen": 2,
+        "last_price": 7.99,
+        "last_source": "receipt",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 1,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Eggs",
+        "category": "dairy"
+      },
+      {
+        "store": "costco",
+        "store_product_id": "cc-milk",
+        "name": "KS UF 2% MILK",
+        "size_text": "52 fl oz, 3-count",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-18",
+        "last_seen": "2026-09-18",
+        "times_seen": 1,
+        "last_price": 12.29,
+        "last_source": "receipt",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 2,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Milk",
+        "category": "dairy"
+      },
+      {
+        "store": "costco",
+        "store_product_id": "cc-t-1",
+        "name": "KS TEST RICE",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-24",
+        "last_seen": "2026-09-24",
+        "times_seen": 1,
+        "last_price": 18.49,
+        "last_source": "receipt",
+        "status": "converged",
+        "status_changed_at": "<ts>",
+        "product_id": 2,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": null,
+        "note": "relinked",
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Milk",
+        "category": "dairy"
+      },
+      {
+        "store": "costco",
+        "store_product_id": "cc-salmon",
+        "name": "KS ATL SALMON",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-18",
+        "last_seen": "2026-09-18",
+        "times_seen": 1,
+        "last_price": 29.97,
+        "last_source": "receipt",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 3,
+        "weight_lb": 2.5,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Salmon",
+        "category": "meat/seafood"
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-bagels",
+        "name": "Kirkland Signature Bagels, 12-count",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 7.29,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 6,
+        "weight_lb": null,
+        "pair_id": "cc-bagels-sale",
+        "regular_price": 7.29,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Bagels",
+        "category": "bakery"
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-eggs-24",
+        "name": "Kirkland Signature Cage-Free Eggs, 24-count",
+        "size_text": null,
+        "url": "https://example.test/ic-eggs-24",
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 8.49,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 1,
+        "weight_lb": null,
+        "pair_id": "cc-eggs",
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Eggs",
+        "category": "dairy"
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-waffles",
+        "name": "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 13.08,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 5,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Frozen waffles",
+        "category": "frozen"
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-t-1",
+        "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+        "size_text": "25 lb",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-26",
+        "last_seen": "2026-09-26",
+        "times_seen": 1,
+        "last_price": 19.99,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": "<ts>",
+        "product_id": 12,
+        "weight_lb": null,
+        "pair_id": "cc-t-1",
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Jasmine rice",
+        "category": "pantry"
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-milk",
+        "name": "Kirkland Signature Ultra-Filtered 2% Milk, 52 fl oz, 3-count",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 12.49,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 2,
+        "weight_lb": null,
+        "pair_id": "cc-milk",
+        "regular_price": 13.49,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Milk",
+        "category": "dairy"
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-towels",
+        "name": "Kirkland Signature Paper Towels, 12 rolls",
+        "size_text": "160 Sheets, 12 Rolls",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 24.99,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 4,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Paper towels",
+        "category": "household"
+      },
+      {
+        "store": "instacart",
+        "store_product_id": "ic-salmon",
+        "name": "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-19",
+        "last_seen": "2026-09-19",
+        "times_seen": 1,
+        "last_price": 38.97,
+        "last_source": "cart",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 3,
+        "weight_lb": null,
+        "pair_id": "cc-salmon",
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Salmon",
+        "category": "meat/seafood"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "name:bananas",
+        "name": "Bananas",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 1.25,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 9,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Bananas",
+        "category": "produce"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-rolls",
+        "name": "Great Value Dinner Rolls, 12 Count",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 2.47,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 10,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Dinner rolls",
+        "category": "bakery"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-eggs-18",
+        "name": "Great Value Cage-Free Large Eggs, 18 Count",
+        "size_text": null,
+        "url": "https://example.test/wm-eggs-18",
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 4.47,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 1,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Eggs",
+        "category": "dairy"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-waffles",
+        "name": "Eggo Homestyle Waffles, 12.3 oz, 10 Count",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 3.47,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 5,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Frozen waffles",
+        "category": "frozen"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-milk",
+        "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-25",
+        "times_seen": 2,
+        "last_price": 4.08,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": "<ts>",
+        "product_id": 2,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Milk",
+        "category": "dairy"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-towels",
+        "name": "Bounty Select-A-Size Paper Towels, 6 Double Rolls",
+        "size_text": "98 Sheets, 6 Rolls",
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 15.97,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 4,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Paper towels",
+        "category": "household"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-chips",
+        "name": "Mariquitas Plantain Chips, 5 oz",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 1.78,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 11,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Plantain chips",
+        "category": "snacks"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-salmon",
+        "name": "Fresh Atlantic Salmon Fillet",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 11.62,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 3,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "equivalent",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Salmon",
+        "category": "meat/seafood"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-t-1",
+        "name": "Great Value Test Tortillas, 10 Count",
+        "size_text": "10 Count",
+        "url": "https://example.test/wm-t-1",
+        "image_url": null,
+        "first_seen": "2026-09-25",
+        "last_seen": "2026-09-25",
+        "times_seen": 1,
+        "last_price": 1.98,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": "<ts>",
+        "product_id": 7,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "substitute",
+        "note": "test",
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Tortillas",
+        "category": "bakery"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-tort",
+        "name": "Mission Carb Balance Tortillas",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 4.28,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 7,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Tortillas",
+        "category": "bakery"
+      },
+      {
+        "store": "walmart",
+        "store_product_id": "wm-water",
+        "name": "Great Value Purified Water, 16.9 fl oz, 40 Count",
+        "size_text": null,
+        "url": null,
+        "image_url": null,
+        "first_seen": "2026-09-20",
+        "last_seen": "2026-09-20",
+        "times_seen": 1,
+        "last_price": 4.98,
+        "last_source": "order",
+        "status": "converged",
+        "status_changed_at": null,
+        "product_id": 8,
+        "weight_lb": null,
+        "pair_id": null,
+        "regular_price": null,
+        "match_tier": "exact",
+        "note": null,
+        "exclude_markup": 0,
+        "preferred": 0,
+        "product_name": "Water",
+        "category": "pantry"
+      }
+    ]
+  },
+  {
+    "op": "compare",
+    "result": {
+      "markup": 1.0906,
+      "products": [
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery",
+          "compare_unit": "ct",
+          "stores": {
+            "costco": {
+              "versions": [
+                {
+                  "store_product_id": "cc-bagels",
+                  "name": "KS BAGELS 12CT",
+                  "url": null,
+                  "image_url": null,
+                  "price": 6.49,
+                  "ppu": 0.5408,
+                  "unit": "ct",
+                  "per_count": 0.5408,
+                  "pack_count": 12,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-07-01",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": {
+                    "price": 6.49,
+                    "on": "2026-07-01"
+                  },
+                  "instacart_price": null,
+                  "comparable": true
+                },
+                {
+                  "store_product_id": "ic-bagels",
+                  "name": "Kirkland Signature Bagels, 12-count",
+                  "url": null,
+                  "image_url": null,
+                  "price": 6.68,
+                  "ppu": 0.557,
+                  "unit": "ct",
+                  "per_count": 0.557,
+                  "pack_count": 12,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-19",
+                  "preferred": false,
+                  "estimate": true,
+                  "confirmed": {
+                    "price": 4.99,
+                    "on": "2026-09-18"
+                  },
+                  "instacart_price": 7.29,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [
+                {
+                  "store_product_id": "al-bagels",
+                  "name": "L'oven Fresh Plain Bagels, 6 ct",
+                  "url": null,
+                  "image_url": null,
+                  "price": 1.99,
+                  "ppu": 0.3317,
+                  "unit": "ct",
+                  "per_count": 0.3317,
+                  "pack_count": 6,
+                  "sold_by_weight": false,
+                  "tier": "equivalent",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-22",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                },
+                {
+                  "store_product_id": "al-t-3",
+                  "name": "Everything Bagels",
+                  "url": "",
+                  "image_url": null,
+                  "price": 2.29,
+                  "ppu": 0.3817,
+                  "unit": "ct",
+                  "per_count": 0.3817,
+                  "pack_count": 6,
+                  "sold_by_weight": false,
+                  "tier": "substitute",
+                  "note": null,
+                  "times_seen": 0,
+                  "last_seen": "<today>",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            }
+          }
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery",
+          "compare_unit": "ct",
+          "stores": {
+            "costco": {
+              "versions": [],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-rolls",
+                  "name": "Great Value Dinner Rolls, 12 Count",
+                  "url": null,
+                  "image_url": null,
+                  "price": 2.47,
+                  "ppu": 0.2058,
+                  "unit": "ct",
+                  "per_count": 0.2058,
+                  "pack_count": 12,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [],
+              "not_carried": {
+                "note": "no dinner rolls",
+                "checked_on": "2026-09-22"
+              }
+            }
+          }
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery",
+          "compare_unit": "ct",
+          "stores": {
+            "costco": {
+              "versions": [],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-t-1",
+                  "name": "Great Value Test Tortillas, 10 Count",
+                  "url": "https://example.test/wm-t-1",
+                  "image_url": null,
+                  "price": 1.98,
+                  "ppu": 0.198,
+                  "unit": "ct",
+                  "per_count": 0.198,
+                  "pack_count": 10,
+                  "sold_by_weight": false,
+                  "tier": "substitute",
+                  "note": "test",
+                  "times_seen": 1,
+                  "last_seen": "2026-09-25",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                },
+                {
+                  "store_product_id": "wm-tort",
+                  "name": "Mission Carb Balance Tortillas",
+                  "url": null,
+                  "image_url": null,
+                  "price": 4.28,
+                  "ppu": 4.28,
+                  "unit": "ea",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": false
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [
+                {
+                  "store_product_id": "al-tort-carb",
+                  "name": "L'oven Fresh Carb Control Tortillas, 8 ct",
+                  "url": null,
+                  "image_url": null,
+                  "price": 3.39,
+                  "ppu": 0.4238,
+                  "unit": "ct",
+                  "per_count": 0.4238,
+                  "pack_count": 8,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-22",
+                  "preferred": true,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                },
+                {
+                  "store_product_id": "al-tort-flour",
+                  "name": "Casa Mamita Flour Tortillas, 10 ct",
+                  "url": null,
+                  "image_url": null,
+                  "price": 2.49,
+                  "ppu": 0.249,
+                  "unit": "ct",
+                  "per_count": 0.249,
+                  "pack_count": 10,
+                  "sold_by_weight": false,
+                  "tier": "substitute",
+                  "note": "not low-carb",
+                  "times_seen": 1,
+                  "last_seen": "2026-09-22",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            }
+          }
+        },
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy",
+          "compare_unit": "ct",
+          "stores": {
+            "costco": {
+              "versions": [
+                {
+                  "store_product_id": "ic-eggs-24",
+                  "name": "Kirkland Signature Cage-Free Eggs, 24-count",
+                  "url": "https://example.test/ic-eggs-24",
+                  "image_url": null,
+                  "price": 7.78,
+                  "ppu": 0.3244,
+                  "unit": "ct",
+                  "per_count": 0.3244,
+                  "pack_count": 24,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-19",
+                  "preferred": false,
+                  "estimate": true,
+                  "confirmed": {
+                    "price": 7.99,
+                    "on": "2026-09-24"
+                  },
+                  "instacart_price": 8.49,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-eggs-18",
+                  "name": "Great Value Cage-Free Large Eggs, 18 Count",
+                  "url": "https://example.test/wm-eggs-18",
+                  "image_url": null,
+                  "price": 4.47,
+                  "ppu": 0.2483,
+                  "unit": "ct",
+                  "per_count": 0.2483,
+                  "pack_count": 18,
+                  "sold_by_weight": false,
+                  "tier": "equivalent",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [
+                {
+                  "store_product_id": "al-eggs-12",
+                  "name": "Goldhen Cage Free Eggs, 12 ct",
+                  "url": "https://example.test/al-eggs-12",
+                  "image_url": null,
+                  "price": 2.79,
+                  "ppu": 0.2325,
+                  "unit": "ct",
+                  "per_count": 0.2325,
+                  "pack_count": 12,
+                  "sold_by_weight": false,
+                  "tier": "equivalent",
+                  "note": "in-store price",
+                  "times_seen": 2,
+                  "last_seen": "2026-09-22",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            }
+          }
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy",
+          "compare_unit": "fl_oz",
+          "stores": {
+            "costco": {
+              "versions": [
+                {
+                  "store_product_id": "ic-milk",
+                  "name": "Kirkland Signature Ultra-Filtered 2% Milk, 52 fl oz, 3-count",
+                  "url": null,
+                  "image_url": null,
+                  "price": 12.37,
+                  "ppu": 0.07929,
+                  "unit": "fl_oz",
+                  "per_count": 4.1231,
+                  "pack_count": 3,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-19",
+                  "preferred": false,
+                  "estimate": true,
+                  "confirmed": {
+                    "price": 12.29,
+                    "on": "2026-09-18"
+                  },
+                  "instacart_price": 13.49,
+                  "alt_ppu": 4.1231,
+                  "alt_unit": "ct",
+                  "comparable": true
+                },
+                {
+                  "store_product_id": "cc-t-1",
+                  "name": "KS TEST RICE",
+                  "url": null,
+                  "image_url": null,
+                  "price": 18.49,
+                  "ppu": 18.49,
+                  "unit": "ea",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": false,
+                  "tier": null,
+                  "note": "relinked",
+                  "times_seen": 1,
+                  "last_seen": "2026-09-24",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": {
+                    "price": 18.49,
+                    "on": "2026-09-24"
+                  },
+                  "instacart_price": null,
+                  "comparable": false
+                }
+              ],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-milk",
+                  "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+                  "url": null,
+                  "image_url": null,
+                  "price": 4.08,
+                  "ppu": 0.07846,
+                  "unit": "fl_oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": false,
+                  "tier": "equivalent",
+                  "note": null,
+                  "times_seen": 2,
+                  "last_seen": "2026-09-25",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [],
+              "not_carried": {
+                "note": "no ultra-filtered milk",
+                "checked_on": "2026-09-22"
+              }
+            }
+          }
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen",
+          "compare_unit": "ct",
+          "stores": {
+            "costco": {
+              "versions": [
+                {
+                  "store_product_id": "ic-waffles",
+                  "name": "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+                  "url": null,
+                  "image_url": null,
+                  "price": 11.99,
+                  "ppu": 0.1999,
+                  "unit": "ct",
+                  "per_count": 0.1999,
+                  "pack_count": 60,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-19",
+                  "preferred": false,
+                  "estimate": true,
+                  "confirmed": null,
+                  "instacart_price": 13.08,
+                  "alt_ppu": 0.1612,
+                  "alt_unit": "oz",
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-waffles",
+                  "name": "Eggo Homestyle Waffles, 12.3 oz, 10 Count",
+                  "url": null,
+                  "image_url": null,
+                  "price": 3.47,
+                  "ppu": 0.347,
+                  "unit": "ct",
+                  "per_count": 0.347,
+                  "pack_count": 10,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "alt_ppu": 0.28211,
+                  "alt_unit": "oz",
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [],
+              "not_carried": {
+                "note": "no waffles",
+                "checked_on": "<today>"
+              }
+            }
+          }
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household",
+          "compare_unit": "sheet",
+          "stores": {
+            "costco": {
+              "versions": [
+                {
+                  "store_product_id": "ic-towels",
+                  "name": "Kirkland Signature Paper Towels, 12 rolls",
+                  "url": null,
+                  "image_url": null,
+                  "price": 22.91,
+                  "ppu": 0.011934,
+                  "unit": "sheet",
+                  "per_count": 1.9095,
+                  "pack_count": 12,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-19",
+                  "preferred": false,
+                  "estimate": true,
+                  "confirmed": null,
+                  "instacart_price": 24.99,
+                  "alt_ppu": 1.9095,
+                  "alt_unit": "ct",
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-towels",
+                  "name": "Bounty Select-A-Size Paper Towels, 6 Double Rolls",
+                  "url": null,
+                  "image_url": null,
+                  "price": 15.97,
+                  "ppu": 0.02716,
+                  "unit": "sheet",
+                  "per_count": 2.6617,
+                  "pack_count": 6,
+                  "sold_by_weight": false,
+                  "tier": "equivalent",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "alt_ppu": 2.6617,
+                  "alt_unit": "ct",
+                  "comparable": true
+                }
+              ],
+              "not_carried": {
+                "note": "second supersedes",
+                "checked_on": "<today>"
+              }
+            },
+            "aldi": {
+              "versions": [],
+              "not_carried": {
+                "note": "only single rolls",
+                "checked_on": "2026-09-22"
+              }
+            }
+          }
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood",
+          "compare_unit": "oz",
+          "stores": {
+            "costco": {
+              "versions": [
+                {
+                  "store_product_id": "ic-salmon",
+                  "name": "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+                  "url": null,
+                  "image_url": null,
+                  "price": 29.78,
+                  "ppu": 0.74442,
+                  "unit": "oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": true,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-19",
+                  "preferred": false,
+                  "estimate": true,
+                  "confirmed": {
+                    "price": 29.97,
+                    "on": "2026-09-18"
+                  },
+                  "instacart_price": 38.97,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-salmon",
+                  "name": "Fresh Atlantic Salmon Fillet",
+                  "url": null,
+                  "image_url": null,
+                  "price": 11.62,
+                  "ppu": 0.58112,
+                  "unit": "oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": true,
+                  "tier": "equivalent",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [],
+              "not_carried": null
+            }
+          }
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry",
+          "compare_unit": "oz",
+          "stores": {
+            "costco": {
+              "versions": [
+                {
+                  "store_product_id": "ic-t-1",
+                  "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+                  "url": null,
+                  "image_url": null,
+                  "price": 18.79,
+                  "ppu": 0.04697,
+                  "unit": "oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-26",
+                  "preferred": false,
+                  "estimate": true,
+                  "confirmed": {
+                    "price": 18.49,
+                    "on": "2026-09-24"
+                  },
+                  "instacart_price": 20.49,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [],
+              "not_carried": null
+            }
+          }
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry",
+          "compare_unit": "ct",
+          "stores": {
+            "costco": {
+              "versions": [],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-water",
+                  "name": "Great Value Purified Water, 16.9 fl oz, 40 Count",
+                  "url": null,
+                  "image_url": null,
+                  "price": 4.98,
+                  "ppu": 0.1245,
+                  "unit": "ct",
+                  "per_count": 0.1245,
+                  "pack_count": 40,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "alt_ppu": 0.00737,
+                  "alt_unit": "fl_oz",
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [
+                {
+                  "store_product_id": "al-water",
+                  "name": "Puraqua Water, 40 pack",
+                  "url": null,
+                  "image_url": null,
+                  "price": 4.99,
+                  "ppu": 0.1247,
+                  "unit": "ct",
+                  "per_count": 0.1247,
+                  "pack_count": 40,
+                  "sold_by_weight": false,
+                  "tier": "equivalent",
+                  "note": "in-store price",
+                  "times_seen": 2,
+                  "last_seen": "2026-09-26",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "alt_ppu": 0.00738,
+                  "alt_unit": "fl_oz",
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            }
+          }
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce",
+          "compare_unit": "oz",
+          "stores": {
+            "costco": {
+              "versions": [],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "name:bananas",
+                  "name": "Bananas",
+                  "url": null,
+                  "image_url": null,
+                  "price": 1.25,
+                  "ppu": 0.0346,
+                  "unit": "oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": true,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [
+                {
+                  "store_product_id": "al-bananas",
+                  "name": "Bananas, per lb",
+                  "url": "https://example.test/al-bananas",
+                  "image_url": null,
+                  "price": 0.49,
+                  "ppu": 0.03062,
+                  "unit": "oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 0,
+                  "last_seen": "2026-09-22",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            }
+          }
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks",
+          "compare_unit": "oz",
+          "stores": {
+            "costco": {
+              "versions": [],
+              "not_carried": null
+            },
+            "walmart": {
+              "versions": [
+                {
+                  "store_product_id": "wm-chips",
+                  "name": "Mariquitas Plantain Chips, 5 oz",
+                  "url": null,
+                  "image_url": null,
+                  "price": 1.78,
+                  "ppu": 0.356,
+                  "unit": "oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": false,
+                  "tier": "exact",
+                  "note": null,
+                  "times_seen": 1,
+                  "last_seen": "2026-09-20",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            },
+            "aldi": {
+              "versions": [
+                {
+                  "store_product_id": "al-t-2",
+                  "name": "Mariquitas Plantain Chips, family size",
+                  "url": "",
+                  "image_url": null,
+                  "price": 4.49,
+                  "ppu": 0.449,
+                  "unit": "oz",
+                  "per_count": null,
+                  "pack_count": null,
+                  "sold_by_weight": false,
+                  "tier": "equivalent",
+                  "note": "in-store",
+                  "times_seen": 0,
+                  "last_seen": "<today>",
+                  "preferred": false,
+                  "estimate": false,
+                  "confirmed": null,
+                  "comparable": true
+                }
+              ],
+              "not_carried": null
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "op": "dump",
+    "result": {
+      "grabs": [
+        {
+          "id": 1,
+          "store": "walmart",
+          "source": "order",
+          "order_date": "2026-09-20",
+          "captured_at": "<ts>",
+          "page_url": "https://www.walmart.com/orders/TEST-ORDER-1",
+          "order_key": "walmart:https://www.walmart.com/orders/TEST-ORDER-1",
+          "price_mode": "online"
+        },
+        {
+          "id": 2,
+          "store": "costco",
+          "source": "receipt",
+          "order_date": "2026-09-18",
+          "captured_at": "<ts>",
+          "page_url": "",
+          "order_key": "costco:receipt:2026-09-18:test00000001",
+          "price_mode": "in_store"
+        },
+        {
+          "id": 3,
+          "store": "instacart",
+          "source": "cart",
+          "order_date": "2026-09-19",
+          "captured_at": "<ts>",
+          "page_url": "https://www.instacart.com/store/costco/cart",
+          "order_key": null,
+          "price_mode": "online"
+        },
+        {
+          "id": 4,
+          "store": "aldi",
+          "source": "cart",
+          "order_date": "2026-09-21",
+          "captured_at": "<ts>",
+          "page_url": "https://www.aldi.us/store/aldi/storefront",
+          "order_key": null,
+          "price_mode": "pickup"
+        },
+        {
+          "id": 5,
+          "store": "aldi",
+          "source": "cart",
+          "order_date": "2026-09-22",
+          "captured_at": "<ts>",
+          "page_url": "https://www.aldi.us/store/aldi/storefront",
+          "order_key": null,
+          "price_mode": "in_store"
+        },
+        {
+          "id": 6,
+          "store": "costco",
+          "source": "receipt",
+          "order_date": "2026-07-01",
+          "captured_at": "<ts>",
+          "page_url": "",
+          "order_key": "costco:receipt:2026-07-01:test00000002",
+          "price_mode": "in_store"
+        },
+        {
+          "id": 7,
+          "store": "walmart",
+          "source": "order",
+          "order_date": "2026-09-25",
+          "captured_at": "<ts>",
+          "page_url": "https://www.walmart.com/orders/TEST-ORDER-2",
+          "order_key": "walmart:https://www.walmart.com/orders/TEST-ORDER-2",
+          "price_mode": null
+        },
+        {
+          "id": 8,
+          "store": "aldi",
+          "source": "cart",
+          "order_date": "2026-09-26",
+          "captured_at": "<ts>",
+          "page_url": "https://www.aldi.us/store/aldi/storefront",
+          "order_key": null,
+          "price_mode": "pickup"
+        },
+        {
+          "id": 9,
+          "store": "costco",
+          "source": "receipt",
+          "order_date": "2026-09-24",
+          "captured_at": "<ts>",
+          "page_url": null,
+          "order_key": "costco:receipt:2026-09-24:eacf85b2d819",
+          "price_mode": null
+        },
+        {
+          "id": 10,
+          "store": "instacart",
+          "source": "cart",
+          "order_date": "2026-09-26",
+          "captured_at": "<ts>",
+          "page_url": null,
+          "order_key": null,
+          "price_mode": null
+        }
+      ],
+      "observations": [
+        {
+          "id": 1,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-eggs-18",
+          "name": "Great Value Cage-Free Large Eggs, 18 Count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 4.47,
+          "line_total": 4.47,
+          "unit_price_text": "24.8\u00a2/ea",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 2,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-milk",
+          "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+          "size_text": null,
+          "qty": 2.0,
+          "price_each": 4.28,
+          "line_total": 8.56,
+          "unit_price_text": "8.2\u00a2/fl oz",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 3,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-salmon",
+          "name": "Fresh Atlantic Salmon Fillet",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 11.62,
+          "line_total": 11.62,
+          "unit_price_text": "$9.97/lb",
+          "url": null,
+          "image_url": null,
+          "notes": "was $12.46",
+          "raw_json": null
+        },
+        {
+          "id": 4,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-towels",
+          "name": "Bounty Select-A-Size Paper Towels, 6 Double Rolls",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 15.97,
+          "line_total": 15.97,
+          "unit_price_text": "",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 5,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-waffles",
+          "name": "Eggo Homestyle Waffles, 12.3 oz, 10 Count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 3.47,
+          "line_total": 3.47,
+          "unit_price_text": "28.2\u00a2/oz",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 6,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-tort",
+          "name": "Mission Carb Balance Tortillas",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 4.28,
+          "line_total": 4.28,
+          "unit_price_text": "",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 7,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-water",
+          "name": "Great Value Purified Water, 16.9 fl oz, 40 Count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 4.98,
+          "line_total": 4.98,
+          "unit_price_text": "0.7\u00a2/fl oz",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 8,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "name:bananas",
+          "name": "Bananas",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 1.25,
+          "line_total": 1.25,
+          "unit_price_text": "$0.62/lb",
+          "url": null,
+          "image_url": null,
+          "notes": "was $1.40",
+          "raw_json": null
+        },
+        {
+          "id": 9,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-rolls",
+          "name": "Great Value Dinner Rolls, 12 Count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 2.47,
+          "line_total": 2.47,
+          "unit_price_text": "",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 10,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-chips",
+          "name": "Mariquitas Plantain Chips, 5 oz",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 1.78,
+          "line_total": 1.78,
+          "unit_price_text": "35.6\u00a2/oz",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 11,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-new-beans",
+          "name": "Great Value Black Beans, 15 oz",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 0.98,
+          "line_total": 0.98,
+          "unit_price_text": "6.5\u00a2/oz",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 12,
+          "grab_id": 1,
+          "store": "walmart",
+          "store_product_id": "wm-ign-card",
+          "name": "Birthday Card",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 3.97,
+          "line_total": 3.97,
+          "unit_price_text": "",
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 13,
+          "grab_id": 2,
+          "store": "costco",
+          "store_product_id": "cc-eggs",
+          "name": "KS CF 2DZ",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 7.79,
+          "line_total": 7.79,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": "{\"taxable\": false}"
+        },
+        {
+          "id": 14,
+          "grab_id": 2,
+          "store": "costco",
+          "store_product_id": "cc-milk",
+          "name": "KS UF 2% MILK",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 12.29,
+          "line_total": 12.29,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": "{\"taxable\": false}"
+        },
+        {
+          "id": 15,
+          "grab_id": 2,
+          "store": "costco",
+          "store_product_id": "cc-salmon",
+          "name": "KS ATL SALMON",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 29.97,
+          "line_total": 29.97,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "2.5 lb",
+          "raw_json": "{\"taxable\": false}"
+        },
+        {
+          "id": 16,
+          "grab_id": 2,
+          "store": "costco",
+          "store_product_id": "cc-bagels-sale",
+          "name": "KS BAGELS SALE",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 4.99,
+          "line_total": 4.99,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "instant savings",
+          "raw_json": "{\"taxable\": false}"
+        },
+        {
+          "id": 17,
+          "grab_id": 2,
+          "store": "costco",
+          "store_product_id": "cc-new-oil",
+          "name": "KS ORG EVOO 2L",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 16.99,
+          "line_total": 16.99,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": "{\"taxable\": false}"
+        },
+        {
+          "id": 18,
+          "grab_id": 3,
+          "store": "instacart",
+          "store_product_id": "ic-eggs-24",
+          "name": "Kirkland Signature Cage-Free Eggs, 24-count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 8.49,
+          "line_total": 8.49,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": "{\"original_price\": 8.49}"
+        },
+        {
+          "id": 19,
+          "grab_id": 3,
+          "store": "instacart",
+          "store_product_id": "ic-milk",
+          "name": "Kirkland Signature Ultra-Filtered 2% Milk, 52 fl oz, 3-count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 12.49,
+          "line_total": 12.49,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "promo $12.49 (was $13.49)",
+          "raw_json": "{\"original_price\": 13.49}"
+        },
+        {
+          "id": 20,
+          "grab_id": 3,
+          "store": "instacart",
+          "store_product_id": "ic-salmon",
+          "name": "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 38.97,
+          "line_total": 38.97,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": "{\"original_price\": 38.97}"
+        },
+        {
+          "id": 21,
+          "grab_id": 3,
+          "store": "instacart",
+          "store_product_id": "ic-towels",
+          "name": "Kirkland Signature Paper Towels, 12 rolls",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 24.99,
+          "line_total": 24.99,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 22,
+          "grab_id": 3,
+          "store": "instacart",
+          "store_product_id": "ic-waffles",
+          "name": "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 11.99,
+          "line_total": 11.99,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "promo $11.99 (was $13.08)",
+          "raw_json": "{\"original_price\": 13.08}"
+        },
+        {
+          "id": 23,
+          "grab_id": 3,
+          "store": "instacart",
+          "store_product_id": "ic-bagels",
+          "name": "Kirkland Signature Bagels, 12-count",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 7.29,
+          "line_total": 7.29,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 24,
+          "grab_id": 3,
+          "store": "instacart",
+          "store_product_id": "ic-new-oil",
+          "name": "Kirkland Signature Organic Extra Virgin Olive Oil, 2 L",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 17.99,
+          "line_total": 17.99,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": "{\"original_price\": 17.99}"
+        },
+        {
+          "id": 25,
+          "grab_id": 4,
+          "store": "aldi",
+          "store_product_id": "al-eggs-12",
+          "name": "Goldhen Cage Free Eggs, 12 ct",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 3.15,
+          "line_total": 3.15,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 26,
+          "grab_id": 4,
+          "store": "aldi",
+          "store_product_id": "al-water",
+          "name": "Puraqua Water, 40 pack",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 5.65,
+          "line_total": 5.65,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 27,
+          "grab_id": 5,
+          "store": "aldi",
+          "store_product_id": "al-eggs-12",
+          "name": "Goldhen Cage Free Eggs, 12 ct",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 2.79,
+          "line_total": 2.79,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 28,
+          "grab_id": 5,
+          "store": "aldi",
+          "store_product_id": "al-bagels",
+          "name": "L'oven Fresh Plain Bagels, 6 ct",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 1.99,
+          "line_total": 1.99,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 29,
+          "grab_id": 5,
+          "store": "aldi",
+          "store_product_id": "al-tort-carb",
+          "name": "L'oven Fresh Carb Control Tortillas, 8 ct",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 3.39,
+          "line_total": 3.39,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 30,
+          "grab_id": 5,
+          "store": "aldi",
+          "store_product_id": "al-tort-flour",
+          "name": "Casa Mamita Flour Tortillas, 10 ct",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 2.49,
+          "line_total": 2.49,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 31,
+          "grab_id": 5,
+          "store": "aldi",
+          "store_product_id": "al-ign-cream",
+          "name": "Friendly Farms Heavy Whipping Cream (32 fl oz)",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 4.29,
+          "line_total": 4.29,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": null
+        },
+        {
+          "id": 32,
+          "grab_id": 6,
+          "store": "costco",
+          "store_product_id": "cc-bagels",
+          "name": "KS BAGELS 12CT",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 6.49,
+          "line_total": 6.49,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": "",
+          "raw_json": "{\"taxable\": false}"
+        },
+        {
+          "id": 33,
+          "grab_id": 7,
+          "store": "walmart",
+          "store_product_id": "wm-milk",
+          "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 4.08,
+          "line_total": 4.08,
+          "unit_price_text": "7.8\u00a2/fl oz",
+          "url": null,
+          "image_url": null,
+          "notes": null,
+          "raw_json": null
+        },
+        {
+          "id": 34,
+          "grab_id": 7,
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "name": "Great Value Test Tortillas, 10 Count",
+          "size_text": null,
+          "qty": 2.0,
+          "price_each": 1.98,
+          "line_total": 3.96,
+          "unit_price_text": null,
+          "url": "https://example.test/wm-t-1",
+          "image_url": null,
+          "notes": null,
+          "raw_json": null
+        },
+        {
+          "id": 35,
+          "grab_id": 8,
+          "store": "aldi",
+          "store_product_id": "al-water",
+          "name": "Puraqua Water, 40 pack",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 5.99,
+          "line_total": null,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": null,
+          "raw_json": "{\"k\": 1}"
+        },
+        {
+          "id": 36,
+          "grab_id": 9,
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "name": "KS TEST RICE",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 18.49,
+          "line_total": null,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": null,
+          "raw_json": null
+        },
+        {
+          "id": 37,
+          "grab_id": 9,
+          "store": "costco",
+          "store_product_id": "cc-eggs",
+          "name": "KS CF 2DZ",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 7.99,
+          "line_total": null,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": null,
+          "raw_json": null
+        },
+        {
+          "id": 38,
+          "grab_id": 10,
+          "store": "instacart",
+          "store_product_id": "ic-t-1",
+          "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+          "size_text": null,
+          "qty": 1.0,
+          "price_each": 19.99,
+          "line_total": null,
+          "unit_price_text": null,
+          "url": null,
+          "image_url": null,
+          "notes": null,
+          "raw_json": "{\"original_price\": 20.49}"
+        }
+      ],
+      "items": [
+        {
+          "store": "aldi",
+          "store_product_id": "al-bagels",
+          "name": "L'oven Fresh Plain Bagels, 6 ct",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-22",
+          "last_seen": "2026-09-22",
+          "times_seen": 1,
+          "last_price": 1.99,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 6,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-bananas",
+          "name": "Bananas, per lb",
+          "size_text": "1 lb",
+          "url": "https://example.test/al-bananas",
+          "image_url": null,
+          "first_seen": null,
+          "last_seen": "2026-09-22",
+          "times_seen": 0,
+          "last_price": 0.49,
+          "last_source": "match",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 9,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-eggs-12",
+          "name": "Goldhen Cage Free Eggs, 12 ct",
+          "size_text": null,
+          "url": "https://example.test/al-eggs-12",
+          "image_url": null,
+          "first_seen": "2026-09-21",
+          "last_seen": "2026-09-22",
+          "times_seen": 2,
+          "last_price": 2.79,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 1,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": "in-store price",
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-ign-cream",
+          "name": "Friendly Farms Heavy Whipping Cream (32 fl oz)",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-22",
+          "last_seen": "2026-09-22",
+          "times_seen": 1,
+          "last_price": 4.29,
+          "last_source": "cart",
+          "status": "ignored",
+          "status_changed_at": null,
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-t-2",
+          "name": "Mariquitas Plantain Chips, family size",
+          "size_text": "10 oz",
+          "url": "",
+          "image_url": null,
+          "first_seen": null,
+          "last_seen": "<today>",
+          "times_seen": 0,
+          "last_price": 4.49,
+          "last_source": "match",
+          "status": "converged",
+          "status_changed_at": "<ts>",
+          "product_id": 11,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": "in-store",
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-t-3",
+          "name": "Everything Bagels",
+          "size_text": "6 ct",
+          "url": "",
+          "image_url": null,
+          "first_seen": null,
+          "last_seen": "<today>",
+          "times_seen": 0,
+          "last_price": 2.29,
+          "last_source": "match",
+          "status": "converged",
+          "status_changed_at": "<ts>",
+          "product_id": 6,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "substitute",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-tort-carb",
+          "name": "L'oven Fresh Carb Control Tortillas, 8 ct",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-22",
+          "last_seen": "2026-09-22",
+          "times_seen": 1,
+          "last_price": 3.39,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 7,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 1
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-tort-flour",
+          "name": "Casa Mamita Flour Tortillas, 10 ct",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-22",
+          "last_seen": "2026-09-22",
+          "times_seen": 1,
+          "last_price": 2.49,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 7,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "substitute",
+          "note": "not low-carb",
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "aldi",
+          "store_product_id": "al-water",
+          "name": "Puraqua Water, 40 pack",
+          "size_text": "16.9 fl oz, 40-count",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-21",
+          "last_seen": "2026-09-26",
+          "times_seen": 2,
+          "last_price": 4.99,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 8,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": "in-store price",
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-bagels",
+          "name": "KS BAGELS 12CT",
+          "size_text": "12-count",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-07-01",
+          "last_seen": "2026-07-01",
+          "times_seen": 1,
+          "last_price": 6.49,
+          "last_source": "receipt",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 6,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-bagels-sale",
+          "name": "KS BAGELS SALE",
+          "size_text": "12-count",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-18",
+          "last_seen": "2026-09-18",
+          "times_seen": 1,
+          "last_price": 4.99,
+          "last_source": "receipt",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 6,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": "instant savings",
+          "exclude_markup": 1,
+          "preferred": 0
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-eggs",
+          "name": "KS CF 2DZ",
+          "size_text": "24-count",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-18",
+          "last_seen": "2026-09-24",
+          "times_seen": 2,
+          "last_price": 7.99,
+          "last_source": "receipt",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 1,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-milk",
+          "name": "KS UF 2% MILK",
+          "size_text": "52 fl oz, 3-count",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-18",
+          "last_seen": "2026-09-18",
+          "times_seen": 1,
+          "last_price": 12.29,
+          "last_source": "receipt",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 2,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-new-oil",
+          "name": "KS ORG EVOO 2L",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-18",
+          "last_seen": "2026-09-18",
+          "times_seen": 1,
+          "last_price": 16.99,
+          "last_source": "receipt",
+          "status": "pending",
+          "status_changed_at": null,
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-salmon",
+          "name": "KS ATL SALMON",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-18",
+          "last_seen": "2026-09-18",
+          "times_seen": 1,
+          "last_price": 29.97,
+          "last_source": "receipt",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 3,
+          "weight_lb": 2.5,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "name": "KS TEST RICE",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-24",
+          "last_seen": "2026-09-24",
+          "times_seen": 1,
+          "last_price": 18.49,
+          "last_source": "receipt",
+          "status": "converged",
+          "status_changed_at": "<ts>",
+          "product_id": 2,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": "relinked",
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-bagels",
+          "name": "Kirkland Signature Bagels, 12-count",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "times_seen": 1,
+          "last_price": 7.29,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 6,
+          "weight_lb": null,
+          "pair_id": "cc-bagels-sale",
+          "regular_price": 7.29,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-eggs-24",
+          "name": "Kirkland Signature Cage-Free Eggs, 24-count",
+          "size_text": null,
+          "url": "https://example.test/ic-eggs-24",
+          "image_url": null,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "times_seen": 1,
+          "last_price": 8.49,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 1,
+          "weight_lb": null,
+          "pair_id": "cc-eggs",
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-milk",
+          "name": "Kirkland Signature Ultra-Filtered 2% Milk, 52 fl oz, 3-count",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "times_seen": 1,
+          "last_price": 12.49,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 2,
+          "weight_lb": null,
+          "pair_id": "cc-milk",
+          "regular_price": 13.49,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-new-oil",
+          "name": "Kirkland Signature Organic Extra Virgin Olive Oil, 2 L",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "times_seen": 1,
+          "last_price": 17.99,
+          "last_source": "cart",
+          "status": "pending",
+          "status_changed_at": null,
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-salmon",
+          "name": "Kirkland Signature Atlantic Salmon Fillet (About 3 lb / package)",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "times_seen": 1,
+          "last_price": 38.97,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 3,
+          "weight_lb": null,
+          "pair_id": "cc-salmon",
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-t-1",
+          "name": "Kirkland Signature Test Jasmine Rice, 25 lb",
+          "size_text": "25 lb",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-26",
+          "last_seen": "2026-09-26",
+          "times_seen": 1,
+          "last_price": 19.99,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": "<ts>",
+          "product_id": 12,
+          "weight_lb": null,
+          "pair_id": "cc-t-1",
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-towels",
+          "name": "Kirkland Signature Paper Towels, 12 rolls",
+          "size_text": "160 Sheets, 12 Rolls",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "times_seen": 1,
+          "last_price": 24.99,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 4,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "instacart",
+          "store_product_id": "ic-waffles",
+          "name": "Kellogg's Eggo Homestyle Waffle, 1.24 oz, 60-count",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-19",
+          "last_seen": "2026-09-19",
+          "times_seen": 1,
+          "last_price": 13.08,
+          "last_source": "cart",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 5,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "name:bananas",
+          "name": "Bananas",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 1.25,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 9,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "name": "Loose Limes (no id)",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-25",
+          "last_seen": "2026-09-25",
+          "times_seen": 1,
+          "last_price": 1.25,
+          "last_source": "order",
+          "status": "pending",
+          "status_changed_at": "<ts>",
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-chips",
+          "name": "Mariquitas Plantain Chips, 5 oz",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 1.78,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 11,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-eggs-18",
+          "name": "Great Value Cage-Free Large Eggs, 18 Count",
+          "size_text": null,
+          "url": "https://example.test/wm-eggs-18",
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 4.47,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 1,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-ign-card",
+          "name": "Birthday Card",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 3.97,
+          "last_source": "order",
+          "status": "ignored",
+          "status_changed_at": "<ts>",
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-milk",
+          "name": "fairlife Ultra-Filtered 2% Milk, 52 fl oz",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-25",
+          "times_seen": 2,
+          "last_price": 4.08,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": "<ts>",
+          "product_id": 2,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-new-beans",
+          "name": "Great Value Black Beans, 15 oz",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 0.98,
+          "last_source": "order",
+          "status": "pending",
+          "status_changed_at": null,
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-rolls",
+          "name": "Great Value Dinner Rolls, 12 Count",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 2.47,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 10,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-salmon",
+          "name": "Fresh Atlantic Salmon Fillet",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 11.62,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 3,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "name": "Great Value Test Tortillas, 10 Count",
+          "size_text": "10 Count",
+          "url": "https://example.test/wm-t-1",
+          "image_url": null,
+          "first_seen": "2026-09-25",
+          "last_seen": "2026-09-25",
+          "times_seen": 1,
+          "last_price": 1.98,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": "<ts>",
+          "product_id": 7,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "substitute",
+          "note": "test",
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-t-2",
+          "name": "Gift Bag",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": null,
+          "last_seen": null,
+          "times_seen": 0,
+          "last_price": null,
+          "last_source": null,
+          "status": "ignored",
+          "status_changed_at": "<ts>",
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-t-3",
+          "name": "Wrapping paper",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": null,
+          "last_seen": null,
+          "times_seen": 0,
+          "last_price": null,
+          "last_source": null,
+          "status": "ignored",
+          "status_changed_at": "<ts>",
+          "product_id": null,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": null,
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-tort",
+          "name": "Mission Carb Balance Tortillas",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 4.28,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 7,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-towels",
+          "name": "Bounty Select-A-Size Paper Towels, 6 Double Rolls",
+          "size_text": "98 Sheets, 6 Rolls",
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 15.97,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 4,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "equivalent",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-waffles",
+          "name": "Eggo Homestyle Waffles, 12.3 oz, 10 Count",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 3.47,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 5,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        },
+        {
+          "store": "walmart",
+          "store_product_id": "wm-water",
+          "name": "Great Value Purified Water, 16.9 fl oz, 40 Count",
+          "size_text": null,
+          "url": null,
+          "image_url": null,
+          "first_seen": "2026-09-20",
+          "last_seen": "2026-09-20",
+          "times_seen": 1,
+          "last_price": 4.98,
+          "last_source": "order",
+          "status": "converged",
+          "status_changed_at": null,
+          "product_id": 8,
+          "weight_lb": null,
+          "pair_id": null,
+          "regular_price": null,
+          "match_tier": "exact",
+          "note": null,
+          "exclude_markup": 0,
+          "preferred": 0
+        }
+      ],
+      "products": [
+        {
+          "id": 1,
+          "name": "Eggs",
+          "category": "dairy",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 2,
+          "name": "Milk",
+          "category": "dairy",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 3,
+          "name": "Salmon",
+          "category": "meat/seafood",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 4,
+          "name": "Paper towels",
+          "category": "household",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 5,
+          "name": "Frozen waffles",
+          "category": "frozen",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 6,
+          "name": "Bagels",
+          "category": "bakery",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 7,
+          "name": "Tortillas",
+          "category": "bakery",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 8,
+          "name": "Water",
+          "category": "pantry",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 9,
+          "name": "Bananas",
+          "category": "produce",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 10,
+          "name": "Dinner rolls",
+          "category": "bakery",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 11,
+          "name": "Plantain chips",
+          "category": "snacks",
+          "created_at": "<ts>"
+        },
+        {
+          "id": 12,
+          "name": "Jasmine rice",
+          "category": "pantry",
+          "created_at": "<ts>"
+        }
+      ],
+      "not_carried": [
+        {
+          "product_id": 2,
+          "store": "aldi",
+          "note": "no ultra-filtered milk",
+          "checked_on": "2026-09-22"
+        },
+        {
+          "product_id": 4,
+          "store": "aldi",
+          "note": "only single rolls",
+          "checked_on": "2026-09-22"
+        },
+        {
+          "product_id": 4,
+          "store": "walmart",
+          "note": "second supersedes",
+          "checked_on": "<today>"
+        },
+        {
+          "product_id": 5,
+          "store": "aldi",
+          "note": "no waffles",
+          "checked_on": "<today>"
+        },
+        {
+          "product_id": 10,
+          "store": "aldi",
+          "note": "no dinner rolls",
+          "checked_on": "2026-09-22"
+        }
+      ],
+      "proposals": [
+        {
+          "id": 1,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "wm-eggs-18",
+          "action": "link",
+          "payload_json": {
+            "store": "walmart",
+            "store_product_id": "wm-eggs-18",
+            "action": "link",
+            "confidence": 0.95,
+            "reason": "same eggs",
+            "size_text": null,
+            "match_tier": "equivalent",
+            "note": null,
+            "preferred": false,
+            "product_id": 1
+          },
+          "confidence": 0.95,
+          "reason": "same eggs",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 2,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "wm-new-beans",
+          "action": "new",
+          "payload_json": {
+            "store": "walmart",
+            "store_product_id": "wm-new-beans",
+            "action": "new",
+            "confidence": 0.6,
+            "reason": "beans",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "new_product": {
+              "name": "Black beans",
+              "category": "pantry"
+            }
+          },
+          "confidence": 0.6,
+          "reason": "beans",
+          "status": "rejected",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 3,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "al-chips",
+          "action": "version",
+          "payload_json": {
+            "action": "version",
+            "product_id": 11,
+            "product_name": "Plantain chips",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.8,
+            "reason": "only plantain chips",
+            "match_tier": "equivalent",
+            "note": "in-store price",
+            "checked_on": "2026-09-22",
+            "store_product_id": "al-chips",
+            "name": "Mariquitas Original Plantain Chips",
+            "url": "https://example.test/al-chips",
+            "price": 2.75,
+            "size_text": "5 oz",
+            "alternatives": []
+          },
+          "confidence": 0.8,
+          "reason": "only plantain chips",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 4,
+          "batch": "<ts>",
+          "store": "costco",
+          "store_product_id": "cc-new-oil",
+          "action": "ask",
+          "payload_json": {
+            "store": "costco",
+            "store_product_id": "cc-new-oil",
+            "action": "ask",
+            "confidence": 0.3,
+            "reason": "unsure",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "candidates": [2]
+          },
+          "confidence": 0.3,
+          "reason": "unsure",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 5,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "wm-t-1",
+          "action": "link",
+          "payload_json": {
+            "store": "walmart",
+            "store_product_id": "wm-t-1",
+            "action": "link",
+            "confidence": 0.95,
+            "reason": "r1",
+            "size_text": "10 Count",
+            "match_tier": "substitute",
+            "note": "test",
+            "preferred": false,
+            "product_id": 7
+          },
+          "confidence": 0.95,
+          "reason": "r1",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 6,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "action": "new",
+          "payload_json": {
+            "store": "walmart",
+            "store_product_id": "name:loose-limes-no-id",
+            "action": "new",
+            "confidence": 0.7,
+            "reason": "r2",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "new_product": {
+              "name": "Limes",
+              "category": "produce"
+            }
+          },
+          "confidence": 0.7,
+          "reason": "r2",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 7,
+          "batch": "<ts>",
+          "store": "instacart",
+          "store_product_id": "ic-t-1",
+          "action": "pair",
+          "payload_json": {
+            "store": "instacart",
+            "store_product_id": "ic-t-1",
+            "action": "pair",
+            "confidence": 0.92,
+            "reason": "r3",
+            "size_text": "25 lb",
+            "match_tier": "exact",
+            "note": null,
+            "preferred": false,
+            "new_product": {
+              "name": "Jasmine rice",
+              "category": "pantry"
+            },
+            "pair_with": {
+              "store": "costco",
+              "store_product_id": "cc-t-1"
+            }
+          },
+          "confidence": 0.92,
+          "reason": "r3",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 8,
+          "batch": "<ts>",
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "action": "ask",
+          "payload_json": {
+            "store": "costco",
+            "store_product_id": "cc-t-1",
+            "action": "ask",
+            "confidence": 0.3,
+            "reason": "r4",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "candidates": [1, 2]
+          },
+          "confidence": 0.3,
+          "reason": "r4",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 9,
+          "batch": "<ts>",
+          "store": "costco",
+          "store_product_id": "cc-t-1",
+          "action": "ignore",
+          "payload_json": {
+            "store": "costco",
+            "store_product_id": "cc-t-1",
+            "action": "link",
+            "confidence": 0.5,
+            "reason": "supersedes ask",
+            "size_text": null,
+            "match_tier": null,
+            "note": "relinked",
+            "preferred": false,
+            "product_id": 2
+          },
+          "confidence": 0.5,
+          "reason": "supersedes ask",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 10,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "name:loose-limes-no-id",
+          "action": "link",
+          "payload_json": {
+            "store": "walmart",
+            "store_product_id": "name:loose-limes-no-id",
+            "action": "link",
+            "confidence": 0.8,
+            "reason": "existing name becomes link",
+            "size_text": null,
+            "match_tier": null,
+            "note": null,
+            "preferred": false,
+            "product_id": 6
+          },
+          "confidence": 0.8,
+          "reason": "existing name becomes link",
+          "status": "rejected",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 11,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "al-t-1",
+          "action": "version",
+          "payload_json": {
+            "action": "version",
+            "product_id": 11,
+            "product_name": "Plantain chips",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.9,
+            "reason": "n1",
+            "match_tier": "equivalent",
+            "note": "in-store",
+            "checked_on": "<today>",
+            "store_product_id": "al-t-2",
+            "name": "Mariquitas Plantain Chips, family size",
+            "url": "",
+            "price": 4.49,
+            "size_text": "10 oz",
+            "alternatives": [
+              {
+                "store_product_id": "al-t-2",
+                "name": "Mariquitas Plantain Chips, family size",
+                "url": "",
+                "price": 4.49,
+                "size_text": "10 oz"
+              }
+            ],
+            "choice": 0
+          },
+          "confidence": 0.9,
+          "reason": "n1",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 12,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "product:5",
+          "action": "not_carried",
+          "payload_json": {
+            "action": "not_carried",
+            "product_id": 5,
+            "product_name": "Frozen waffles",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.8,
+            "reason": "n2",
+            "match_tier": null,
+            "note": "no waffles",
+            "checked_on": "<today>"
+          },
+          "confidence": 0.8,
+          "reason": "n2",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 13,
+          "batch": "<ts>",
+          "store": "aldi",
+          "store_product_id": "product:6",
+          "action": "version_ask",
+          "payload_json": {
+            "action": "version",
+            "product_id": 6,
+            "product_name": "Bagels",
+            "target": "aldi",
+            "item_store": "aldi",
+            "confidence": 0.4,
+            "reason": "n3",
+            "match_tier": "substitute",
+            "note": null,
+            "checked_on": "<today>",
+            "candidates": [
+              {
+                "store_product_id": "al-t-3",
+                "name": "Everything Bagels",
+                "url": "",
+                "price": 2.29,
+                "size_text": "6 ct"
+              }
+            ],
+            "choice": 0,
+            "store_product_id": "al-t-3",
+            "name": "Everything Bagels",
+            "url": "",
+            "price": 2.29,
+            "size_text": "6 ct"
+          },
+          "confidence": 0.4,
+          "reason": "n3",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 14,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "product:4",
+          "action": "not_carried",
+          "payload_json": {
+            "action": "not_carried",
+            "product_id": 4,
+            "product_name": "Paper towels",
+            "target": "walmart",
+            "item_store": "walmart",
+            "confidence": 0.5,
+            "reason": "",
+            "match_tier": null,
+            "note": "first",
+            "checked_on": "<today>"
+          },
+          "confidence": 0.5,
+          "reason": "",
+          "status": "superseded",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        },
+        {
+          "id": 15,
+          "batch": "<ts>",
+          "store": "walmart",
+          "store_product_id": "product:4",
+          "action": "not_carried",
+          "payload_json": {
+            "action": "not_carried",
+            "product_id": 4,
+            "product_name": "Paper towels",
+            "target": "walmart",
+            "item_store": "walmart",
+            "confidence": 0.6,
+            "reason": "",
+            "match_tier": null,
+            "note": "second supersedes",
+            "checked_on": "<today>"
+          },
+          "confidence": 0.6,
+          "reason": "",
+          "status": "approved",
+          "created_at": "<ts>",
+          "decided_at": "<ts>"
+        }
+      ]
+    }
+  }
+]

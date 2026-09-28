@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables - DO NOT REMOVE THIS!
+.env
+.env.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.sw?
+
+# Not part of the product: retired code, local backups, Python leftovers
+archive/
+backups/
+__pycache__
+
+# Local data: the live database and agent run files (back them up separately)
+data/
+
+# Claude Code: skills and settings stay local for now
+.claude/
+
+# Never commit database files anywhere in the repo (tests build theirs from backend/test/fixtures/seed.sql)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3

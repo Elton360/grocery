@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Grocery Grabber",
+  "version": "0.2.0",
+  "description": "Grab cart and order items from Walmart, Instacart (Costco) and Aldi into the local grocery backend.",
+  "permissions": ["sidePanel", "scripting", "activeTab", "storage", "tabs"],
+  "host_permissions": [
+    "*://*.walmart.com/*",
+    "*://*.instacart.com/*",
+    "*://*.aldi.us/*",
+    "http://127.0.0.1:8765/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "action": { "default_title": "Grocery Grabber" }
+}

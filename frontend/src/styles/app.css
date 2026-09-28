@@ -1,0 +1,357 @@
+/* Functional placeholder layout (ported from the v1 pages) until the UI design brief. */
+.nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 10px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.nav a[aria-current='page'] {
+  color: var(--text);
+  font-weight: 600;
+}
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+main.wide {
+  max-width: 1200px;
+}
+h1 {
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+.sub {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+.bar,
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.bar .grow {
+  flex: 1;
+}
+.bar .converge-status {
+  flex-basis: 100%;
+  margin: 0;
+}
+input[type='search'] {
+  flex: 1 1 220px;
+}
+label.chk {
+  color: var(--muted);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.empty {
+  color: var(--muted);
+  padding: 24px;
+  text-align: center;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.card h2 {
+  font-size: 13px;
+  margin: 0;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.card h2.store {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.ph {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background: var(--chip);
+}
+
+/* ---- compare ---- */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.stat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  min-width: 150px;
+}
+.stat b {
+  display: block;
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}
+.stat span {
+  color: var(--muted);
+  font-size: 12px;
+}
+.table-wrap {
+  overflow-x: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+table.compare {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 860px;
+}
+.compare th,
+.compare td {
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.compare th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.compare th:not([class^='s-']) {
+  color: var(--muted);
+}
+.compare tr:last-child td {
+  border-bottom: 0;
+}
+td.prod b {
+  display: block;
+}
+.cat {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.cell small {
+  color: var(--muted);
+  display: block;
+}
+.cell .price {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.cell .ppu {
+  font-variant-numeric: tabular-nums;
+}
+.cell a {
+  text-decoration: none;
+}
+.cell a:hover {
+  text-decoration: underline;
+}
+.cell.win {
+  background: var(--win);
+}
+.cell.win .ppu {
+  color: var(--win-text);
+  font-weight: 600;
+}
+.cell .empty {
+  color: var(--border);
+  padding: 0;
+}
+.badge.est {
+  background: var(--est);
+  color: var(--est-text);
+}
+details.more {
+  margin-top: 6px;
+}
+details.more summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 12px;
+}
+.ver {
+  border-top: 1px dashed var(--border);
+  margin-top: 6px;
+  padding-top: 6px;
+  font-size: 12px;
+}
+.ver .vp {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+/* ---- list ---- */
+.tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px;
+}
+.tabs button {
+  border: 0;
+  background: none;
+  color: var(--muted);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+.tabs button[aria-selected='true'] {
+  background: var(--chip);
+  color: var(--text);
+  font-weight: 600;
+}
+.item-row {
+  display: grid;
+  grid-template-columns: 40px 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.item-row:last-child {
+  border-bottom: 0;
+}
+.item-row img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
+.item-row .name a {
+  color: inherit;
+  text-decoration: none;
+}
+.item-row .name a:hover {
+  text-decoration: underline;
+}
+.item-row .price {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  text-align: right;
+}
+.store-tag {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 6px;
+}
+button.remove,
+button.no {
+  color: var(--danger);
+}
+button.restore,
+button.ok {
+  color: var(--accent);
+}
+
+/* ---- review ---- */
+.proposal-row {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.proposal-row:last-child {
+  border-bottom: 0;
+}
+.proposal-row .top {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  gap: 12px;
+  align-items: start;
+}
+.proposal-row img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+}
+.proposal-row .item a {
+  color: inherit;
+  text-decoration: none;
+}
+.proposal {
+  margin-top: 3px;
+}
+.arrow {
+  color: var(--accent);
+  font-weight: 600;
+}
+.conf {
+  display: inline-block;
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 99px;
+  background: var(--chip);
+  color: var(--muted);
+  margin-left: 6px;
+}
+.conf.hi {
+  color: var(--accent);
+}
+.btns {
+  display: flex;
+  gap: 6px;
+}
+.edit {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px 12px;
+  margin: 10px 0 0 56px;
+  padding: 10px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+}
+.edit label {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.edit label.chk {
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+label.opt {
+  display: block;
+  margin-top: 4px;
+}
+
+@media (max-width: 560px) {
+  .item-row {
+    grid-template-columns: 40px 1fr auto;
+  }
+  .item-row .price {
+    display: none;
+  }
+  .proposal-row .top {
+    grid-template-columns: 44px 1fr;
+  }
+  .btns {
+    grid-column: 1 / -1;
+  }
+  .edit {
+    margin-left: 0;
+  }
+}
