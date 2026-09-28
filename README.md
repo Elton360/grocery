@@ -5,12 +5,12 @@ This project compares grocery prices per unit across Aldi, Walmart and Costco.
 1. **Gather:** the Chrome side panel grabs orders, carts and receipts into a local backend as *pending* items.
 2. **Converge:** Claude proposes how pending items join the curated product list, and you approve them.
 3. **Normalize:** Claude browses the stores to fill in missing store versions, and you approve them.
-4. **Compare:** the web app shows each product's best version per store and the cheapest store.
+4. **My List:** the web app shows pending items plus each product's best version per store and the cheapest store.
 
 ## Layout
 ```
 backend/     Node (ESM) + Express 5 + better-sqlite3. API, compare math, converge/normalize, CLIs
-frontend/    React 19 + Vite web app: Compare, List (pending / on list / ignored), Review (proposals)
+frontend/    React 19 + Vite web app: My List (pending + compare + ignored), Review (proposals)
 extension/   Chrome MV3 side panel (React + Vite → extension/dist) + injected grabbers (extension/public/grabbers)
 shared/      code used by frontend and extension: API client, Costco receipt parser, formatting, theme tokens
 data/        local only (gitignored): grocery.db (the live database) + converge/ and normalize/ run files
@@ -23,7 +23,7 @@ Each package has its own `package.json` and ESLint config, following `../homelab
 ## Run
 ```bash
 npm run install:all      # once: root + backend + frontend + extension
-npm start                # build the web app, then serve API + app on http://127.0.0.1:8765
+npm start                # build the web app, then serve API + app (My List) on http://127.0.0.1:8765
 ```
 - **Development:**
   - `npm --prefix backend run dev` runs the API with `node --watch`.
@@ -34,41 +34,45 @@ npm start                # build the web app, then serve API + app on http://127
   - `npm run format` (or `format:check`) runs Prettier.
 - **Scope:** the backend only listens on 127.0.0.1. POSTs must carry the `X-Grocery-Client: 1` header, which the app and extension send. Once the backend is hosted, it will need real auth.
 - **Database:** `data/grocery.db`, or set `GROCERY_DB` to override the path. Schema and additive migrations are applied at startup (`backend/src/db.js`).
-- **Old URLs:** `/`, `/pending(.html)` and `/converge(.html)` redirect to the new pages.
+- **Old URLs:** `/compare`, `/list`, `/pending(.html)` and `/converge(.html)` redirect to My List or Review.
 
 ## Extension (side panel)
 1. Build it with `npm --prefix extension run build`, or `npm --prefix extension run dev` to rebuild on change.
 2. Go to `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and pick **`extension/dist`**. Press reload on the card after each rebuild.
 3. Click the toolbar icon to open the side panel. The panel follows the active tab.
 
-| Site | Actions |
-|---|---|
-| Walmart | **Grab order** on an order detail page; **Grab cart** on walmart.com/cart |
-| Instacart (Costco) | **Grab cart** with the cart panel open |
-| Aldi | **Grab list** in **In-Store** mode with the list open. The grabber refuses Pickup/Delivery, whose prices run about 10–13% higher |
-| Any tab | **Paste Costco receipt**: lines like `E 123456 KS EGGS 2DZ 5.29 N //note` |
+**Main view:**
+- **Import Ordered Items** and **Import Items from Cart** grab from the active tab:
 
-**The flow in the panel (no new tabs):**
-- A grab opens a review with:
-  - the order date;
-  - a banner for items already on the list, pending or ignored (collapsed, with a restore option for ignored ones);
-  - the new items, with keep checkboxes.
-- Unchecked items are removed **and remembered** as ignored.
-- **Submit** saves and shows "Saved: …" inline. Move to the next order and grab again.
-- An unsubmitted review survives tab switches and closing or reopening the panel (it's kept in `chrome.storage.session`).
-- If the backend is down, the rows stay and Submit can be retried.
-- The Compare, List and Review links open the web app in a tab only when clicked.
+  | Site | Ordered items | Cart |
+  |---|---|---|
+  | Walmart | order detail page | walmart.com/cart |
+  | Instacart (Costco) | — | cart panel open |
+  | Aldi | — | your list, in **In-Store** mode (the grabber refuses Pickup/Delivery, whose prices run about 10–13% higher) |
 
-**Duplicates:**
-- Re-submitting the same order replaces the earlier grab. Orders are matched by page URL; Costco receipts by date plus item numbers.
-- Carts are never deduplicated.
+- **Paste Costco Receipt**: lines like `E 123456 KS EGGS 2DZ 5.29 N //note`, plus a date.
+- **Open My List**, and links to the stores. All URLs live in `extension/src/links.js`.
+
+**Capture Feed** (opens right after an import):
+- **Tabs:**
+  - **New**: never seen before;
+  - **Tracked**: already on My List, pending or matched;
+  - **Omitted**: on the ignore list.
+- **Accumulates across stores:** import a Walmart order, then a Costco cart, and so on. Items stay in the feed, kept in `chrome.storage.local`, until they're handled. Grabbed items only appear in the panel; nothing opens a new tab.
+- **Adding:** select one or more New items, then **Add to My List**. They become *pending* on My List in the web app.
+- **Refresh** (next to the store chip): re-grabs the latest import from the active tab, e.g. "Refresh cart list from Instacart". It's disabled unless the tab is that store and the right page (a Walmart order page, walmart.com/cart, Instacart, or the Aldi list); the tooltip says what to open.
+- **Grabber errors:** if the page isn't ready (cart panel closed, list not open, cart empty, not an order page), the import stops with a message saying what to open.
+- **Omit / restore:** **Omit** on a New card puts the item on the ignore list, so future imports skip it. On Omitted, **Add to My List** brings one back.
+- **Prices:** items already on My List get their prices recorded as soon as they're imported.
+- **Duplicates:** each import has a capture id (`capture_key`), so re-submitting an import as more of its items are added replaces its earlier grab, and price history isn't duplicated. Orders are also matched by page URL across imports.
+- **Offline:** if the backend is down, the status bar shows **Offline**. Imports still land in New and are checked once the backend is back.
 
 **Grabbers:**
 - They run in the page's MAIN world. Instacart and Aldi product IDs come from React fiber props.
 - **Backend URL:** `extension/src/config.js`, plus `host_permissions` in `extension/public/manifest.json`.
 
 ## Converge (pending → products)
-- **Start a run:** press **Converge** on the List page, or run `/converge` in a Claude Code session in this folder.
+- **Start a run:** press **Converge** in the Pending section of My List, or run `/converge` in a Claude Code session in this folder.
   - The button runs headless Claude Code with your Claude Code login, so there's no API key or separate bill:
     `claude -p "/converge" --allowedTools "Bash(node backend/bin/converge.js:*)" Read "Edit(./data/converge/**)"`
   - Only one run happens at a time, with a 10-minute timeout. Logs go to `data/converge/run-*.log`.

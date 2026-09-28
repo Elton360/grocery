@@ -1,12 +1,12 @@
-import { ComparePage } from './pages/ComparePage.jsx'
-import { ListPage } from './pages/ListPage.jsx'
+import { ShoppingBasket } from 'lucide-react'
+
+import { MyListPage } from './pages/MyListPage.jsx'
 import { ReviewPage } from './pages/ReviewPage.jsx'
 import { Link } from './components/Link.jsx'
 import { usePath } from './router.js'
 
 const PAGES = [
-  ['/compare', 'Compare', ComparePage],
-  ['/list', 'List', ListPage],
+  ['/my-list', 'My List', MyListPage],
   ['/review', 'Review', ReviewPage],
 ]
 
@@ -17,7 +17,12 @@ export function App() {
   return (
     <>
       <nav className="nav">
-        <b>Grocery</b>
+        <span className="brand">
+          <span className="logo" aria-hidden="true">
+            <ShoppingBasket size={20} />
+          </span>
+          Grocery
+        </span>
         {PAGES.map(([to, label]) => (
           <Link
             key={to}
@@ -28,7 +33,7 @@ export function App() {
           </Link>
         ))}
       </nav>
-      <main className={path === '/compare' ? 'wide' : ''}>
+      <main className={path === '/my-list' ? 'wide' : ''}>
         {Page ? <Page /> : <p className="empty">Page not found.</p>}
       </main>
     </>

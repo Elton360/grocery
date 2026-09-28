@@ -133,3 +133,23 @@ test('bulk approve and proposal listing', async () => {
   )
   assert.equal(list.products.length, 11)
 })
+
+test('re-submitting a side panel capture replaces it (carts too)', async () => {
+  const cart = (items) =>
+    post('/api/grabs', {
+      store: 'instacart',
+      source: 'cart',
+      order_date: '2026-09-28',
+      capture_key: 'cap-1',
+      items,
+    })
+  const a = { store_product_id: 'ic-cap-a', name: 'Cap A', price_each: 3 }
+  const b = { store_product_id: 'ic-cap-b', name: 'Cap B', price_each: 4 }
+  let res = await (await cart([a])).json()
+  assert.equal(res.replaced, false)
+  res = await (await cart([a, b])).json()
+  assert.deepEqual([res.replaced, res.new, res.known], [true, 1, 1])
+  const items = (await (await fetch(`${base}/api/pending`)).json()).items
+  const capA = items.find((i) => i.store_product_id === 'ic-cap-a')
+  assert.equal(capA.times_seen, 1) // one observation, not two
+})

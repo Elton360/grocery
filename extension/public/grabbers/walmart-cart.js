@@ -12,6 +12,11 @@
   const names = [
     ...root.querySelectorAll('[data-testid="productName"]'),
   ].filter((n) => !n.closest('[data-testid="recommendation-containers-group"]'))
+  if (!names.length)
+    return {
+      error:
+        'No cart items found — make sure walmart.com/cart has finished loading and the cart isn’t empty, then import again.',
+    }
   const items = names.map((n) => {
     let tile = n
     while (

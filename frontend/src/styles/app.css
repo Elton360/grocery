@@ -8,7 +8,7 @@
   border-bottom: 1px solid var(--border);
 }
 .nav a {
-  color: var(--muted);
+  color: var(--text-muted);
   text-decoration: none;
 }
 .nav a[aria-current='page'] {
@@ -28,7 +28,7 @@ h1 {
   margin: 0 0 4px;
 }
 .sub {
-  color: var(--muted);
+  color: var(--text-muted);
   margin: 0 0 16px;
 }
 .bar,
@@ -50,13 +50,13 @@ input[type='search'] {
   flex: 1 1 220px;
 }
 label.chk {
-  color: var(--muted);
+  color: var(--text-muted);
   display: flex;
   gap: 6px;
   align-items: center;
 }
 .empty {
-  color: var(--muted);
+  color: var(--text-muted);
   padding: 24px;
   text-align: center;
 }
@@ -81,7 +81,7 @@ label.chk {
   width: 40px;
   height: 40px;
   border-radius: 6px;
-  background: var(--chip);
+  background: var(--surface-muted);
 }
 
 /* ---- compare ---- */
@@ -104,7 +104,7 @@ label.chk {
   font-variant-numeric: tabular-nums;
 }
 .stat span {
-  color: var(--muted);
+  color: var(--text-muted);
   font-size: 12px;
 }
 .table-wrap {
@@ -134,7 +134,7 @@ table.compare {
   white-space: nowrap;
 }
 .compare th:not([class^='s-']) {
-  color: var(--muted);
+  color: var(--text-muted);
 }
 .compare tr:last-child td {
   border-bottom: 0;
@@ -144,11 +144,11 @@ td.prod b {
 }
 .cat {
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
   white-space: nowrap;
 }
 .cell small {
-  color: var(--muted);
+  color: var(--text-muted);
   display: block;
 }
 .cell .price {
@@ -184,7 +184,7 @@ details.more {
 }
 details.more summary {
   cursor: pointer;
-  color: var(--muted);
+  color: var(--text-muted);
   font-size: 12px;
 }
 .ver {
@@ -210,12 +210,12 @@ details.more summary {
 .tabs button {
   border: 0;
   background: none;
-  color: var(--muted);
+  color: var(--text-muted);
   padding: 6px 12px;
   border-radius: 6px;
 }
 .tabs button[aria-selected='true'] {
-  background: var(--chip);
+  background: var(--surface-muted);
   color: var(--text);
   font-weight: 600;
 }
@@ -261,7 +261,7 @@ button.no {
 }
 button.restore,
 button.ok {
-  color: var(--accent);
+  color: var(--primary-text);
 }
 
 /* ---- review ---- */
@@ -293,7 +293,7 @@ button.ok {
   margin-top: 3px;
 }
 .arrow {
-  color: var(--accent);
+  color: var(--primary-text);
   font-weight: 600;
 }
 .conf {
@@ -301,12 +301,12 @@ button.ok {
   font-size: 11px;
   padding: 1px 7px;
   border-radius: 99px;
-  background: var(--chip);
-  color: var(--muted);
+  background: var(--surface-muted);
+  color: var(--text-muted);
   margin-left: 6px;
 }
 .conf.hi {
-  color: var(--accent);
+  color: var(--primary-text);
 }
 .btns {
   display: flex;
@@ -326,7 +326,7 @@ button.ok {
   flex-direction: column;
   gap: 3px;
   font-size: 12px;
-  color: var(--muted);
+  color: var(--text-muted);
 }
 .edit label.chk {
   flex-direction: row;
@@ -354,4 +354,87 @@ label.opt {
   .edit {
     margin-left: 0;
   }
+}
+
+/* ---- My List / shared chrome (Capture Feed tokens) ---- */
+h1,
+h2,
+.nav,
+.stat b {
+  font-family: var(--font-display);
+}
+.nav .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.nav .logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.page-head .sub {
+  margin: 0;
+}
+.card-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.card-head h2 {
+  padding: 0;
+  border: 0;
+}
+.card-head .converge-status {
+  flex-basis: 100%;
+  margin: 0;
+}
+.card h3.store {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 8px 14px 0;
+}
+.card.pending .empty {
+  padding: 14px;
+  text-align: left;
+}
+details.card.ignored {
+  margin-top: 16px;
+}
+details.card.ignored summary {
+  cursor: pointer;
+  list-style: none;
+}
+details.card.ignored summary h2 {
+  border-bottom: 0;
+}
+details.card.ignored[open] summary h2 {
+  border-bottom: 1px solid var(--border);
+}
+.card,
+.table-wrap,
+.stat {
+  border-color: transparent;
+  box-shadow: var(--shadow-card);
+  border-radius: var(--radius-card);
 }

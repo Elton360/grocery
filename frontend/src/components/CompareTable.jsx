@@ -1,9 +1,7 @@
 import { useMemo, useState } from 'react'
 
-import { api } from '../api.js'
-import { StoreCell } from '../components/StoreCell.jsx'
-import { useLoad } from '../hooks/useLoad.js'
 import { STORES, headline, winnerOf } from '../lib/prices.js'
+import { StoreCell } from './StoreCell.jsx'
 
 const COLUMNS = [
   ['name', 'Product'],
@@ -20,8 +18,8 @@ function sortValue(p, key) {
   return h && h.ppu !== '' ? Number(h.ppu) : Infinity
 }
 
-export function ComparePage() {
-  const { data, error } = useLoad(() => api.compare(), [])
+/** Products on My List compared per unit across stores (search, category filter, sortable columns). */
+export function CompareTable({ data, error }) {
   const [q, setQ] = useState('')
   const [cat, setCat] = useState('')
   const [onlyMulti, setOnlyMulti] = useState(false)
@@ -62,19 +60,6 @@ export function ComparePage() {
 
   return (
     <>
-      <h1>Grocery price compare</h1>
-      <p className="sub">
-        Your curated grocery list, compared per unit across stores. Each store
-        shows its best version; open “more versions” for other sizes and brands.
-      </p>
-      {data && (
-        <div className="stats">
-          <div className="stat">
-            <b>×{data.markup.toFixed(2)}</b>
-            <span>Instacart markup over Costco</span>
-          </div>
-        </div>
-      )}
       <div className="controls">
         <input
           type="search"

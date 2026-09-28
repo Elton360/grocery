@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 import { plural } from '../../shared/format.js'
-import { api } from './api.js'
-import { ReviewPanel } from './components/ReviewPanel.jsx'
-import { BACKEND } from './config.js'
+import { Header } from './components/Header.jsx'
+import { Toast } from './components/Toast.jsx'
 import { useActiveTab } from './hooks/useActiveTab.js'
-import { useReview } from './hooks/useReview.js'
-import { siteFor } from './sites.js'
-
-/** Open a web app page in a regular tab (only when asked). */
-const openPage = (path) => chrome.tabs.create({ url: BACKEND + path })
+import { useBackendLive } from './hooks/useBackendLive.js'
+import { useFeed } from './hooks/useFeed.js'
+import { useStoredState } from './hooks/useStoredState.js'
+import { refreshInfo, siteFor } from './sites.js'
+import { FeedView } from './views/FeedView.jsx'
+import { MainView } from './views/MainView.jsx'
+import { ReceiptView } from './views/ReceiptView.jsx'
 
 async function runGrabber(tab, grabber) {
   const [res] = await chrome.scripting.executeScript({
@@ -18,134 +19,92 @@ async function runGrabber(tab, grabber) {
     files: [`grabbers/${grabber}.js`],
   })
   const grab = res?.result
+  if (grab) grab.grabber = grabber
   if (!grab || grab.error)
     throw new Error(grab?.error || 'Grabber returned nothing')
-  if (!grab.items?.length) throw new Error('No items found on this page')
+  if (grab.source === 'cart' && !grab.order_date) {
+    grab.order_date = new Date().toLocaleDateString('en-CA')
+  }
   return grab
-}
-
-function useWaitingProposals(deps) {
-  const [waiting, setWaiting] = useState(null)
-  useEffect(() => {
-    api
-      .proposals('proposed')
-      .then((d) => setWaiting(d.proposals.length))
-      .catch(() => setWaiting(null))
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, deps)
-  return waiting
 }
 
 export function App() {
   const tab = useActiveTab()
   const site = tab?.url ? siteFor(tab.url) : null
-  const r = useReview()
-  const [grabbing, setGrabbing] = useState(false)
-  const waiting = useWaitingProposals([r.notice?.saved])
+  const live = useBackendLive()
+  const { feed, ready, importGrab, addToList, omit, restore, recheck } =
+    useFeed()
+  const [view, setView] = useStoredState('session', 'view', 'main')
+  const [feedTab, setFeedTab] = useStoredState('session', 'feedTab', 'new')
+  const [busy, setBusy] = useState(false)
+  const [toast, setToast] = useState(null)
+  const clearToast = useCallback(() => setToast(null), [])
 
-  async function grab(action) {
-    setGrabbing(true)
-    r.setNotice(null)
+  useEffect(() => {
+    if (live) recheck().catch(() => {})
+  }, [live, recheck])
+
+  async function doImport(getGrab) {
+    setBusy(true)
     try {
-      r.start(await runGrabber(tab, action.grabber))
+      const counts = await importGrab(await getGrab())
+      setFeedTab('new')
+      setView('feed')
+      setToast({
+        text: `Imported: ${plural(counts.new, 'new item')}, ${counts.tracked} already on My List, ${counts.omitted} omitted`,
+      })
     } catch (e) {
-      r.setNotice({ error: true, text: e.message })
+      setToast({ error: true, text: e.message })
     } finally {
-      setGrabbing(false)
+      setBusy(false)
     }
   }
 
-  const reviewing = Boolean(r.review)
+  const pendingNew = feed.items.filter((f) => f.status === 'new').length
+  const latest = Object.values(feed.captures).sort((a, b) =>
+    b.captured_at.localeCompare(a.captured_at),
+  )[0]
+  const refresh = {
+    ...refreshInfo(latest, tab?.url),
+    busy,
+    run: () => doImport(() => runGrabber(tab, latest.grabber)),
+  }
   return (
-    <main>
-      <header>
-        <b>Grocery Grabber</b>
-        <nav>
-          <button className="link" onClick={() => openPage('/compare')}>
-            Compare
-          </button>
-          <button className="link" onClick={() => openPage('/list')}>
-            List
-          </button>
-          <button className="link" onClick={() => openPage('/review')}>
-            Review{waiting ? ` (${waiting})` : ''}
-          </button>
-        </nav>
-      </header>
-
-      <section className="site">
-        <h2>{site ? site.name : 'This tab'}</h2>
-        {site ? (
-          site.actions.map((a) => (
-            <div className="action" key={a.label}>
-              <button onClick={() => grab(a)} disabled={grabbing || reviewing}>
-                {a.label}
-              </button>
-              <span className="small">{a.hint}</span>
-            </div>
-          ))
-        ) : (
-          <p className="small">
-            Open a Walmart order or cart, your Instacart (Costco) cart, or your
-            Aldi list.
-          </p>
-        )}
-        <div className="action">
-          <button
-            onClick={() =>
-              r.start({
-                store: 'costco',
-                source: 'receipt',
-                paste: true,
-                items: [],
-              })
-            }
-            disabled={reviewing}
-          >
-            Paste Costco receipt
-          </button>
-        </div>
-        {reviewing && (
-          <p className="small">
-            Submit or discard the review below before grabbing again.
-          </p>
-        )}
-      </section>
-
-      {r.notice && (
-        <p className={`notice${r.notice.error ? ' err' : ''}`}>
-          {r.notice.text}
-          {r.notice.saved && (
-            <>
-              {' '}
-              <button className="link" onClick={() => openPage('/list')}>
-                View pending
-              </button>
-            </>
-          )}
-        </p>
-      )}
-
-      {r.ready && r.review && (
-        <ReviewPanel
-          review={r.review}
-          busy={r.busy}
-          onPaste={r.setPaste}
-          onDate={r.setDate}
-          onToggle={r.toggle}
-          onToggleAll={r.toggleAll}
-          onSubmit={r.submit}
-          onDiscard={r.discard}
+    <div className="side-panel">
+      <Header
+        subtitle={view === 'feed' ? 'Capture Feed' : 'Import & shop'}
+        onHome={view === 'main' ? undefined : () => setView('main')}
+      />
+      {view === 'feed' && (
+        <FeedView
+          feed={feed}
+          ready={ready}
+          live={live}
+          refresh={refresh}
+          tab={feedTab}
+          onTab={setFeedTab}
+          actions={{ addToList, omit, restore }}
+          notify={setToast}
         />
       )}
-      {waiting > 0 && !reviewing && (
-        <p className="small">
-          {plural(waiting, 'proposal')} waiting for review.{' '}
-          <button className="link" onClick={() => openPage('/review')}>
-            Review
-          </button>
-        </p>
+      {view === 'paste' && (
+        <ReceiptView
+          busy={busy}
+          onCancel={() => setView('main')}
+          onImport={(grab) => doImport(() => grab)}
+        />
       )}
-    </main>
+      {view === 'main' && (
+        <MainView
+          site={site}
+          busy={busy}
+          pendingNew={pendingNew}
+          onImport={(grabber) => doImport(() => runGrabber(tab, grabber))}
+          onPaste={() => setView('paste')}
+          onFeed={() => setView('feed')}
+        />
+      )}
+      <Toast toast={toast} onDone={clearToast} />
+    </div>
   )
 }
