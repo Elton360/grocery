@@ -5,12 +5,12 @@ This project compares grocery prices per unit across Aldi, Walmart and Costco.
 1. **Gather:** the Chrome side panel grabs orders, carts and receipts into a local backend as *pending* items.
 2. **Converge:** Claude proposes how pending items join the curated product list, and you approve them.
 3. **Normalize:** Claude browses the stores to fill in missing store versions, and you approve them.
-4. **My List:** the web app shows pending items plus each product's best version per store and the cheapest store.
+4. **My List:** the web app's "My Grocery List". Each master item shows its store variants and the recommended store, and pending items wait in a triage drawer.
 
 ## Layout
 ```
 backend/     Node (ESM) + Express 5 + better-sqlite3. API, compare math, converge/normalize, CLIs
-frontend/    React 19 + Vite web app: My List (pending + compare + ignored), Review (proposals)
+frontend/    React 19 + Vite web app: My List (curated items + store variants, triage drawer), Review (proposals)
 extension/   Chrome MV3 side panel (React + Vite → extension/dist) + injected grabbers (extension/public/grabbers)
 shared/      code used by frontend and extension: API client, Costco receipt parser, formatting, theme tokens
 data/        local only (gitignored): grocery.db (the live database) + converge/ and normalize/ run files
@@ -72,7 +72,7 @@ npm start                # build the web app, then serve API + app (My List) on 
 - **Backend URL:** `extension/src/config.js`, plus `host_permissions` in `extension/public/manifest.json`.
 
 ## Converge (pending → products)
-- **Start a run:** press **Converge** in the Pending section of My List, or run `/converge` in a Claude Code session in this folder.
+- **Start a run:** press **Converge** in the Pending Triage drawer on My List (click the Pending triage card), or run `/converge` in a Claude Code session in this folder.
   - The button runs headless Claude Code with your Claude Code login, so there's no API key or separate bill:
     `claude -p "/converge" --allowedTools "Bash(node backend/bin/converge.js:*)" Read "Edit(./data/converge/**)"`
   - Only one run happens at a time, with a 10-minute timeout. Logs go to `data/converge/run-*.log`.
@@ -107,6 +107,17 @@ npm start                # build the web app, then serve API + app (My List) on 
   - `version_ask`.
 
   They're reviewed on the same Review page, where radio buttons choose the main find, an alternative, or "not carried".
+
+## My List page
+- **Top of the page:**
+  - stat cards: curated items, stores monitored, and **Pending triage** (click it for the drawer with pending items, Converge and ignored items);
+  - search (names, brands, stores, store IDs; debounced) plus category chips. They combine.
+- **Item cards:**
+  - grouped by category, by best store, or not at all (**Group by**);
+  - each card shows the item, when it was last bought, and the **recommendation**: BEST VALUE / BEST UNIT COST (the winner is a different pack size) / BULK CHOICE (the winner is a multipack) / ONLY AT / LOWEST PRICE (units not comparable);
+  - collapsed, a card shows each store's best version with the best one highlighted. Clicking the card header expands every version in a 2-column grid, including not-carried stores. Only one card is expanded at a time.
+- **Where the logic lives:** `shared/recommend.js` (`computeRecommendation`: winner, label, "N% cheaper" and multipack "Saves $X per N pk" text), with tests in `backend/test/recommend.test.js`. Store and category names, icons and colors are in `frontend/src/lib/meta.js`.
+- **Not built yet:** role tags, target quantity, aisles, the on-trip checkbox and per-item trip choice, and editing (Add item, Add variant, the ⋮ menu).
 
 ## Compare rules
 - **Costco headline:** the Instacart regular price ÷ the live median markup.

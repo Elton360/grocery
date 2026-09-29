@@ -1,5 +1,5 @@
 /** Compare-page price rules: Costco estimates vs store-confirmed prices, headline version, winner, unit display. */
-import { money } from '../../../shared/format.js'
+import { money } from './format.js'
 
 export const STORES = ['costco', 'walmart', 'aldi']
 export const CONFIRMED_MAX_DAYS = 30
