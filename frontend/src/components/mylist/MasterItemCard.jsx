@@ -5,6 +5,7 @@ import { STORES, headline } from '../../../../shared/prices.js'
 import { unitText, variantKey } from '../../../../shared/recommend.js'
 import { relativeDay } from '../../lib/dates.js'
 import { STORE_META } from '../../lib/meta.js'
+import { StockToggle } from './StockToggle.jsx'
 import { VariantTile } from './VariantTile.jsx'
 
 function lastBought(product) {
@@ -19,7 +20,16 @@ function lastBought(product) {
  * A master item: name, store count, last bought, recommended store + price, and its store variants —
  * a strip of each store's best version (collapsed) or every version in a 2-column grid (expanded).
  */
-export function MasterItemCard({ product: p, rec, expanded, onToggle }) {
+export function MasterItemCard({
+  product: p,
+  rec,
+  expanded,
+  onToggle,
+  stock,
+  stockBusy,
+  onStock,
+  onPrefer,
+}) {
   const stores = STORES.filter((s) => p.stores[s].versions.length)
   const notCarried = STORES.filter(
     (s) => !p.stores[s].versions.length && p.stores[s].not_carried,
@@ -39,34 +49,46 @@ export function MasterItemCard({ product: p, rec, expanded, onToggle }) {
   const panelId = `variants-${p.id}`
 
   return (
-    <article className={`master-card${expanded ? ' expanded' : ''}`}>
-      <button
-        className="master-head"
-        aria-expanded={expanded}
-        aria-controls={panelId}
-        onClick={onToggle}
-      >
-        <span className="master-text">
-          <span className="master-name">
-            {p.name}
-            {stores.length > 1 && (
-              <span className="tag options">{stores.length} Store Options</span>
-            )}
-          </span>
-          <span className="master-meta">{meta.join(' • ')}</span>
-        </span>
-        {rec && (
-          <span className="best-block">
-            <span className="best-label">{rec.label}</span>
-            <span
-              className={`best-value${rec.kind === 'best_unit_cost' ? ' win' : ''}`}
-            >
-              {bestValue} ({STORE_META[rec.store].name})
+    <article
+      className={`master-card${expanded ? ' expanded' : ''} stock-${stock ?? 'in_stock'}`}
+    >
+      <div className="master-top">
+        <button
+          className="master-head"
+          aria-expanded={expanded}
+          aria-controls={panelId}
+          onClick={onToggle}
+        >
+          <span className="master-text">
+            <span className="master-name">
+              {p.name}
+              {stores.length > 1 && (
+                <span className="tag options">
+                  {stores.length} Store Options
+                </span>
+              )}
             </span>
+            <span className="master-meta">{meta.join(' • ')}</span>
           </span>
-        )}
-        <ChevronDown className="chevron" size={18} aria-hidden="true" />
-      </button>
+          {rec && (
+            <span className="best-block">
+              <span className="best-label">{rec.label}</span>
+              <span
+                className={`best-value${rec.kind === 'best_unit_cost' ? ' win' : ''}`}
+              >
+                {bestValue} ({STORE_META[rec.store].name})
+              </span>
+            </span>
+          )}
+          <ChevronDown className="chevron" size={18} aria-hidden="true" />
+        </button>
+        <StockToggle
+          name={p.name}
+          status={stock}
+          busy={stockBusy}
+          onChange={onStock}
+        />
+      </div>
 
       {expanded ? (
         <div className="variants-panel" id={panelId}>
@@ -88,6 +110,7 @@ export function MasterItemCard({ product: p, rec, expanded, onToggle }) {
                   reason={rec?.reason}
                   savings={rec?.savings.get(variantKey(s, v))}
                   detailed
+                  onPrefer={() => onPrefer(s, v)}
                 />
               )),
             )}

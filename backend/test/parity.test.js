@@ -51,7 +51,9 @@ function dump(db) {
     out[t] = db
       .prepare(`SELECT * FROM ${t} ORDER BY ${order}`)
       .all()
-      .map((r) =>
+      // eslint-disable-next-line no-unused-vars
+      .map(({ stock_status, stock_changed_at, ...r }) =>
+        // stock columns were added after the Python backend (no golden for them)
         'payload_json' in r
           ? { ...r, payload_json: JSON.parse(r.payload_json) }
           : r,

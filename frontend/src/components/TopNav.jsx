@@ -17,7 +17,7 @@ export function TopNav({ path, pages }) {
           <span className="logo" aria-hidden="true">
             <ShoppingBasket size={16} />
           </span>
-          Grocery Grabber
+          <span className="brand-text">Grocery Grabber</span>
         </span>
         <span className="location-chip">
           <Store size={12} aria-hidden="true" />
@@ -34,7 +34,10 @@ export function TopNav({ path, pages }) {
             className="nav-link"
             aria-current={to === path ? 'page' : undefined}
           >
-            {label}
+            <span className="label-long">{label}</span>
+            <span className="label-short">
+              {label.replace(' Grocery List', '')}
+            </span>
           </Link>
         ))}
       </div>

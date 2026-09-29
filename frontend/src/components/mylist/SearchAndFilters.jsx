@@ -10,6 +10,7 @@ export function SearchAndFilters({
   category,
   onCategory,
   total,
+  lowOut,
 }) {
   return (
     <div className="search-filters">
@@ -31,6 +32,14 @@ export function SearchAndFilters({
           onClick={() => onCategory('')}
         >
           All ({total})
+        </button>
+        <button
+          role="radio"
+          aria-checked={category === 'lowout'}
+          className={`chip lowout${category === 'lowout' ? ' active' : ''}`}
+          onClick={() => onCategory('lowout')}
+        >
+          Low &amp; Out ({lowOut})
         </button>
         {categories.map(([id, count]) => (
           <button

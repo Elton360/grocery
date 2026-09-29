@@ -27,6 +27,28 @@
   --group-header-bg: #eeeef6;
   --variant-tile: #f1f1f9;
   --band: #fbfbfe;
+  --out-bg: #c4262d;
+  --low-bg: #e6e8f5;
+  --row-missing: #fff7f7;
+  --missing-chip-bg: #fde2e2;
+  --missing-text: #c0262d;
+  --card-footer: #e4e5f5;
+  --panel: #eeeef9;
+  --action-green: #1e6b45;
+  --selected-border: #0d2a1c;
+  --banner-bg: #9ff0cb;
+  --low-pill-bg: #fdf1c7;
+  --low-pill-text: #8a5a00;
+  --out-pill-bg: #fde2e2;
+  --tag-preferred-bg: #fbd68a;
+  --tag-preferred-text: #5c3b00;
+  --tag-moved-bg: #dcd6ff;
+  --tag-moved-text: #3a2a9e;
+  --tag-gap-bg: #bff2d6;
+  --store-header-bg: #eeeef9;
+  --row-bg: #f3f3fa;
+  --savings-bg: #0d2a1c;
+  --savings-accent: #9ff0cb;
   --divider: #d9d9e3;
 
   --win: #dff7e9;

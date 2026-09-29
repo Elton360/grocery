@@ -1,4 +1,4 @@
-import { SlidersHorizontal } from 'lucide-react'
+import { ClipboardList, SlidersHorizontal } from 'lucide-react'
 import {
   useCallback,
   useDeferredValue,
@@ -14,6 +14,7 @@ import { CategoryGroup } from '../components/mylist/CategoryGroup.jsx'
 import { SearchAndFilters } from '../components/mylist/SearchAndFilters.jsx'
 import { StatCards } from '../components/mylist/StatCards.jsx'
 import { TriageDrawer } from '../components/mylist/TriageDrawer.jsx'
+import { Link } from '../components/Link.jsx'
 import { useLoad } from '../hooks/useLoad.js'
 import { STORE_META, categoryMeta } from '../lib/meta.js'
 
@@ -57,8 +58,17 @@ export function MyListPage() {
   const compare = useLoad(() => api.compare(), [])
   const pending = useLoad(() => api.items('pending'), [])
   const ignored = useLoad(() => api.items('ignored'), [])
+  const stockLoad = useLoad(() => api.stock(), [])
+  const stock = useMemo(() => stockLoad.data ?? {}, [stockLoad.data])
+  const [stockBusy, setStockBusy] = useState(null)
+  const [actionError, setActionError] = useState(null)
   const [query, setQuery] = useState('')
-  const [category, setCategory] = useState('')
+  // '' | a category id | 'lowout' (the Low & Out chip; /my-list?filter=lowout)
+  const [category, setCategory] = useState(() =>
+    new URLSearchParams(window.location.search).get('filter') === 'lowout'
+      ? 'lowout'
+      : '',
+  )
   const [groupBy, setGroupBy] = useState('category')
   const [expandedId, setExpandedId] = useState(null)
   const [triageOpen, setTriageOpen] = useState(false)
@@ -86,7 +96,12 @@ export function MyListPage() {
 
   const groups = useMemo(() => {
     const shown = products.filter(
-      (p) => (!category || p.category === category) && matches(p, needle),
+      (p) =>
+        (!category ||
+          (category === 'lowout'
+            ? ['low', 'out'].includes(stock[p.id]?.status)
+            : p.category === category)) &&
+        matches(p, needle),
     )
     const byName = (a, b) => a.name.localeCompare(b.name)
     if (groupBy === 'none')
@@ -111,7 +126,39 @@ export function MyListPage() {
         items: items.sort(byName),
       }))
       .sort((a, b) => a.title.localeCompare(b.title))
-  }, [products, category, needle, groupBy, recs])
+  }, [products, category, needle, groupBy, recs, stock])
+
+  const lowOut = products.filter((p) =>
+    ['low', 'out'].includes(stock[p.id]?.status),
+  ).length
+
+  async function changeStock(productId, status) {
+    setStockBusy(productId)
+    setActionError(null)
+    try {
+      const r = await api.setStock(productId, status)
+      stockLoad.setData((m) => ({
+        ...m,
+        [productId]: { status: r.status, changed_at: r.changed_at },
+      }))
+    } catch (e) {
+      setActionError(e.message)
+    } finally {
+      setStockBusy(null)
+    }
+  }
+
+  // Costco versions come from Instacart listings (estimates) or receipt lines
+  async function togglePreferred(store, v) {
+    const itemStore = store === 'costco' && v.estimate ? 'instacart' : store
+    setActionError(null)
+    try {
+      await api.setPreferred(itemStore, v.store_product_id, !v.preferred)
+      await compare.reload()
+    } catch (e) {
+      setActionError(e.message)
+    }
+  }
 
   const toggle = useCallback(
     (id) => setExpandedId((cur) => (cur === id ? null : id)),
@@ -157,6 +204,7 @@ export function MyListPage() {
             category={category}
             onCategory={setCategory}
             total={products.length}
+            lowOut={lowOut}
           />
         </div>
       </div>
@@ -190,6 +238,7 @@ export function MyListPage() {
           </label>
         </div>
 
+        {actionError && <p className="err">{actionError}</p>}
         {!compare.data && !compare.error && <p className="empty">Loading…</p>}
         {compare.data && !products.length && (
           <div className="empty">
@@ -199,7 +248,9 @@ export function MyListPage() {
         )}
         {compare.data && products.length > 0 && !groups.length && (
           <div className="empty">
-            No groceries match “{query}”.{' '}
+            {category === 'lowout' && !query
+              ? 'Nothing is running low or out.'
+              : `No groceries match “${query}”.`}{' '}
             <button
               className="link-btn"
               onClick={() => {
@@ -218,9 +269,24 @@ export function MyListPage() {
             recs={recs}
             expandedId={expandedId}
             onToggle={toggle}
+            stock={stock}
+            stockBusy={stockBusy}
+            onStock={changeStock}
+            onPrefer={togglePreferred}
           />
         ))}
       </div>
+
+      {lowOut > 0 && (
+        <div className="lowout-bar" role="region" aria-label="Running low">
+          <span>
+            <b>{lowOut}</b> {lowOut === 1 ? 'item' : 'items'} running low or out
+          </span>
+          <Link to="/draft" className="primary-link">
+            <ClipboardList size={16} aria-hidden="true" /> Draft Grocery List
+          </Link>
+        </div>
+      )}
 
       <TriageDrawer
         open={triageOpen}
