@@ -39,6 +39,11 @@ export function createApi(base = '') {
   return {
     health: () => get('/api/health'),
     compare: () => get('/api/compare'),
+    stock: () => get('/api/stock'),
+    setStock: (productId, status) =>
+      post(`/api/products/${productId}/stock`, { status }),
+    setPreferred: (store, id, preferred) =>
+      post(`/api/items/${seg(store)}/${seg(id)}/preferred`, { preferred }),
     items: (status = 'pending') => get(`/api/pending?status=${seg(status)}`),
     proposals: (status = 'proposed') =>
       get(`/api/proposals?status=${seg(status)}`),

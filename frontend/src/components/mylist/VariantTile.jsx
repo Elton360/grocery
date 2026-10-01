@@ -1,4 +1,4 @@
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, Star } from 'lucide-react'
 
 import { money, usDate } from '../../../../shared/format.js'
 import { priceState } from '../../../../shared/prices.js'
@@ -28,6 +28,7 @@ export function VariantTile({
   reason,
   savings,
   detailed,
+  onPrefer,
 }) {
   const meta =
     best && reason
@@ -70,6 +71,19 @@ export function VariantTile({
         </span>
         <span className="variant-meta">{meta}</span>
       </div>
+      {onPrefer && (
+        <button
+          className={`star${v.preferred ? ' on' : ''}`}
+          onClick={onPrefer}
+          title={
+            v.preferred ? 'Preferred — click to unstar' : 'Mark as preferred'
+          }
+          aria-label={`${v.preferred ? 'Unmark' : 'Mark'} ${v.name} as preferred`}
+          aria-pressed={Boolean(v.preferred)}
+        >
+          <Star size={14} fill={v.preferred ? 'currentColor' : 'none'} />
+        </button>
+      )}
       <span className="variant-price">
         {money(v.price)}
         {v.pack_count > 1 && (

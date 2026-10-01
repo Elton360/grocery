@@ -57,6 +57,12 @@ CREATE TABLE IF NOT EXISTS proposals (
   decided_at TEXT
 );
 CREATE INDEX IF NOT EXISTS proposal_item ON proposals(store, store_product_id, status);
+CREATE TABLE IF NOT EXISTS stock_events (
+  id INTEGER PRIMARY KEY,
+  product_id INTEGER NOT NULL REFERENCES products(id),
+  status TEXT NOT NULL,            -- in_stock | low | out
+  at TEXT NOT NULL
+);
 CREATE TABLE IF NOT EXISTS not_carried (
   product_id INTEGER NOT NULL REFERENCES products(id),
   store TEXT NOT NULL,
@@ -77,6 +83,8 @@ const MIGRATIONS = [
   ['items', 'exclude_markup', 'INTEGER DEFAULT 0'],
   ['items', 'preferred', 'INTEGER DEFAULT 0'], // shown first for its store
   ['grabs', 'price_mode', 'TEXT'], // in_store | pickup | online; pickup prices are not used for comparison
+  ['products', 'stock_status', "TEXT NOT NULL DEFAULT 'in_stock'"], // in_stock | low | out
+  ['products', 'stock_changed_at', 'TEXT'],
 ]
 
 export function connect(file = DB_PATH) {

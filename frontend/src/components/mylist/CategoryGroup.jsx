@@ -2,7 +2,16 @@ import { categoryMeta } from '../../lib/meta.js'
 import { MasterItemCard } from './MasterItemCard.jsx'
 
 /** A group header bar (category, store or all) followed by its master item cards. */
-export function CategoryGroup({ group, recs, expandedId, onToggle }) {
+export function CategoryGroup({
+  group,
+  recs,
+  expandedId,
+  onToggle,
+  stock,
+  stockBusy,
+  onStock,
+  onPrefer,
+}) {
   const Icon = group.icon ?? categoryMeta(group.id).icon
   return (
     <section className="category-group">
@@ -24,6 +33,10 @@ export function CategoryGroup({ group, recs, expandedId, onToggle }) {
             rec={recs.get(p.id)}
             expanded={expandedId === p.id}
             onToggle={() => onToggle(p.id)}
+            stock={stock[p.id]?.status}
+            stockBusy={stockBusy === p.id}
+            onStock={(status) => onStock(p.id, status)}
+            onPrefer={onPrefer}
           />
         ))}
       </div>

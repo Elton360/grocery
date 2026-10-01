@@ -8,6 +8,7 @@ import * as compare from './lib/compare.js'
 import * as converge from './lib/converge.js'
 import * as grabs from './lib/grabs.js'
 import * as runner from './lib/runner.js'
+import * as stock from './lib/stock.js'
 import { ValueError } from './lib/util.js'
 import { ROOT } from './paths.js'
 
@@ -32,6 +33,7 @@ export function createApp(db) {
   app.get('/api/proposals', (req, res) =>
     res.json(converge.listProposals(db, req.query.status || 'proposed')),
   )
+  app.get('/api/stock', (req, res) => res.json(stock.stockMap(db)))
   app.get('/api/converge/status', (req, res) => res.json(runner.runStatus()))
 
   const api = express.Router()
@@ -90,6 +92,21 @@ export function createApp(db) {
   api.post(
     '/proposals/:id/reject',
     tx((req) => converge.reject(db, Number(req.params.id))),
+  )
+  api.post(
+    '/products/:id/stock',
+    tx((req) => stock.setStock(db, Number(req.params.id), req.body.status)),
+  )
+  api.post(
+    /^\/items\/([^/]+)\/(.+)\/preferred$/,
+    tx((req) =>
+      stock.setPreferred(
+        db,
+        req.params[0],
+        req.params[1],
+        Boolean(req.body.preferred),
+      ),
+    ),
   )
   // ids may contain slashes (name-derived keys), so match the tail by hand
   api.post(/^\/pending\/([^/]+)\/(.+)\/(remove|restore)$/, (req, res) => {

@@ -14,9 +14,9 @@ import {
 } from 'lucide-react'
 
 export const STORE_META = {
-  walmart: { name: 'Walmart', dot: '#1F4A33' },
-  costco: { name: 'Costco', dot: '#1E2A78' },
-  aldi: { name: 'Aldi', dot: '#1F4A33' },
+  walmart: { name: 'Walmart', dot: '#1F4A33', avatar: '#2A22C7' },
+  costco: { name: 'Costco', dot: '#1E2A78', avatar: '#1E2A78' },
+  aldi: { name: 'Aldi', dot: '#1F4A33', avatar: '#1F4A33' },
 }
 
 export const CATEGORY_META = {

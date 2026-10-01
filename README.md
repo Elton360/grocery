@@ -119,6 +119,21 @@ npm start                # build the web app, then serve API + app (My List) on 
 - **Where the logic lives:** `shared/recommend.js` (`computeRecommendation`: winner, label, "N% cheaper" and multipack "Saves $X per N pk" text), with tests in `backend/test/recommend.test.js`. Store and category names, icons and colors are in `frontend/src/lib/meta.js`.
 - **Not built yet:** role tags, target quantity, aisles, the on-trip checkbox and per-item trip choice, and editing (Add item, Add variant, the ⋮ menu).
 
+## Stock & Draft Grocery List
+- **Stock status on My List:** each item has an **In stock / Low / Out** toggle, stored in `products.stock_status`, with history in `stock_events`.
+  - A sticky bar shows "N items running low or out" and links to **Draft Grocery List** (`/draft`).
+  - The **Low & Out** chip filters the list (`/my-list?filter=lowout`).
+- **Preferred variants:** the ★ on a variant in an expanded card marks it preferred, one per store per item (Costco and Instacart share one slot).
+- **Draft page:** four strategies (Cheapest, My Preferences as the baseline, One Store with a store picker, Up to 2 Stores), each with total, stores, coverage and savings vs the baseline.
+  - For One Store, the availability panel offers: **Add <store>** (auto-balanced), **Best of 3 stores**, or **Leave them off** (those items keep their Low/Out status).
+  - The items table has quantity steppers and sorting.
+- **Auto-balanced view:** a trip plan per store, with reason tags (★ Preferred, Moved to cover gap, <Store> Best Price) and a banner generated from the same data, with Undo. It also has a savings card (vs the cheapest single store that has everything), checkboxes, and a total bar.
+- **Drafting engine:** `shared/draft.js` (`buildDraft`, `strategies`, `resolutions`). It's pure and tested in `backend/test/draft.test.js`. Auto-balancing keeps items at the anchor store unless they're preferred elsewhere or at least 10% cheaper elsewhere.
+- **Not built yet:**
+  - Start Shopping (shopping mode, #11);
+  - the route card (no location data);
+  - saving drafts server-side (drafts live in the browser session for now).
+
 ## Compare rules
 - **Costco headline:** the Instacart regular price ÷ the live median markup.
   - The markup comes from Instacart ↔ Costco receipt pairs, about ×1.10.

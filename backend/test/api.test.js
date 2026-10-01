@@ -153,3 +153,36 @@ test('re-submitting a side panel capture replaces it (carts too)', async () => {
   const capA = items.find((i) => i.store_product_id === 'ic-cap-a')
   assert.equal(capA.times_seen, 1) // one observation, not two
 })
+
+test('stock status: set, list, history, validation', async () => {
+  let res = await post('/api/products/1/stock', { status: 'low' })
+  assert.equal((await res.json()).status, 'low')
+  await post('/api/products/2/stock', { status: 'out' })
+  const map = await (await fetch(`${base}/api/stock`)).json()
+  assert.deepEqual(
+    [map[1].status, map[2].status, map[3].status],
+    ['low', 'out', 'in_stock'],
+  )
+  res = await post('/api/products/1/stock', { status: 'gone' })
+  assert.equal(res.status, 400)
+  res = await post('/api/products/9999/stock', { status: 'low' })
+  assert.deepEqual(await res.json(), { error: 'unknown product' })
+})
+
+test('preferred: one per product per store; Costco and Instacart share one slot', async () => {
+  // product 6 (Bagels) has costco receipt cc-bagels and instacart ic-bagels on the Costco side
+  let res = await post('/api/items/costco/cc-bagels/preferred', {
+    preferred: true,
+  })
+  assert.equal(res.status, 200)
+  await post('/api/items/instacart/ic-bagels/preferred', { preferred: true })
+  const bagels = (
+    await (await fetch(`${base}/api/compare`)).json()
+  ).products.find((p) => p.name === 'Bagels')
+  const flags = Object.fromEntries(
+    bagels.stores.costco.versions.map((v) => [v.store_product_id, v.preferred]),
+  )
+  assert.deepEqual(flags, { 'ic-bagels': true, 'cc-bagels': false })
+  res = await post('/api/items/walmart/nope/preferred', { preferred: true })
+  assert.equal(res.status, 400)
+})
